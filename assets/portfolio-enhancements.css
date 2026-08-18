@@ -1,0 +1,51 @@
+/* Visual + interaction layer for Ahmad Alshehri Professional Portfolio */
+:root{--brand-glow:rgba(159,117,38,.16)}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;background:radial-gradient(circle at 78% 12%,rgba(159,117,38,.08),transparent 30%),radial-gradient(circle at 12% 34%,rgba(16,25,39,.035),transparent 26%)}
+.scroll-progress{position:fixed;top:0;inset-inline-start:0;height:3px;width:0;background:var(--gold);z-index:1000;box-shadow:0 0 16px rgba(159,117,38,.35)}
+.nav a.is-active{color:var(--ink);border-bottom-color:var(--gold)}
+.hero{position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;width:420px;height:420px;border-radius:50%;top:-210px;right:-140px;background:radial-gradient(circle,rgba(159,117,38,.10),transparent 70%);pointer-events:none}
+.hero h1{background:linear-gradient(110deg,var(--ink) 35%,#38455a 68%,var(--gold) 115%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.aside-card{position:relative;transform-style:preserve-3d;transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;box-shadow:0 20px 55px rgba(16,25,39,.07)}
+.aside-card:hover{border-color:#d7c8aa;box-shadow:0 24px 70px rgba(16,25,39,.12),0 0 0 1px rgba(159,117,38,.05)}
+.aside-card>img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:center 20%;filter:saturate(.92) contrast(1.02);transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .4s}
+.aside-card:hover>img{transform:scale(1.035);filter:saturate(1) contrast(1.03)}
+.aside-card::after{content:"";position:absolute;inset:0 0 auto;height:52%;pointer-events:none;background:linear-gradient(180deg,transparent 65%,rgba(16,25,39,.06))}
+.brand-journey{padding:24px 0 28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:rgba(255,255,255,.52);backdrop-filter:blur(8px)}
+.brand-journey-in{display:flex;align-items:center;gap:28px;justify-content:space-between}
+.brand-journey-label{min-width:180px}
+.brand-journey-label strong{display:block;font-family:var(--display);font-size:.96rem;margin-bottom:2px}
+.brand-journey-label span{font-size:.77rem;color:var(--ink-mute)}
+.brand-list{display:flex;align-items:center;gap:12px;flex:1;justify-content:flex-end}
+.brand-card{appearance:none;border:1px solid var(--line);background:#fff;min-width:150px;height:72px;padding:16px 20px;border-radius:7px;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;position:relative;overflow:hidden}
+.brand-card::after{content:"";position:absolute;inset:auto 0 0;height:2px;background:var(--gold);transform:scaleX(0);transition:transform .25s ease}
+.brand-card:hover{transform:translateY(-4px);border-color:#d8c69e;box-shadow:0 12px 26px rgba(16,25,39,.08)}
+.brand-card:hover::after{transform:scaleX(1)}
+.brand-card img{max-width:94px;max-height:27px;object-fit:contain}
+.role{position:relative;transition:background .25s ease,transform .25s ease;padding-inline:12px;border-radius:6px}
+.role:hover{background:rgba(255,255,255,.62);transform:translateX(4px)}
+html[dir="rtl"] .role:hover{transform:translateX(-4px)}
+.role-brand{display:flex;align-items:center;gap:12px;margin:0 0 12px}
+.role-logo{width:92px;height:38px;border:1px solid var(--line);border-radius:5px;background:#fff;padding:8px 12px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(16,25,39,.04)}
+.role-logo img{max-width:68px;max-height:19px;object-fit:contain}
+.role-company-name{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--ink-mute);font-weight:600}
+.role-detail-wrap{position:relative;overflow:hidden;transition:max-height .45s ease}
+.role.is-collapsed .role-detail-wrap{max-height:106px}
+.role.is-collapsed .role-detail-wrap::after{content:"";position:absolute;inset:auto 0 0;height:52px;background:linear-gradient(transparent,var(--bg))}
+.role-toggle{margin-top:13px;border:0;background:transparent;color:var(--gold);font-family:var(--body);font-weight:600;font-size:.82rem;padding:0;cursor:pointer}
+.role-toggle:hover{text-decoration:underline}
+.hl{transition:background .25s ease,transform .25s ease}
+.hl:hover{background:#172335;transform:translateY(-3px)}
+.hl-fig[data-counting="1"]{font-variant-numeric:tabular-nums}
+.rail-step{transition:transform .25s ease}
+.rail-step:hover{transform:translateY(-4px)}
+.rail-step .rail-co{display:flex;align-items:center;gap:7px}
+.rail-mini-logo{width:36px;height:18px;object-fit:contain;filter:grayscale(1);opacity:.72}
+.pcard,.comp,.edu-card,.cert{transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease}
+.pcard:hover,.comp:hover,.edu-card:hover{transform:translateY(-4px);box-shadow:0 16px 34px rgba(16,25,39,.07)}
+.cert:hover{transform:translateX(4px)}
+html[dir="rtl"] .cert:hover{transform:translateX(-4px)}
+.rv{transform:translateY(24px);opacity:0;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.7,.2,1)}
+.rv.in{transform:none;opacity:1}
+@media(max-width:820px){.brand-journey-in{align-items:flex-start;flex-direction:column;gap:14px}.brand-list{width:100%;justify-content:flex-start;overflow-x:auto;padding-bottom:5px;scroll-snap-type:x proximity}.brand-card{min-width:132px;height:64px;scroll-snap-align:start}.role{padding-inline:0}.role:hover{transform:none}.role.is-collapsed .role-detail-wrap{max-height:98px}.aside-card{transform:none!important}.hero::after{width:260px;height:260px}}
+@media(prefers-reduced-motion:reduce){.aside-card,.brand-card,.role,.hl,.rail-step,.pcard,.comp,.edu-card,.cert,.rv,.aside-card>img{transition:none!important;transform:none!important}.scroll-progress{display:none}}
