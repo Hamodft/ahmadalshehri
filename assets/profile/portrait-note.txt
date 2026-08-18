@@ -1,0 +1,1 @@
+Profile portrait is stored as assets/profile/ahmad-portrait.webp
