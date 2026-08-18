@@ -1,0 +1,94 @@
+{
+  "items": [
+    {
+      "id": "rail-1",
+      "year": {
+        "en": "2020",
+        "ar": "2020"
+      },
+      "company": "HUAWEI",
+      "title": {
+        "en": "Brand Consultant",
+        "ar": "مستشار علامة تجارية"
+      },
+      "tier": 1,
+      "order": 0,
+      "visible": true
+    },
+    {
+      "id": "rail-2",
+      "year": {
+        "en": "2021",
+        "ar": "2021"
+      },
+      "company": "HONOR",
+      "title": {
+        "en": "Brand Consultant",
+        "ar": "مستشار علامة تجارية"
+      },
+      "tier": 1,
+      "order": 1,
+      "visible": true
+    },
+    {
+      "id": "rail-3",
+      "year": {
+        "en": "2022",
+        "ar": "2022"
+      },
+      "company": "HONOR",
+      "title": {
+        "en": "Regional Trainer",
+        "ar": "مدرّب إقليمي"
+      },
+      "tier": 2,
+      "order": 2,
+      "visible": true
+    },
+    {
+      "id": "rail-4",
+      "year": {
+        "en": "2023",
+        "ar": "2023"
+      },
+      "company": "HONOR",
+      "title": {
+        "en": "Area Manager",
+        "ar": "مدير منطقة"
+      },
+      "tier": 2,
+      "order": 3,
+      "visible": true
+    },
+    {
+      "id": "rail-5",
+      "year": {
+        "en": "2024",
+        "ar": "2024"
+      },
+      "company": "HONOR",
+      "title": {
+        "en": "Field Force Management Manager",
+        "ar": "مدير إدارة القوى الميدانية"
+      },
+      "tier": 3,
+      "order": 4,
+      "visible": true
+    },
+    {
+      "id": "rail-6",
+      "year": {
+        "en": "2024–Now",
+        "ar": "2024 – الآن"
+      },
+      "company": "TECNO",
+      "title": {
+        "en": "Training Manager",
+        "ar": "مدير التدريب"
+      },
+      "tier": 3,
+      "order": 5,
+      "visible": true
+    }
+  ]
+}
