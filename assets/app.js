@@ -68,8 +68,8 @@
     var mono = el('monogram');
     if (D.profile.photo) {
       el('photoSlot').outerHTML =
-        '<img class="profile-photo" src="' + esc(D.profile.photo) + '" alt="' + esc(t(D.profile.name)) +
-        '" width="1026" height="1305" loading="eager" fetchpriority="high">';
+        '<div class="profile-photo-stage"><img class="profile-photo" src="' + esc(D.profile.photo) + '" alt="' + esc(t(D.profile.name)) +
+        '" width="1026" height="1305" loading="eager" fetchpriority="high"></div>';
     } else if (mono) {
       mono.textContent = D.profile.monogram || 'AA';
     }
