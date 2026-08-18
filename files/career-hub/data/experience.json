@@ -1,0 +1,262 @@
+{
+  "items": [
+    {
+      "id": "exp-1",
+      "company": "TECNO Mobile",
+      "logo": "",
+      "title": {
+        "en": "Training Manager",
+        "ar": "مدير التدريب"
+      },
+      "period": {
+        "en": "2024 – Present",
+        "ar": "2024 – حتى الآن"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": true,
+      "scope": "national",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Lead nationwide training and sales capability initiatives aligned with product launches, sales priorities, and retail execution.",
+          "Partner with sales, marketing, field-force, and retail stakeholders to improve customer engagement and sales productivity.",
+          "Develop product, competitive, and consultative-selling programmes that translate technical features into customer value.",
+          "Analyse sales performance, field feedback, customer behaviour, and competitor activity to identify capability and execution gaps.",
+          "Monitor training KPIs and field performance, and recommend actions to strengthen execution and commercial results."
+        ],
+        "ar": [
+          "قيادة مبادرات التدريب وتطوير قدرات البيع على مستوى المملكة بما يتوافق مع إطلاق المنتجات وأولويات المبيعات والتنفيذ في التجزئة.",
+          "العمل مع فرق المبيعات والتسويق والقوى الميدانية وشركاء التجزئة لتحسين تفاعل العملاء وإنتاجية المبيعات.",
+          "تطوير برامج المنتجات والتنافسية والبيع الاستشاري التي تحوّل المزايا التقنية إلى قيمة ملموسة للعميل.",
+          "تحليل أداء المبيعات والملاحظات الميدانية وسلوك العملاء ونشاط المنافسين لتحديد فجوات القدرات والتنفيذ.",
+          "متابعة مؤشرات أداء التدريب والأداء الميداني، والتوصية بالإجراءات اللازمة لتعزيز التنفيذ والنتائج التجارية."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 0,
+      "visible": true
+    },
+    {
+      "id": "exp-2",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Field Force Management Manager",
+        "ar": "مدير إدارة القوى الميدانية"
+      },
+      "period": {
+        "en": "2024",
+        "ar": "2024"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "national",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Managed national field-force sales execution, target allocation, performance monitoring, and retail productivity across KSA.",
+          "Owned the sales performance cycle from target breakdown through month-end closing, achieving an average 89% target performance.",
+          "Tracked sales KPIs, productivity, market execution, and regional performance to identify risks and growth opportunities.",
+          "Coordinated with regional teams and retail stakeholders to strengthen execution and deliver commercial objectives.",
+          "Analysed competitor activity and market conditions to support sales strategy and corrective action plans."
+        ],
+        "ar": [
+          "إدارة تنفيذ مبيعات القوى الميدانية على مستوى المملكة، وتوزيع المستهدفات، ومتابعة الأداء، وإنتاجية التجزئة.",
+          "إدارة دورة أداء المبيعات كاملة من تفصيل المستهدفات حتى الإقفال الشهري، بمتوسط تحقيق بلغ 89% من المستهدف.",
+          "متابعة مؤشرات أداء المبيعات والإنتاجية والتنفيذ في السوق والأداء الإقليمي لرصد المخاطر وفرص النمو.",
+          "التنسيق مع الفرق الإقليمية وشركاء التجزئة لتعزيز التنفيذ وتحقيق الأهداف التجارية.",
+          "تحليل نشاط المنافسين وظروف السوق لدعم استراتيجية المبيعات وخطط الإجراءات التصحيحية."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 1,
+      "visible": true
+    },
+    {
+      "id": "exp-3",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Area Manager",
+        "ar": "مدير منطقة"
+      },
+      "period": {
+        "en": "2023 – 2024",
+        "ar": "2023 – 2024"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "regional",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Led regional sales teams and managed store-level execution, sales targets, KPIs, and team productivity.",
+          "Built working relationships with retail partners and key store stakeholders to improve execution and business performance.",
+          "Implemented sales action plans based on field visits, customer insights, and competitor monitoring.",
+          "Coached teams on needs discovery, product recommendation, negotiation, objection handling, and closing."
+        ],
+        "ar": [
+          "قيادة فرق المبيعات الإقليمية وإدارة التنفيذ على مستوى المتاجر ومستهدفات المبيعات ومؤشرات الأداء وإنتاجية الفريق.",
+          "بناء علاقات عمل مع شركاء التجزئة وأصحاب المصلحة الرئيسيين في المتاجر لتحسين التنفيذ وأداء الأعمال.",
+          "تطبيق خطط عمل للمبيعات مبنية على الزيارات الميدانية ورؤى العملاء ومتابعة المنافسين.",
+          "تدريب الفرق على اكتشاف الاحتياج، والتوصية بالمنتج، والتفاوض، ومعالجة الاعتراضات، وإتمام البيع."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 2,
+      "visible": true
+    },
+    {
+      "id": "exp-4",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Regional Trainer",
+        "ar": "مدرّب إقليمي"
+      },
+      "period": {
+        "en": "2022 – 2023",
+        "ar": "2022 – 2023"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "regional",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Delivered regional product, sales, and customer-experience training programmes for frontline teams.",
+          "Conducted product presentations and demonstrations, converting technical specifications into practical customer benefits.",
+          "Supported product launches and identified capability gaps through field observation and performance analysis."
+        ],
+        "ar": [
+          "تقديم برامج تدريبية إقليمية في المنتجات والمبيعات وتجربة العميل لفرق الخطوط الأمامية.",
+          "تنفيذ عروض المنتجات والعروض التوضيحية، وتحويل المواصفات التقنية إلى منافع عملية للعميل.",
+          "دعم إطلاق المنتجات وتحديد فجوات القدرات عبر الملاحظة الميدانية وتحليل الأداء."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 3,
+      "visible": true
+    },
+    {
+      "id": "exp-5",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Brand Consultant",
+        "ar": "مستشار علامة تجارية"
+      },
+      "period": {
+        "en": "2021 – 2022",
+        "ar": "2021 – 2022"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "store",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Managed direct customer engagement and retail sales using consultative selling, product demonstrations, and competitive comparisons.",
+          "Handled customer objections, product recommendations, and sales closing while supporting store-level targets."
+        ],
+        "ar": [
+          "إدارة التعامل المباشر مع العملاء ومبيعات التجزئة عبر البيع الاستشاري والعروض التوضيحية والمقارنات التنافسية.",
+          "معالجة اعتراضات العملاء، والتوصية بالمنتجات، وإتمام عمليات البيع مع دعم مستهدفات المتجر."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 4,
+      "visible": true
+    },
+    {
+      "id": "exp-6",
+      "company": "HUAWEI",
+      "logo": "",
+      "title": {
+        "en": "Brand Consultant",
+        "ar": "مستشار علامة تجارية"
+      },
+      "period": {
+        "en": "2020 – 2021",
+        "ar": "2020 – 2021"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "store",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Managed frontline technology sales, customer needs discovery, product demonstrations, and store-level sales support.",
+          "Collected customer and competitor insights and maintained productive relationships with retail stakeholders."
+        ],
+        "ar": [
+          "إدارة مبيعات التقنية في الخطوط الأمامية، واكتشاف احتياجات العملاء، وتقديم العروض التوضيحية، ودعم المبيعات على مستوى المتجر.",
+          "جمع رؤى العملاء والمنافسين والحفاظ على علاقات فعّالة مع شركاء التجزئة."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 5,
+      "visible": true
+    }
+  ]
+}

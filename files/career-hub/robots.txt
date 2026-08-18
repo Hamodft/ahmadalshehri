@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ahmadalshehri/admin/
+
+Sitemap: https://hamodft.github.io/ahmadalshehri/sitemap.xml
