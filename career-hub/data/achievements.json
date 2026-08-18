@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "id": "ach-1",
+      "title": {
+        "en": "Years across sales, retail operations, field force and training",
+        "ar": "سنوات خبرة في المبيعات وعمليات التجزئة والقوى الميدانية والتدريب"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "",
+      "category": "",
+      "evidence": "",
+      "auto": "years",
+      "featured": true,
+      "order": 0,
+      "visible": true,
+      "value": "6",
+      "unit": {
+        "en": "+",
+        "ar": "+"
+      }
+    },
+    {
+      "id": "ach-2",
+      "title": {
+        "en": "Average KSA sales target performance in 2024, managing national field-force execution",
+        "ar": "متوسط تحقيق مستهدفات المبيعات في المملكة خلال 2024 مع إدارة التنفيذ الميداني الوطني"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "2024",
+      "company": "HONOR",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 1,
+      "visible": true,
+      "value": "89",
+      "unit": {
+        "en": "%",
+        "ar": "%"
+      }
+    },
+    {
+      "id": "ach-3",
+      "title": {
+        "en": "Progression across three global technology brands: HUAWEI, HONOR, TECNO",
+        "ar": "تدرّج وظيفي عبر ثلاث علامات تقنية عالمية: HUAWEI و HONOR و TECNO"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "",
+      "category": "",
+      "evidence": "",
+      "auto": "roles",
+      "featured": true,
+      "order": 2,
+      "visible": true,
+      "value": "6",
+      "unit": {
+        "en": " roles",
+        "ar": " أدوار"
+      }
+    },
+    {
+      "id": "ach-4",
+      "title": {
+        "en": "Accredited professional training in facilitation, management and quality",
+        "ar": "تدريب مهني معتمد في التيسير والإدارة والجودة"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "",
+      "category": "",
+      "evidence": "",
+      "auto": "trainingHours",
+      "featured": true,
+      "order": 3,
+      "visible": true,
+      "value": "298",
+      "unit": {
+        "en": " hrs",
+        "ar": " ساعة"
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "id": "edu-1",
+      "program": {
+        "en": "Public Administration",
+        "ar": "الإدارة العامة"
+      },
+      "institution": {
+        "en": "Applied College — King Faisal University",
+        "ar": "الكلية التطبيقية — جامعة الملك فيصل"
+      },
+      "location": {
+        "en": "Kingdom of Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "status": {
+        "en": "In progress",
+        "ar": "قيد الدراسة"
+      },
+      "start": "",
+      "end": "",
+      "documents": [],
+      "order": 0,
+      "visible": true
+    }
+  ]
+}
