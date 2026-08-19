@@ -25,6 +25,20 @@ input,textarea,select,button{font-family:inherit;font-size:inherit}
 .gate h1{font-family:var(--display);font-weight:800;font-size:1.7rem;letter-spacing:-.025em;margin:0 0 8px}
 .gate p{color:var(--ink-soft);margin:0 0 24px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:26px 28px}
+.auth-gate{display:none}.auth-gate.on{display:block}
+.auth-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.auth-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.link-btn{border:0;background:none;color:var(--gold);padding:5px 0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.account-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.status-line{display:flex;align-items:center;gap:9px;margin:8px 0;color:var(--ink-soft)}
+.status-dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px #E8F3ED}
+.status-dot.wait{background:var(--gold);box-shadow:0 0 0 4px var(--gold-tint)}
+.media-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;margin-top:16px}
+.media-card{background:var(--surface);border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.media-thumb{height:150px;background:var(--line-soft);display:grid;place-items:center;overflow:hidden}
+.media-thumb img{width:100%;height:100%;object-fit:contain}
+.media-meta{padding:11px}.media-meta b{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:.82rem}
+.media-meta small{display:block;color:var(--ink-mute);margin:2px 0 8px}.media-acts{display:flex;gap:5px;flex-wrap:wrap}
 .steps{margin:0 0 22px;padding-inline-start:20px;color:var(--ink-soft);font-size:.9rem}
 .steps li{margin-bottom:8px}
 .steps code{background:var(--gold-tint);color:var(--gold);padding:1px 6px;border-radius:3px;font-size:.85em}
@@ -124,10 +138,11 @@ textarea.tall{min-height:150px}
   .side nav button{white-space:nowrap;border-inline-start:0;border-bottom:2px solid transparent;padding:8px 14px}
   .side nav button.on{border-inline-start:0;border-bottom-color:var(--gold)}
   .side nav button .n{display:none}
-  .side .sidefoot{display:flex;gap:8px;padding:14px 14px 0}
-  .side .sidefoot button{margin:0}
+  .side .sidefoot{display:flex;flex-wrap:wrap;gap:8px;padding:14px 14px 0}
+  .side .sidefoot button{margin:0;width:auto;flex:1 1 130px}
   .body,.topbar{padding-inline:16px}
   .bi{grid-template-columns:1fr}
+  .auth-row,.account-grid{grid-template-columns:1fr}
   .docrow{grid-template-columns:1fr}
 }
 </style>
@@ -137,8 +152,27 @@ textarea.tall{min-height:150px}
 <!-- ============ GATE ============ -->
 <div class="gate" id="gate">
   <h1>Career Hub — Admin</h1>
-  <p>Sign in with a GitHub token to edit your site. The token stays in this browser and is never saved to the repository.</p>
-  <div class="card">
+  <p id="gateIntro">Sign in to edit and publish your professional website.</p>
+
+  <div class="card auth-gate" id="authGate">
+    <div id="authMsg"></div>
+    <div class="field">
+      <label for="authEmail">Verified email</label>
+      <input class="in" id="authEmail" type="email" autocomplete="email" value="Ahmadfalshehry@gmail.com">
+    </div>
+    <div class="field">
+      <label for="authPassword">Password</label>
+      <input class="in" id="authPassword" type="password" autocomplete="current-password" placeholder="Enter your password">
+    </div>
+    <div class="auth-actions">
+      <button class="b p" id="authSignin">Sign in</button>
+      <button class="b" id="authSignup">Create owner account</button>
+      <button class="link-btn" id="authForgot" type="button">Forgot password?</button>
+    </div>
+    <p class="help" style="margin-top:14px">A verification message is sent to the approved owner email before access is allowed.</p>
+  </div>
+
+  <div class="card" id="tokenGate">
     <div id="gateMsg"></div>
     <ol class="steps">
       <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → Fine-grained tokens</a></li>
@@ -165,6 +199,7 @@ textarea.tall{min-height:150px}
     <h2>Career Hub<small id="repoLabel"></small></h2>
     <nav id="sideNav"></nav>
     <div class="sidefoot">
+      <button id="btnAccount">Account & security</button>
       <button id="btnExport">Export backup</button>
       <button id="btnImport">Import backup</button>
       <button id="btnSignout">Sign out</button>
@@ -186,8 +221,11 @@ textarea.tall{min-height:150px}
 <div class="toast" id="toast"></div>
 <div class="modal-bg" id="modalBg"><div class="modal" id="modal"></div></div>
 <input type="file" id="importFile" accept="application/json" hidden>
+<input type="file" id="mediaFile" accept="image/png,image/jpeg,image/webp,image/gif,application/pdf" hidden>
 
-<script src="schema.js"></script>
-<script src="admin.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="auth-config.js?v=20260819-auth1"></script>
+<script src="schema.js?v=20260819-auth1"></script>
+<script src="admin.js?v=20260819-auth1"></script>
 </body>
 </html>
