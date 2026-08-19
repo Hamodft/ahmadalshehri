@@ -480,7 +480,7 @@
   if (pre) { boot(pre); return; }
 
   Promise.all(FILES.map(function (f) {
-    return fetch('data/' + f + '.json?v=20260818-v9', { cache: 'no-store' }).then(function (r) {
+    return fetch('data/' + f + '.json?v=20260819-v11', { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error(f + '.json — ' + r.status);
       return r.json();
     });
