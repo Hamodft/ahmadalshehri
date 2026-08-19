@@ -26,6 +26,7 @@ body{margin:0;background:#EDEBE7;color:var(--ink);font-family:var(--body);font-s
   background:transparent;border:1px solid rgba(255,255,255,.3);color:#fff;text-decoration:none;
 }
 .bar button.p{background:var(--gold);border-color:var(--gold)}
+.sync-note{font-size:.76rem;color:rgba(255,255,255,.68)}
 .bar select{background:#1D2837}
 .page{
   background:#fff;max-width:210mm;margin:20px auto;padding:16mm 15mm;
@@ -74,6 +75,7 @@ ul{margin:0;padding:0;list-style:none}
 
 <div class="bar">
   <b>CV</b>
+  <span class="sync-note">Live ATS version · synced with website data</span>
   <select id="mode">
     <option value="en">English</option>
     <option value="ar">العربية</option>
@@ -81,7 +83,7 @@ ul{margin:0;padding:0;list-style:none}
   </select>
   <span class="sp"></span>
   <a href="index.html">← Back to site</a>
-  <button class="p" id="print">Print / Save as PDF</button>
+  <button class="p" id="print">Export ATS PDF</button>
 </div>
 
 <div id="out"></div>
@@ -199,7 +201,10 @@ ul{margin:0;padding:0;list-style:none}
     if (q) document.getElementById('mode').value = q;
     render();
     document.getElementById('mode').onchange = render;
-    document.getElementById('print').onclick = function(){ window.print(); };
+    document.getElementById('print').onclick = function(){
+      document.title = 'Ahmad-Alshehri-ATS-CV-' + document.getElementById('mode').value;
+      window.print();
+    };
   }).catch(function(e){
     document.getElementById('out').innerHTML =
       '<div class="page"><h1>Could not load CV data</h1><p>' + esc(e.message) + '</p></div>';

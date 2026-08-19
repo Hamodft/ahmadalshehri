@@ -458,6 +458,7 @@
       return '<button data-go="' + k + '" class="' + (S.view === k ? 'on' : '') + '">' + d + esc(sch.label.en) + n + '</button>';
     }).join('');
     html += '<button data-go="media" class="' + (S.view === 'media' ? 'on' : '') + '">Media library</button>';
+    html += '<button data-go="atscv" class="' + (S.view === 'atscv' ? 'on' : '') + '">ATS CV & PDF</button>';
     html += '<button data-go="account" class="' + (S.view === 'account' ? 'on' : '') + '">Account & security</button>';
     $('sideNav').innerHTML = html;
     $('sideNav').querySelectorAll('[data-go]').forEach(function (b) {
@@ -556,8 +557,23 @@
     };
   }
 
+  function renderAtsCv() {
+    var v = $('view');
+    $('viewTitle').textContent = 'ATS CV & PDF';
+    v.innerHTML = '<div class="note good"><b>Automatically synced.</b> The CV is generated from the same profile, experience, skills, education and certifications used by the website. Publish an edit once and both the website and CV update together.</div>' +
+      '<div class="card"><h2 style="margin-top:0">Export the latest ATS resume</h2>' +
+      '<p style="color:var(--ink-soft)">Choose a version, review it, then select <b>Export ATS PDF</b>. The PDF keeps selectable text, a simple one-column reading order and the same navy, gold and warm-white visual identity as the website.</p>' +
+      '<div class="auth-actions" style="margin-top:18px">' +
+      '<a class="b p" href="../cv.html?lang=en" target="_blank" rel="noopener">English PDF</a>' +
+      '<a class="b" href="../cv.html?lang=ar" target="_blank" rel="noopener">Arabic PDF</a>' +
+      '<a class="b" href="../cv.html?lang=both" target="_blank" rel="noopener">Bilingual PDF</a></div></div>' +
+      '<div class="card" style="margin-top:16px"><h2 style="margin-top:0">Single source of truth</h2>' +
+      '<ol class="steps"><li>Edit any section in this admin page.</li><li>Press <b>Publish</b>.</li><li>Open the ATS CV here; it always loads the latest published data.</li><li>Export as PDF. No separate CV file needs to be uploaded or maintained.</li></ol></div>';
+  }
+
   function renderView() {
     var key = S.view, sch = window.SCHEMA[key], v = $('view');
+    if (key === 'atscv') { renderNav(); renderAtsCv(); return; }
     renderNav();
     if (key === 'media') { renderMedia(); return; }
     if (key === 'account') { renderAccount(); return; }
