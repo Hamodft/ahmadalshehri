@@ -20,8 +20,21 @@
   var FILES = ['profile', 'settings', 'experience', 'progression', 'achievements',
     'skills', 'certifications', 'education', 'languages', 'projects', 'training', 'documents'];
 
-  var S = { token: '', online: false, data: {}, sha: {}, dirty: {}, view: 'profile' };
+  var AUTH = window.ADMIN_AUTH_CONFIG || { enabled: false };
+  var S = {
+    token: '', online: false, data: {}, sha: {}, dirty: {}, view: 'profile',
+    auth: null, user: null, media: [], mediaLoaded: false
+  };
   var $ = function (id) { return document.getElementById(id); };
+
+  function authEnabled() {
+    return Boolean(AUTH.enabled && AUTH.supabaseUrl && AUTH.supabasePublishableKey && window.supabase);
+  }
+
+  function ownerEmail() { return String(AUTH.ownerEmail || '').trim().toLowerCase(); }
+  function isOwner(user) {
+    return Boolean(user && user.email && user.email.toLowerCase() === ownerEmail() && user.email_confirmed_at);
+  }
 
   /* ------------------------------------------------------------- storage */
   function store(k, v) {
@@ -55,6 +68,99 @@
   }
   function uid(p) { return p + '-' + Date.now().toString(36) + Math.random().toString(36).slice(2, 5); }
 
+  /* --------------------------------------------------------------- auth */
+  function authMsg(msg, bad, good) {
+    $('authMsg').innerHTML = msg
+      ? '<div class="note' + (bad ? ' bad' : (good ? ' good' : '')) + '">' + esc(msg) + '</div>'
+      : '';
+  }
+
+  function redirectUrl() {
+    return location.origin + location.pathname;
+  }
+
+  function showTokenGate() {
+    $('authGate').classList.remove('on');
+    $('tokenGate').style.display = '';
+    $('gateIntro').textContent = 'Owner verified. Connect this browser to the GitHub repository to publish.';
+    var saved = store('aa_token');
+    if (saved) {
+      $('tok').value = saved;
+      S.remember = true;
+      signIn();
+    }
+  }
+
+  function acceptAuthUser(user) {
+    if (!user || !user.email) return false;
+    if (user.email.toLowerCase() !== ownerEmail()) {
+      S.auth.auth.signOut();
+      authMsg('This account is not approved to manage the website.', true);
+      return false;
+    }
+    if (!user.email_confirmed_at) {
+      authMsg('Verify your email first, then return here and sign in.', true);
+      return false;
+    }
+    S.user = user;
+    showTokenGate();
+    return true;
+  }
+
+  function initAuth() {
+    $('authGate').classList.add('on');
+    $('tokenGate').style.display = 'none';
+    $('gateIntro').textContent = 'Secure owner sign-in with verified email.';
+    $('authEmail').value = AUTH.ownerEmail || '';
+    $('authEmail').readOnly = Boolean(AUTH.ownerEmail);
+
+    S.auth = window.supabase.createClient(AUTH.supabaseUrl, AUTH.supabasePublishableKey, {
+      auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: true }
+    });
+
+    $('authSignin').onclick = function () {
+      var email = $('authEmail').value.trim(), password = $('authPassword').value;
+      if (!email || !password) { authMsg('Enter your email and password.', true); return; }
+      authMsg('Checking your account…');
+      S.auth.auth.signInWithPassword({ email: email, password: password }).then(function (r) {
+        if (r.error) throw r.error;
+        acceptAuthUser(r.data.user);
+      }).catch(function (e) { authMsg(e.message, true); });
+    };
+
+    $('authSignup').onclick = function () {
+      var email = $('authEmail').value.trim(), password = $('authPassword').value;
+      if (email.toLowerCase() !== ownerEmail()) { authMsg('Use the approved owner email.', true); return; }
+      if (!password || password.length < 8) { authMsg('Use a password with at least 8 characters.', true); return; }
+      authMsg('Creating the owner account…');
+      S.auth.auth.signUp({
+        email: email, password: password,
+        options: { emailRedirectTo: redirectUrl(), data: { username: 'ahmad.alshehri' } }
+      }).then(function (r) {
+        if (r.error) throw r.error;
+        authMsg('Account created. Check your email and open the verification link.', false, true);
+      }).catch(function (e) { authMsg(e.message, true); });
+    };
+
+    $('authForgot').onclick = function () {
+      var email = $('authEmail').value.trim();
+      if (email.toLowerCase() !== ownerEmail()) { authMsg('Use the approved owner email.', true); return; }
+      S.auth.auth.resetPasswordForEmail(email, { redirectTo: redirectUrl() + '?reset=1' })
+        .then(function (r) {
+          if (r.error) throw r.error;
+          authMsg('Password reset email sent.', false, true);
+        }).catch(function (e) { authMsg(e.message, true); });
+    };
+
+    $('authPassword').addEventListener('keydown', function (e) {
+      if (e.key === 'Enter') $('authSignin').click();
+    });
+
+    S.auth.auth.getSession().then(function (r) {
+      if (r.data && r.data.session) acceptAuthUser(r.data.session.user);
+    });
+  }
+
   /* -------------------------------------------------------------- GitHub */
   function api(path, opts) {
     opts = opts || {};
@@ -66,7 +172,9 @@
     return fetch('https://api.github.com/repos/' + REPO.owner + '/' + REPO.repo + path, opts)
       .then(function (r) {
         if (!r.ok) return r.json().catch(function () { return {}; }).then(function (j) {
-          throw new Error(j.message || ('GitHub ' + r.status));
+          var err = new Error(j.message || ('GitHub ' + r.status));
+          err.status = r.status;
+          throw err;
         });
         return r.status === 204 ? {} : r.json();
       });
@@ -107,6 +215,68 @@
     })).then(function (all) {
       FILES.forEach(function (f, i) { S.data[f] = all[i]; });
     });
+  }
+
+  function bytesToB64(buf) {
+    var bytes = new Uint8Array(buf), out = '', step = 0x8000;
+    for (var i = 0; i < bytes.length; i += step) {
+      out += String.fromCharCode.apply(null, bytes.subarray(i, Math.min(i + step, bytes.length)));
+    }
+    return btoa(out);
+  }
+
+  function loadMedia() {
+    if (!S.online) { S.media = []; return Promise.resolve([]); }
+    return Promise.all(['assets/profile', 'assets/uploads'].map(function (dir) {
+      return api('/contents/' + dir + '?ref=' + REPO.branch).catch(function (e) {
+        if (e.status === 404) return [];
+        throw e;
+      });
+    })).then(function (groups) {
+      S.media = groups.reduce(function (a, b) { return a.concat(Array.isArray(b) ? b : []); }, [])
+        .filter(function (f) { return f.type === 'file' && /\.(png|jpe?g|webp|gif|pdf)$/i.test(f.name); })
+        .sort(function (a, b) { return a.name.localeCompare(b.name); });
+      S.mediaLoaded = true;
+      return S.media;
+    });
+  }
+
+  function uploadMedia(file) {
+    if (!S.online) { toast('Connect to GitHub before uploading files.', true); return; }
+    if (!file) return;
+    if (file.size > 8 * 1024 * 1024) { toast('File is larger than 8 MB.', true); return; }
+    var safe = file.name.toLowerCase().replace(/[^a-z0-9._-]+/g, '-').replace(/^-+|-+$/g, '');
+    if (!safe) safe = 'asset-' + Date.now();
+    var path = 'assets/uploads/' + Date.now().toString(36) + '-' + safe;
+    file.arrayBuffer().then(function (buf) {
+      return api('/contents/' + path, {
+        method: 'PUT',
+        body: JSON.stringify({
+          message: 'Upload ' + safe + ' via admin',
+          content: bytesToB64(buf),
+          branch: REPO.branch
+        })
+      });
+    }).then(function () {
+      toast('Uploaded. Copy its path and use it in any image or document field.');
+      return loadMedia();
+    }).then(renderView).catch(function (e) { toast('Upload failed — ' + e.message, true); });
+  }
+
+  function deleteMedia(item) {
+    if (!item || item.path.indexOf('assets/uploads/') !== 0) return;
+    if (!confirm('Delete "' + item.name + '" from the website repository?')) return;
+    api('/contents/' + item.path, {
+      method: 'DELETE',
+      body: JSON.stringify({
+        message: 'Delete ' + item.name + ' via admin',
+        sha: item.sha,
+        branch: REPO.branch
+      })
+    }).then(function () {
+      toast('File deleted.');
+      return loadMedia();
+    }).then(renderView).catch(function (e) { toast('Delete failed — ' + e.message, true); });
   }
 
   function publish() {
@@ -281,21 +451,117 @@
   }
 
   function renderNav() {
-    $('sideNav').innerHTML = window.COLLECTION_ORDER.map(function (k) {
+    var html = window.COLLECTION_ORDER.map(function (k) {
       var sch = window.SCHEMA[k];
       var n = sch.single ? '' : '<span class="n">' + ((S.data[k] && S.data[k].items) || []).length + '</span>';
       var d = S.dirty[k] ? '<span class="dirty"></span>' : '';
       return '<button data-go="' + k + '" class="' + (S.view === k ? 'on' : '') + '">' + d + esc(sch.label.en) + n + '</button>';
     }).join('');
+    html += '<button data-go="media" class="' + (S.view === 'media' ? 'on' : '') + '">Media library</button>';
+    html += '<button data-go="account" class="' + (S.view === 'account' ? 'on' : '') + '">Account & security</button>';
+    $('sideNav').innerHTML = html;
     $('sideNav').querySelectorAll('[data-go]').forEach(function (b) {
       b.onclick = function () { S.view = b.getAttribute('data-go'); renderView(); };
     });
   }
 
+  function renderMedia() {
+    var v = $('view');
+    $('viewTitle').textContent = 'Media library';
+    if (!S.online) {
+      v.innerHTML = '<div class="note bad">Media uploads require a GitHub connection. Sign in online to continue.</div>';
+      return;
+    }
+    if (!S.mediaLoaded) {
+      v.innerHTML = '<div class="card">Loading media…</div>';
+      loadMedia().then(renderView).catch(function (e) {
+        v.innerHTML = '<div class="note bad">' + esc(e.message) + '</div>';
+      });
+      return;
+    }
+    var h = '<div class="card"><h3 style="margin-top:0">Upload images and documents</h3>' +
+      '<p class="help">PNG, JPG, WebP, GIF or PDF up to 8 MB. Uploaded files are saved in <code>assets/uploads/</code>.</p>' +
+      '<button class="b p" id="uploadMedia">Choose file</button></div><div class="media-grid">';
+    if (!S.media.length) h += '<div class="empty">No media files yet.</div>';
+    S.media.forEach(function (f, i) {
+      var image = /\.(png|jpe?g|webp|gif)$/i.test(f.name);
+      h += '<div class="media-card"><div class="media-thumb">' +
+        (image ? '<img src="../' + esc(f.path) + '?v=' + esc(f.sha) + '" alt="">' : '<b>PDF</b>') +
+        '</div><div class="media-meta"><b title="' + esc(f.name) + '">' + esc(f.name) + '</b>' +
+        '<small>' + Math.max(1, Math.round((f.size || 0) / 1024)) + ' KB</small><div class="media-acts">' +
+        '<button class="b sm" data-copy-media="' + i + '">Copy path</button>' +
+        '<a class="b sm" href="../' + esc(f.path) + '" target="_blank" rel="noopener">Open</a>' +
+        (f.path.indexOf('assets/uploads/') === 0 ? '<button class="b sm warn" data-delete-media="' + i + '">Delete</button>' : '') +
+        '</div></div></div>';
+    });
+    v.innerHTML = h + '</div>';
+    $('uploadMedia').onclick = function () { $('mediaFile').click(); };
+    v.querySelectorAll('[data-copy-media]').forEach(function (b) {
+      b.onclick = function () {
+        var item = S.media[Number(b.getAttribute('data-copy-media'))];
+        navigator.clipboard.writeText(item.path).then(function () { toast('Path copied: ' + item.path); })
+          .catch(function () { toast('Copy failed. Select the path manually.', true); });
+      };
+    });
+    v.querySelectorAll('[data-delete-media]').forEach(function (b) {
+      b.onclick = function () { deleteMedia(S.media[Number(b.getAttribute('data-delete-media'))]); };
+    });
+  }
+
+  function renderAccount() {
+    var v = $('view'), email = AUTH.ownerEmail || 'Ahmadfalshehry@gmail.com';
+    $('viewTitle').textContent = 'Account & security';
+    var configured = authEnabled();
+    var username = S.user && S.user.user_metadata ? (S.user.user_metadata.username || '') : 'ahmad.alshehri';
+    var h = '<div class="account-grid"><div class="card"><h3 style="margin-top:0">Account status</h3>' +
+      '<div class="status-line"><span class="status-dot' + (configured ? '' : ' wait') + '"></span><b>' +
+      (configured ? 'Email authentication active' : 'Supabase connection pending') + '</b></div>' +
+      '<p class="help">Approved email: <span class="ltr">' + esc(email) + '</span></p>' +
+      '<p class="help">Repository: ' + esc(REPO.owner + '/' + REPO.repo) + ' — ' + (S.online ? 'connected' : 'offline') + '</p></div>' +
+      '<div class="card"><h3 style="margin-top:0">Owner profile</h3>' +
+      '<div class="field"><label for="accountUsername">Username</label><input class="in" id="accountUsername" value="' + esc(username) + '"' + (configured ? '' : ' disabled') + '></div>' +
+      '<button class="b p" id="saveUsername"' + (configured ? '' : ' disabled') + '>Save username</button></div>' +
+      '<div class="card"><h3 style="margin-top:0">Password</h3>' +
+      '<div class="field"><label for="newPassword">New password</label><input class="in" id="newPassword" type="password" autocomplete="new-password" placeholder="At least 8 characters"' + (configured ? '' : ' disabled') + '></div>' +
+      '<button class="b" id="changePassword"' + (configured ? '' : ' disabled') + '>Change password</button> ' +
+      '<button class="b" id="sendReset"' + (configured ? '' : ' disabled') + '>Send reset email</button></div>' +
+      '<div class="card"><h3 style="margin-top:0">Repository access</h3>' +
+      '<p class="help">The GitHub token remains only in this browser and can be revoked at any time.</p>' +
+      '<button class="b warn" id="forgetToken">Forget this device token</button></div></div>';
+    if (!configured) h = '<div class="note">Secure email login is prepared but not activated. The existing GitHub-token login remains active so the admin page continues to work.</div>' + h;
+    v.innerHTML = h;
+    $('forgetToken').onclick = function () { store('aa_token', null); S.token = ''; toast('Saved token removed from this browser.'); };
+    if (!configured || !S.auth || !S.user) return;
+    $('saveUsername').onclick = function () {
+      var name = $('accountUsername').value.trim();
+      if (!name) { toast('Enter a username.', true); return; }
+      S.auth.auth.updateUser({ data: { username: name } }).then(function (r) {
+        if (r.error) throw r.error;
+        S.user = r.data.user; toast('Username updated.');
+      }).catch(function (e) { toast(e.message, true); });
+    };
+    $('changePassword').onclick = function () {
+      var password = $('newPassword').value;
+      if (password.length < 8) { toast('Use at least 8 characters.', true); return; }
+      S.auth.auth.updateUser({ password: password }).then(function (r) {
+        if (r.error) throw r.error;
+        $('newPassword').value = ''; toast('Password updated.');
+      }).catch(function (e) { toast(e.message, true); });
+    };
+    $('sendReset').onclick = function () {
+      S.auth.auth.resetPasswordForEmail(email, { redirectTo: redirectUrl() + '?reset=1' }).then(function (r) {
+        if (r.error) throw r.error;
+        toast('Reset email sent.');
+      }).catch(function (e) { toast(e.message, true); });
+    };
+  }
+
   function renderView() {
     var key = S.view, sch = window.SCHEMA[key], v = $('view');
-    $('viewTitle').textContent = sch.label.en;
     renderNav();
+    if (key === 'media') { renderMedia(); return; }
+    if (key === 'account') { renderAccount(); return; }
+    $('viewTitle').textContent = sch.label.en;
 
     if (sch.single) {
       var obj = S.data[key];
@@ -472,6 +738,10 @@
   }
 
   function signIn() {
+    if (authEnabled() && !isOwner(S.user)) {
+      gateMsg('Verify the approved owner email before connecting the repository.', true);
+      return;
+    }
     var tok = $('tok').value.trim();
     if (!tok) { gateMsg('Paste your token first.', true); return; }
     S.token = tok;
@@ -504,18 +774,28 @@
     };
     $('btnPublish').onclick = publish;
     $('btnPreview').onclick = preview;
+    $('btnAccount').onclick = function () { S.view = 'account'; renderView(); };
     $('btnExport').onclick = exportAll;
     $('btnImport').onclick = function () { $('importFile').click(); };
     $('importFile').onchange = function () { if (this.files[0]) importAll(this.files[0]); this.value = ''; };
+    $('mediaFile').onchange = function () { if (this.files[0]) uploadMedia(this.files[0]); this.value = ''; };
     $('btnSignout').onclick = function () {
       if (Object.keys(S.dirty).length && !confirm('You have unpublished changes. Sign out anyway?')) return;
-      store('aa_token', null); location.reload();
+      store('aa_token', null);
+      if (S.auth) S.auth.auth.signOut().then(function () { location.reload(); });
+      else location.reload();
     };
     window.addEventListener('beforeunload', function (e) {
       if (Object.keys(S.dirty).length) { e.preventDefault(); e.returnValue = ''; }
     });
 
-    var saved = store('aa_token');
-    if (saved) { $('tok').value = saved; S.remember = true; signIn(); }
+    if (authEnabled()) {
+      initAuth();
+    } else {
+      $('authGate').classList.remove('on');
+      $('tokenGate').style.display = '';
+      var saved = store('aa_token');
+      if (saved) { $('tok').value = saved; S.remember = true; signIn(); }
+    }
   });
 })();
