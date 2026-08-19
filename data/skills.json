@@ -484,29 +484,6 @@
       "visible": true
     },
     {
-      "id": "skl-22",
-      "name": {
-        "en": "Training strategy",
-        "ar": "استراتيجية التدريب"
-      },
-      "category": {
-        "en": "Training",
-        "ar": "التدريب"
-      },
-      "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
-      },
-      "categoryKey": "cat-4",
-      "level": "",
-      "companies": [],
-      "roles": [],
-      "projects": [],
-      "evidence": "",
-      "order": 22,
-      "visible": true
-    },
-    {
       "id": "skl-23",
       "name": {
         "en": "Training needs analysis",
