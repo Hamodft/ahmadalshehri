@@ -39,6 +39,10 @@ The admin panel writes to your repository using a GitHub token. **The token is n
 
 That's it. The panel remembers you on that device until you sign out.
 
+### Optional verified-email login
+
+`admin/auth-config.js` contains the owner email and the Supabase connection switch. After a Supabase project is linked, set `enabled` to `true` and add only the project URL and publishable key. Never place a service-role key, GitHub token, or password in that file. The owner can then sign in with a verified email, change the username, change the password, and request password recovery from **Account & security**.
+
 **Why a token and not Decap CMS?** Decap's GitHub backend needs an OAuth server, which GitHub Pages cannot host — you'd have to run a separate service on Netlify or Cloudflare just to log in. A fine-grained token does the same job with nothing extra to maintain, and it can be revoked instantly from GitHub settings.
 
 ---
@@ -57,6 +61,8 @@ Open `/admin/`. Left sidebar lists every collection.
 | Show / hide | **Hide** keeps the entry but removes it from the public site |
 | Preview | **Live preview** opens the real site with your unsaved changes |
 | Publish | **Publish** commits to GitHub. Live in about a minute |
+| Upload media | **Media library** uploads images or PDFs up to 8 MB and copies their repository path |
+| Account | **Account & security** shows authentication status and manages owner credentials when verified-email login is active |
 
 A gold dot marks unpublished changes. Nothing reaches the public site until you press **Publish**.
 
