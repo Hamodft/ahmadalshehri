@@ -1,12 +1,30 @@
 {
-  "name": {"en": "Ahmad Alshehri", "ar": "أحمد الشهري"},
-  "fullName": {"en": "Ahmad Faris Ahmad Alshehri", "ar": "أحمد فارس أحمد الشهري"},
-  "headline": {"en": "Sales Operations / Field Force Management / Training & Capability Development", "ar": "عمليات المبيعات / إدارة القوى الميدانية / التدريب وتطوير القدرات"},
-  "lede": {"en": "Saudi sales and operations professional with 6+ years across consumer technology, retail sales, field force management, training, and commercial execution — with proven progression from frontline sales to regional and national management roles.", "ar": "مختصّ سعودي في المبيعات والعمليات بخبرة تتجاوز 6 سنوات في التقنية الاستهلاكية، ومبيعات التجزئة، وإدارة القوى الميدانية، والتدريب، والتنفيذ التجاري — مع تدرّج وظيفي مثبت من البيع المباشر إلى الأدوار الإدارية الإقليمية والوطنية."},
-  "eyebrow": {"en": "Riyadh, Saudi Arabia", "ar": "الرياض، المملكة العربية السعودية"},
+  "name": {
+    "en": "Ahmad Alshehri",
+    "ar": "أحمد الشهري"
+  },
+  "fullName": {
+    "en": "Ahmad Faris Ahmad Alshehri",
+    "ar": "أحمد فارس أحمد الشهري"
+  },
+  "headline": {
+    "en": "Sales Operations / Field Force Management / Training & Capability Development",
+    "ar": "عمليات المبيعات / إدارة القوى الميدانية / التدريب وتطوير القدرات"
+  },
+  "lede": {
+    "en": "Sales operations and training professional with 6+ years in Saudi Arabia’s consumer technology sector, progressing from frontline retail sales to regional leadership and national field-force management. Experienced in owning sales targets, managing KPIs, coaching teams, and translating commercial priorities into practical in-store execution.",
+    "ar": "مختص في عمليات المبيعات والتدريب بخبرة تتجاوز 6 سنوات في قطاع التقنية الاستهلاكية بالمملكة، تدرّجت خلالها من المبيعات المباشرة إلى القيادة الإقليمية وإدارة القوى الميدانية على المستوى الوطني. أمتلك خبرة عملية في إدارة المستهدفات ومؤشرات الأداء، وتطوير الفرق، وتحويل الأولويات التجارية إلى تنفيذ فعّال داخل نقاط البيع."
+  },
+  "eyebrow": {
+    "en": "Riyadh, Saudi Arabia",
+    "ar": "الرياض، المملكة العربية السعودية"
+  },
   "photo": "assets/profile/ahmad-alshehri-profile.png?v=20260819-v11",
   "monogram": "AA",
-  "summaryTitle": {"en": "From the shop floor to national scope", "ar": "من نقطة البيع إلى النطاق الوطني"},
+  "summaryTitle": {
+    "en": "From the shop floor to national scope",
+    "ar": "من نقطة البيع إلى النطاق الوطني"
+  },
   "summary": {
     "en": [
       "I build sales capability where it actually happens — in stores, with field teams, against a target. Six years in Saudi consumer technology took me from selling handsets on the floor to running national field-force execution, and then to leading the training function that makes that execution repeatable.",
@@ -20,15 +38,70 @@
     ]
   },
   "atAGlance": [
-    {"label": {"en": "Current role", "ar": "الدور الحالي"}, "value": {"en": "Training Manager", "ar": "مدير التدريب"}, "note": {"en": "TECNO Mobile — Saudi Arabia", "ar": "TECNO Mobile — المملكة العربية السعودية"}},
-    {"label": {"en": "Experience", "ar": "الخبرة"}, "value": {"en": "6+ years", "ar": "أكثر من 6 سنوات"}, "note": {"en": "Sales, retail, field force & training", "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"}},
-    {"label": {"en": "Based in", "ar": "مقر الإقامة"}, "value": {"en": "Riyadh", "ar": "الرياض"}, "note": {"en": "Kingdom of Saudi Arabia", "ar": "المملكة العربية السعودية"}},
-    {"label": {"en": "Languages", "ar": "اللغات"}, "value": {"en": "Arabic & English", "ar": "العربية والإنجليزية"}, "note": {"en": "Native / Professional working", "ar": "اللغة الأم / إجادة مهنية"}}
+    {
+      "label": {
+        "en": "Current role",
+        "ar": "الدور الحالي"
+      },
+      "value": {
+        "en": "Training Manager",
+        "ar": "مدير التدريب"
+      },
+      "note": {
+        "en": "TECNO Mobile — Saudi Arabia",
+        "ar": "TECNO Mobile — المملكة العربية السعودية"
+      }
+    },
+    {
+      "label": {
+        "en": "Experience",
+        "ar": "الخبرة"
+      },
+      "value": {
+        "en": "6+ years",
+        "ar": "أكثر من 6 سنوات"
+      },
+      "note": {
+        "en": "Sales, retail, field force & training",
+        "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"
+      }
+    },
+    {
+      "label": {
+        "en": "Based in",
+        "ar": "مقر الإقامة"
+      },
+      "value": {
+        "en": "Riyadh",
+        "ar": "الرياض"
+      },
+      "note": {
+        "en": "Kingdom of Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      }
+    },
+    {
+      "label": {
+        "en": "Languages",
+        "ar": "اللغات"
+      },
+      "value": {
+        "en": "Arabic & English",
+        "ar": "العربية والإنجليزية"
+      },
+      "note": {
+        "en": "Native / Professional working",
+        "ar": "اللغة الأم / إجادة مهنية"
+      }
+    }
   ],
   "contact": {
     "email": "Ahmadfalshehry@gmail.com",
     "phone": "+966 50 740 8065",
-    "location": {"en": "Riyadh, Saudi Arabia", "ar": "الرياض، المملكة العربية السعودية"},
+    "location": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، المملكة العربية السعودية"
+    },
     "linkedin": ""
   },
   "cvUrl": "cv.html"
