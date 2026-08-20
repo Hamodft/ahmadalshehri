@@ -30,6 +30,20 @@
     return '<span class="en">' + esc(v.en || '') + '</span><span class="ar">' + esc(v.ar || '') + '</span>';
   }
   function el(id) { return document.getElementById(id); }
+  function cvUrl(l) {
+    return 'downloads/Ahmad-Alshehri-CV-' + (l === 'ar' ? 'ar' : 'en') + '.pdf';
+  }
+  function syncCvLinks(l) {
+    var ar = l === 'ar';
+    ['cvNav', 'cvHero', 'cvContact'].forEach(function (id) {
+      var a = el(id);
+      if (!a) return;
+      a.href = cvUrl(l);
+      a.setAttribute('download', ar ? 'Ahmad-Alshehri-CV-ar.pdf' : 'Ahmad-Alshehri-CV-en.pdf');
+      a.setAttribute('hreflang', l);
+      a.setAttribute('aria-label', ar ? 'تحميل السيرة الذاتية العربية بصيغة PDF' : 'Download English CV as PDF');
+    });
+  }
   function visible(list) {
     return (list || []).filter(function (x) { return x.visible !== false; })
       .sort(function (a, b) { return (a.order || 0) - (b.order || 0); });
@@ -61,10 +75,7 @@
     document.querySelectorAll('[data-bind]').forEach(function (node) {
       node.innerHTML = bi(get(node.getAttribute('data-bind'), D));
     });
-    var cv = D.profile.cvUrl || '#';
-    ['cvNav', 'cvHero', 'cvContact'].forEach(function (id) {
-      var a = el(id); if (a) a.href = cv;
-    });
+    syncCvLinks(LANG);
     var mono = el('monogram');
     if (D.profile.photo) {
       el('photoSlot').outerHTML =
@@ -385,9 +396,13 @@
 
   /* ------------------------------------------------------------- language */
   function setLang(l) {
+    l = l === 'ar' ? 'ar' : 'en';
     LANG = l;
     html.setAttribute('lang', l);
     html.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+    document.body.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
+    syncCvLinks(l);
+    try { localStorage.setItem('aa_lang', l); } catch (e) {}
     document.title = t(D.settings.site.baseTitle);
     var d = document.querySelector('meta[name="description"]');
     if (d) d.setAttribute('content', t(D.settings.site.description));
@@ -439,7 +454,12 @@
     renderBindings(); renderNav(); renderHero(); renderAchievements();
     renderExperience(); renderProjects(); renderTraining();
     renderSkills(); renderCerts(); renderEducation(); renderContact(); jsonld();
-    setLang(D.settings.site.defaultLang || 'en');
+    var initialLang = D.settings.site.defaultLang || 'en';
+    try {
+      var savedLang = localStorage.getItem('aa_lang');
+      if (savedLang === 'ar' || savedLang === 'en') initialLang = savedLang;
+    } catch (e) {}
+    setLang(initialLang);
 
     el('langBtn').addEventListener('click', function () {
       setLang(LANG === 'ar' ? 'en' : 'ar');
