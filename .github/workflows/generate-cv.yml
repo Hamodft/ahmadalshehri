@@ -1,0 +1,43 @@
+name: Generate downloadable CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "cv.html"
+      - "data/**"
+      - "scripts/generate-cv.mjs"
+      - ".github/workflows/generate-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-cv
+  cancel-in-progress: true
+
+jobs:
+  build-pdf:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install PDF browser
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Start portfolio
+        run: python3 -m http.server 4173 >/tmp/cv-server.log 2>&1 &
+      - name: Generate English and Arabic PDFs
+        run: node scripts/generate-cv.mjs
+      - name: Publish generated PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- downloads/Ahmad-Alshehri-CV-en.pdf downloads/Ahmad-Alshehri-CV-ar.pdf
+          git diff --cached --quiet || git commit -m "Update downloadable CV PDFs"
+          git push
