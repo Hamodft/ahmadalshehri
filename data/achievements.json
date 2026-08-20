@@ -51,8 +51,8 @@
     {
       "id": "ach-3",
       "title": {
-        "en": "Progression across three global technology brands: HUAWEI, HONOR, TECNO",
-        "ar": "تدرّج وظيفي عبر ثلاث علامات تقنية عالمية: HUAWEI و HONOR و TECNO"
+        "en": "Progressed from Brand Consultant to national Field Force Management at HONOR",
+        "ar": "تدرّج من مستشار علامة تجارية إلى إدارة القوى الميدانية على مستوى المملكة في HONOR"
       },
       "description": {
         "en": "",
@@ -62,14 +62,14 @@
       "company": "",
       "category": "",
       "evidence": "",
-      "auto": "roles",
+      "auto": "manual",
       "featured": true,
       "order": 2,
       "visible": true,
-      "value": "6",
+      "value": "3",
       "unit": {
-        "en": " roles",
-        "ar": " أدوار"
+        "en": " promotions",
+        "ar": " ترقيات"
       }
     },
     {
