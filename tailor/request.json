@@ -1,0 +1,20 @@
+{
+  "active": false,
+  "requestId": "",
+  "createdAt": "",
+  "lang": "en",
+  "jobTitle": "",
+  "slug": "",
+  "matchScore": 0,
+  "keywords": [],
+  "missingKeywords": [],
+  "themes": [],
+  "headline": { "en": [], "ar": [] },
+  "summary": { "en": "", "ar": "" },
+  "scope": { "en": [], "ar": [] },
+  "commercialSkillIds": [],
+  "leadershipSkillIds": [],
+  "certIds": [],
+  "bulletSelection": {},
+  "outputPath": ""
+}
