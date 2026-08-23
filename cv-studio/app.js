@@ -5,6 +5,8 @@
   var D = {};
   var RESULT = null;
   var LANG = 'en';
+  var READY_PDF = null;
+  var READY_PDF_URL = '';
   var $ = function (id) { return document.getElementById(id); };
 
   var THEMES = {
@@ -134,11 +136,79 @@
       if (y < 293) pdf.text(line, LANG === 'ar' ? 207 : 3, y, { renderingMode: 'invisible', align: LANG === 'ar' ? 'right' : 'left', maxWidth: 202 });
     });
   }
+  function buildChatGPTRequest() {
+    if (!RESULT) { analyze(); if (!RESULT) return ''; }
+    var language = LANG === 'ar' ? 'Arabic' : 'English';
+    var p = D.profile || {}, contact = p.contact || {};
+    var title = RESULT.jobTitle || $('jobTitle').value.trim() || 'Target Role';
+    var jd = $('jd').value.trim().slice(0, 3500);
+    var lines = [
+      'Create and attach a downloadable, ATS-compatible, professionally designed ONE-PAGE A4 PDF CV for Ahmad Alshehri, tailored specifically to the target job below.',
+      'Output language: ' + language + '. Use correct ' + (LANG === 'ar' ? 'right-to-left Arabic' : 'left-to-right English') + ' layout. Preserve the professional navy, gold, and white visual identity. Keep a concise two-column professional design, photo if available, and QR linking to the portfolio.',
+      'Use only verified facts below. Do not invent employers, dates, job titles, education, certifications, achievements, metrics, or responsibilities. Prioritize the job-relevant verified experience. Deliver an actual downloadable PDF file, not just CV text.',
+      'Portfolio: https://hamodft.github.io/ahmadalshehri/',
+      'Reference CV design: https://hamodft.github.io/ahmadalshehri/cv.html?lang=' + LANG,
+      'TARGET JOB: ' + title,
+      'JOB DESCRIPTION:\\n' + jd,
+      'VERIFIED CANDIDATE: ' + t(p.name, LANG),
+      'Contact: ' + (contact.phone || '') + ' | ' + (contact.email || '') + ' | ' + t(contact.location, LANG),
+      'Tailored professional summary: ' + t(RESULT.summary, LANG),
+      'Verified experience:'
+    ];
+    vis((D.experience || {}).items).slice(0, 6).forEach(function (role) {
+      lines.push('- ' + t(role.title, LANG) + ' | ' + (role.company || '') + ' | ' + t(role.period, LANG));
+      var values = ((role.responsibilities || {})[LANG]) || [];
+      var selected = (RESULT.bulletSelection && RESULT.bulletSelection[role.id]) || [];
+      selected.slice(0, 2).forEach(function (index) { if (values[index]) lines.push('  * ' + values[index].slice(0, 230)); });
+    });
+    var selectedSkills = RESULT.commercialSkillIds.concat(RESULT.leadershipSkillIds).map(function (id) { var item = itemById((D.skills || {}).items, id); return item ? t(item.name, LANG) : ''; }).filter(Boolean);
+    lines.push('Relevant verified skills: ' + selectedSkills.join(' | '));
+    var selectedCerts = RESULT.certIds.map(function (id) { var item = itemById((D.certifications || {}).items, id); return item ? t(item.name, LANG) + ' — ' + t(item.provider, LANG) : ''; }).filter(Boolean);
+    lines.push('Relevant verified certifications: ' + selectedCerts.join(' | '));
+    vis((D.education || {}).items).forEach(function (item) { lines.push('Education: ' + t(item.program, LANG) + ' — ' + t(item.institution, LANG) + ' — ' + t(item.status, LANG)); });
+    vis((D.achievements || {}).items).slice(0, 4).forEach(function (item) { lines.push('Achievement: ' + (item.value || '') + t(item.unit, LANG) + ' ' + t(item.title, LANG)); });
+    lines.push('The result must fit exactly one A4 page, remain readable and ATS-searchable, and retain all essential experience. Attach the final PDF.');
+    return lines.join('\\n');
+  }
+  function copyRequestText(value) {
+    if (navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(value);
+    var area = document.createElement('textarea');
+    area.value = value; area.style.position = 'fixed'; area.style.opacity = '0'; document.body.appendChild(area); area.focus(); area.select();
+    var ok = document.execCommand('copy'); document.body.removeChild(area);
+    return ok ? Promise.resolve() : Promise.reject(new Error('Copy failed.'));
+  }
+  function openChatGPT() {
+    var request = buildChatGPTRequest(); if (!request) return;
+    copyRequestText(request).catch(function () {});
+    var url = 'https://chatgpt.com/?q=' + encodeURIComponent(request);
+    var opened = window.open(url, '_blank', 'noopener,noreferrer');
+    if (!opened) window.location.assign(url);
+    setStatus('AI', LANG === 'ar' ? 'تم تجهيز الطلب. أرسله داخل ChatGPT لاستلام السيرة بصيغة PDF.' : 'Your request is ready. Send it in ChatGPT to receive the PDF.');
+  }
+  function copyChatGPTRequest() {
+    var request = buildChatGPTRequest(); if (!request) return;
+    copyRequestText(request).then(function () {
+      setStatus('AI', LANG === 'ar' ? 'تم نسخ الطلب. افتح ChatGPT والصقه لإنشاء السيرة.' : 'Request copied. Paste it into ChatGPT to generate your CV.');
+    }).catch(function () {
+      setStatus('!', LANG === 'ar' ? 'تعذر نسخ الطلب تلقائيًا. استخدم زر المتابعة في ChatGPT.' : 'Could not copy automatically. Use Continue in ChatGPT.', true);
+    });
+  }
+  async function shareReadyPdf() {
+    if (!READY_PDF) return;
+    var file = new File([READY_PDF.blob], READY_PDF.filename, { type: 'application/pdf' });
+    if (navigator.share && (!navigator.canShare || navigator.canShare({ files: [file] }))) {
+      try { await navigator.share({ files: [file], title: READY_PDF.filename }); return; }
+      catch (error) { if (error.name === 'AbortError') return; }
+    }
+    $('downloadLink').click();
+  }
   async function generatePdf() {
     if (!RESULT) { analyze(); if (!RESULT) return; }
     var button = $('generateBtn'), frame = null;
     button.disabled = true;
     if ($('retryBtn')) $('retryBtn').hidden = true;
+    if ($('downloadLink')) $('downloadLink').hidden = true;
+    if ($('sharePdfBtn')) $('sharePdfBtn').hidden = true;
     try {
       if (typeof window.html2pdf !== 'function') throw new Error(LANG === 'ar' ? 'تعذر تحميل أداة إنشاء PDF. حدّث الصفحة وحاول مرة أخرى.' : 'The PDF generator did not load. Refresh the page and try again.');
       setStatus('1/3', LANG === 'ar' ? 'جارٍ تجهيز السيرة المخصصة داخل المتصفح…' : 'Preparing your tailored CV in this browser…');
@@ -165,8 +235,19 @@
       var pdf = await worker.get('pdf');
       while (pdf.getNumberOfPages() > 1) pdf.deletePage(pdf.getNumberOfPages());
       await addSearchableText(pdf, page);
-      setStatus('3/3', LANG === 'ar' ? 'اكتمل تجهيز الملف، ويبدأ التحميل الآن.' : 'Your tailored PDF is ready and downloading now.');
-      pdf.save(filename);
+      var blob = pdf.output('blob');
+      if (!blob || !blob.size) throw new Error(LANG === 'ar' ? 'تعذر تجهيز ملف PDF.' : 'The PDF file could not be generated.');
+      if (READY_PDF_URL) URL.revokeObjectURL(READY_PDF_URL);
+      READY_PDF = { blob: blob, filename: filename };
+      READY_PDF_URL = URL.createObjectURL(blob);
+      var link = $('downloadLink');
+      link.href = READY_PDF_URL;
+      link.download = filename;
+      link.hidden = false;
+      if ($('sharePdfBtn') && navigator.share) $('sharePdfBtn').hidden = false;
+      setStatus('3/3', LANG === 'ar' ? 'الملف جاهز. اضغط «تحميل ملف PDF الجاهز» أو «حفظ أو مشاركة PDF».' : 'PDF ready. Tap “Download ready PDF” or “Save or share PDF”.');
+      try { link.click(); } catch (error) { /* A visible user-activated download link remains available. */ }
+
     } catch (error) {
       setStatus('!', error.message || String(error), true);
       if ($('retryBtn')) $('retryBtn').hidden = false;
@@ -178,7 +259,7 @@
   }
   function checkAgain() { return generatePdf(); }
   function setLang(l) { LANG = l === 'ar' ? 'ar' : 'en'; document.documentElement.lang = LANG; document.documentElement.dir = LANG === 'ar' ? 'rtl' : 'ltr'; document.body.dir = LANG === 'ar' ? 'rtl' : 'ltr'; $('outLang').value = LANG; try { localStorage.setItem('aa_lang', LANG); } catch (e) {} if (RESULT) { RESULT.lang = LANG; RESULT.outputPath = 'downloads/tailored/Ahmad-Alshehri-CV-' + RESULT.slug + '-' + LANG + '-' + RESULT.requestId + '.pdf'; renderResult(); } }
-  function bind() { $('analyzeBtn').addEventListener('click', analyze); $('generateBtn').addEventListener('click', generatePdf); $('retryBtn').addEventListener('click', checkAgain); $('outLang').addEventListener('change', function () { setLang(this.value); }); $('langBtn').addEventListener('click', function () { setLang(LANG === 'ar' ? 'en' : 'ar'); }); }
+  function bind() { $('analyzeBtn').addEventListener('click', analyze); $('generateBtn').addEventListener('click', generatePdf); $('retryBtn').addEventListener('click', checkAgain); $('chatgptBtn').addEventListener('click', openChatGPT); $('copyPromptBtn').addEventListener('click', copyChatGPTRequest); $('sharePdfBtn').addEventListener('click', shareReadyPdf); $('outLang').addEventListener('change', function () { setLang(this.value); }); $('langBtn').addEventListener('click', function () { setLang(LANG === 'ar' ? 'en' : 'ar'); }); }
   function boot() { var saved = 'en'; try { saved = localStorage.getItem('aa_lang') || 'en'; } catch (e) {} setLang(saved); bind(); tokenState(); Promise.all(FILES.map(function (f) { return fetch('../data/' + f + '.json?v=20260823-tailor1', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(f + '.json — ' + r.status); return r.json(); }); })).then(function (all) { FILES.forEach(function (f, i) { D[f] = all[i]; }); $('analyzeBtn').disabled = false; $('loadState').hidden = true; }).catch(function (e) { showMsg((LANG === 'ar' ? 'تعذر تحميل بيانات السيرة: ' : 'Could not load CV data: ') + e.message, true); }); }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
