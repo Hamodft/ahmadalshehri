@@ -1,20 +1,34 @@
 {
-  "active": false,
-  "requestId": "",
-  "createdAt": "",
+  "active": true,
+  "requestId": "smoke-20260823",
+  "createdAt": "2026-08-23T08:55:00.000Z",
   "lang": "en",
-  "jobTitle": "",
-  "slug": "",
-  "matchScore": 0,
-  "keywords": [],
+  "jobTitle": "Sales Operations Manager",
+  "slug": "Sales-Operations-Manager",
+  "matchScore": 88,
+  "keywords": ["sales", "operations", "kpi", "field", "retail", "performance"],
   "missingKeywords": [],
-  "themes": [],
-  "headline": { "en": [], "ar": [] },
-  "summary": { "en": "", "ar": "" },
-  "scope": { "en": [], "ar": [] },
-  "commercialSkillIds": [],
+  "themes": ["sales", "field", "kpi", "retail", "leadership", "stakeholder"],
+  "headline": {
+    "en": ["Sales Operations & Performance", "Field Force & Retail Execution"],
+    "ar": ["عمليات المبيعات وإدارة الأداء", "القوى الميدانية وتنفيذ التجزئة"]
+  },
+  "summary": {
+    "en": "Sales operations and training professional with 6+ years in Saudi Arabia’s consumer technology sector, with hands-on responsibility for sales targets, KPIs, field-force execution, team development, and retail performance from frontline to national scope.",
+    "ar": "مختص في عمليات المبيعات والتدريب بخبرة تتجاوز 6 سنوات في قطاع التقنية الاستهلاكية بالمملكة، مع مسؤولية عملية عن مستهدفات المبيعات ومؤشرات الأداء والتنفيذ الميداني وتطوير الفرق وأداء التجزئة من الخطوط الأمامية حتى النطاق الوطني."
+  },
+  "scope": {
+    "en": ["Sales Performance & KPIs", "Field Force Leadership", "National Retail Operations", "Team Leadership", "Stakeholder Management", "Product Launches"],
+    "ar": ["أداء المبيعات ومؤشرات الأداء", "قيادة القوى الميدانية", "عمليات التجزئة الوطنية", "قيادة الفرق", "إدارة أصحاب المصلحة", "إطلاق المنتجات"]
+  },
+  "commercialSkillIds": ["skl-1", "skl-2", "skl-3", "skl-4"],
   "leadershipSkillIds": [],
-  "certIds": [],
-  "bulletSelection": {},
-  "outputPath": ""
+  "certIds": ["crt-1", "crt-2"],
+  "bulletSelection": {
+    "exp-1": [0, 3],
+    "exp-2": [0, 1],
+    "exp-3": [0, 2],
+    "exp-4": [0, 2]
+  },
+  "outputPath": "downloads/tailored/Ahmad-Alshehri-CV-Sales-Operations-Manager-en-smoke-20260823.pdf"
 }
