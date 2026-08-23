@@ -7,6 +7,7 @@ on:
       - "tailor/request.json"
       - "tailored-cv-render.html"
       - "scripts/generate-tailored-cv.mjs"
+      - "scripts/ensure-tailor-entry.mjs"
       - ".github/workflows/generate-tailored-cv.yml"
   workflow_dispatch:
 
@@ -26,18 +27,33 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - name: Wire tailored CV entry into portfolio
+        run: node scripts/ensure-tailor-entry.mjs
+      - name: Publish portfolio entry point
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- index.html
+          git diff --cached --quiet || git commit -m "Add tailored CV entry point"
+          git push
+      - name: Check tailored request
+        run: |
+          ACTIVE=$(node -e "const r=require('./tailor/request.json'); process.stdout.write(r.active && r.requestId && r.outputPath ? 'true' : 'false')")
+          echo "TAILOR_ACTIVE=$ACTIVE" >> "$GITHUB_ENV"
       - name: Install PDF browser
+        if: env.TAILOR_ACTIVE == 'true'
         run: |
           npm install --no-save playwright@1.55.0
           npx playwright install --with-deps chromium
       - name: Start portfolio
+        if: env.TAILOR_ACTIVE == 'true'
         run: python3 -m http.server 4173 >/tmp/tailored-cv-server.log 2>&1 &
       - name: Generate tailored PDF
+        if: env.TAILOR_ACTIVE == 'true'
         run: node scripts/generate-tailored-cv.mjs
       - name: Publish tailored PDF
+        if: env.TAILOR_ACTIVE == 'true'
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A -- downloads/tailored
           git diff --cached --quiet || git commit -m "Generate tailored CV PDF"
           git push
