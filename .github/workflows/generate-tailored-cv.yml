@@ -1,0 +1,43 @@
+name: Generate tailored CV
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "tailor/request.json"
+      - "tailored-cv-render.html"
+      - "scripts/generate-tailored-cv.mjs"
+      - ".github/workflows/generate-tailored-cv.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-tailored-cv
+  cancel-in-progress: true
+
+jobs:
+  build-tailored-pdf:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install PDF browser
+        run: |
+          npm install --no-save playwright@1.55.0
+          npx playwright install --with-deps chromium
+      - name: Start portfolio
+        run: python3 -m http.server 4173 >/tmp/tailored-cv-server.log 2>&1 &
+      - name: Generate tailored PDF
+        run: node scripts/generate-tailored-cv.mjs
+      - name: Publish tailored PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -- downloads/tailored
+          git diff --cached --quiet || git commit -m "Generate tailored CV PDF"
+          git push
