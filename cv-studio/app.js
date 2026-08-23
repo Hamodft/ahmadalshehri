@@ -93,6 +93,7 @@
             for (var attempt = 0; attempt < 200 && !frame.contentWindow.__TAILORED_READY__; attempt++) await pause(75);
             if (frame.contentWindow.__TAILORED_ERROR__) throw new Error(frame.contentWindow.__TAILORED_ERROR__);
             if (!frame.contentWindow.__TAILORED_READY__) throw new Error('CV template did not finish loading.');
+            frame.contentDocument.documentElement.classList.add('cv-export-a4');
             if (frame.contentDocument.fonts && frame.contentDocument.fonts.ready) await frame.contentDocument.fonts.ready;
             var images = Array.prototype.slice.call(frame.contentDocument.images);
             await Promise.all(images.map(function (img) {
@@ -106,6 +107,18 @@
       frame.addEventListener('error', function () { clearTimeout(timer); reject(new Error('Could not open the CV template.')); }, { once: true });
     });
     return frame;
+  }
+  async function loadFrameGenerator(frame) {
+    if (typeof frame.contentWindow.html2pdf === 'function') return frame.contentWindow.html2pdf;
+    await new Promise(function (resolve, reject) {
+      var script = frame.contentDocument.createElement('script');
+      script.src = new URL('../assets/vendor/html2pdf.bundle.min.js?v=0.10.2', window.location.href).href;
+      script.onload = resolve;
+      script.onerror = function () { reject(new Error(LANG === 'ar' ? 'تعذر تحميل أداة تصدير السيرة.' : 'Could not load the CV export engine.')); };
+      frame.contentDocument.head.appendChild(script);
+    });
+    if (typeof frame.contentWindow.html2pdf !== 'function') throw new Error('The CV export engine is unavailable.');
+    return frame.contentWindow.html2pdf;
   }
   async function addSearchableText(pdf, page) {
     var response = await fetch('../assets/fonts/cv-studio-ats.ttf', { cache: 'force-cache' });
@@ -136,14 +149,17 @@
       page.style.boxShadow = 'none';
       page.style.width = '210mm';
       page.style.height = '296.8mm';
+      page.style.minHeight = '296.8mm';
+      page.style.maxHeight = '296.8mm';
       frame.contentDocument.body.style.background = '#ffffff';
       setStatus('2/3', LANG === 'ar' ? 'جارٍ إنشاء ملف PDF من صفحة واحدة مع نص قابل للقراءة…' : 'Generating a one-page PDF with searchable text…');
       var filename = 'Ahmad-Alshehri-CV-' + RESULT.slug + '-' + LANG + '.pdf';
-      var worker = window.html2pdf().set({
+      var frameGenerator = await loadFrameGenerator(frame);
+      var worker = frameGenerator().set({
         margin: 0,
         filename: filename,
         image: { type: 'jpeg', quality: 0.97 },
-        html2canvas: { scale: 2, useCORS: true, allowTaint: false, backgroundColor: '#ffffff', logging: false, scrollX: 0, scrollY: 0, windowWidth: 1050 },
+        html2canvas: { scale: 2, useCORS: true, allowTaint: false, backgroundColor: '#ffffff', logging: false, scrollX: 0, scrollY: 0, windowWidth: 1200, windowHeight: 1500, onclone: function (cloned) { cloned.documentElement.classList.add('cv-export-a4'); var clonedPage = cloned.querySelector('.html2pdf__container .page') || cloned.querySelector('.page'); if (clonedPage) { clonedPage.style.width = '210mm'; clonedPage.style.height = '296.8mm'; clonedPage.style.margin = '0'; } } },
         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait', compress: true }
       }).from(page).toPdf();
       var pdf = await worker.get('pdf');
