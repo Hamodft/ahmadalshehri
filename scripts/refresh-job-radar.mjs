@@ -8,7 +8,10 @@ const roles = [
   'Retail Operations Manager',
   'Training Manager',
   'Retail Manager',
-  'Sales Operations Manager'
+  'Sales Operations Manager',
+  'Field Force Manager',
+  'Retail Excellence Manager',
+  'Learning Development Manager'
 ];
 const naukriLists = [
   'https://www.naukrigulf.com/sales-manager-jobs-in-riyadh',
@@ -62,9 +65,39 @@ function clsText(block, classPart) {
   const re = new RegExp(`<[^>]+class=["'][^"']*${classPart}[^"']*["'][^>]*>([\\s\\S]*?)<\\/[^>]+>`, 'i');
   const m = block.match(re); return m ? decode(m[1]) : '';
 }
+function linkedinId(url='') {
+  return url.match(/-(\d+)(?:\/)?$/)?.[1] || url.match(/jobs\/view\/(?:[^/]*-)?(\d+)/)?.[1] || '';
+}
+function linkedinDescription(html='') {
+  const patterns = [
+    /<div[^>]+class=["'][^"']*show-more-less-html__markup[^"']*["'][^>]*>([\s\S]*?)<\/div>/i,
+    /<div[^>]+class=["'][^"']*description__text[^"']*["'][^>]*>([\s\S]*?)<\/div>/i,
+    /<section[^>]+class=["'][^"']*description[^"']*["'][^>]*>([\s\S]*?)<\/section>/i
+  ];
+  for (const re of patterns) {
+    const m = html.match(re);
+    if (m) {
+      const text = decode(m[1]);
+      if (text.length > 80) return text.slice(0, 2400);
+    }
+  }
+  return '';
+}
+async function enrichLinkedIn(job) {
+  const id = linkedinId(job.url);
+  if (!id) return job;
+  try {
+    const html = await get(`https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/${id}`);
+    const description = linkedinDescription(html);
+    if (description) return {...job, description};
+  } catch(e) {
+    console.warn(`LinkedIn detail ${id}: ${e.message}`);
+  }
+  return job;
+}
 
 async function collectLinkedIn() {
-  const found=[];
+  const discovered = new Map();
   for (const role of roles) {
     const url='https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords='+encodeURIComponent(role)+'&location='+encodeURIComponent('Saudi Arabia')+'&start=0';
     try {
@@ -79,15 +112,21 @@ async function collectLinkedIn() {
         const tm=b.match(/<time[^>]*datetime=["']([^"']+)["']/i);
         const date=isoDate(tm?.[1]);
         if(!title || !relevant(`${title} ${company} ${location}`)) continue;
-        found.push({
-          id:`linkedin:${jobUrl.match(/-(\d+)$/)?.[1]||jobUrl}`,
+        const id=linkedinId(jobUrl) || jobUrl;
+        if(!discovered.has(id)) discovered.set(id,{
+          id:`linkedin:${id}`,
           source:'linkedin', title, company, location,
-          description:`${title} opportunity at ${company || 'an employer'} in ${location}. Open the original LinkedIn posting for the full responsibilities and requirements.`,
+          description:`${title} opportunity at ${company || 'an employer'} in ${location}.`,
           url:jobUrl, date, dateLabel:labelDate(date)
         });
       }
     } catch(e) { console.warn(`LinkedIn ${role}: ${e.message}`); }
-    await sleep(450);
+    await sleep(350);
+  }
+  const found=[];
+  for (const job of [...discovered.values()].slice(0,80)) {
+    found.push(await enrichLinkedIn(job));
+    await sleep(180);
   }
   return found;
 }
@@ -140,7 +179,7 @@ async function collectNaukrigulf() {
       let title=decode(j?.title||'');
       let company=decode(j?.hiringOrganization?.name||'');
       let location=locationFromJob(j);
-      let description=decode(j?.description||'').slice(0,700);
+      let description=decode(j?.description||'').slice(0,2400);
       let date=isoDate(j?.datePosted);
       if(!title) title=decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||'');
       if(!company) company=decode(html.match(/(?:company|employer)[^>]*>[\s\S]{0,300}?<[^>]+>([\s\S]*?)<\//i)?.[1]||'');
@@ -172,6 +211,6 @@ const cutoff=Date.now()-45*86400000;
 const jobs=[...map.values()]
   .filter(j=>{const t=Date.parse(j.date||''); return !Number.isFinite(t)||t>=cutoff;})
   .sort((a,b)=>(Date.parse(b.date)||0)-(Date.parse(a.date)||0))
-  .slice(0,140);
+  .slice(0,180);
 await fs.writeFile(OUT,JSON.stringify({updatedAt:new Date().toISOString(),jobs},null,2)+'\n','utf8');
 console.log(`Job Radar: ${fresh.length} fresh results, ${jobs.length} total.`);
