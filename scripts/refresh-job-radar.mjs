@@ -113,18 +113,27 @@ function locationFromJob(j) {
   const a=loc?.address||{};
   return [a.addressLocality,a.addressRegion,a.addressCountry?.name||a.addressCountry].filter(Boolean).join(', ') || 'Saudi Arabia';
 }
+function naukriLinks(html,listUrl) {
+  const links=new Set();
+  const normalized=html.replace(/\\u002F/gi,'/').replace(/\\\//g,'/').replace(/&amp;/g,'&');
+  for(const m of normalized.matchAll(/https?:\/\/(?:www\.|mobile\.)?naukrigulf\.com\/[^"'<>\s\\]+jid-[^"'<>\s\\]*/gi)) links.add(canonical(m[0]));
+  for(const m of normalized.matchAll(/(?:href=["'])?(\/[^"'<>\s\\]+jobs-in-[^"'<>\s\\]+jid-[^"'<>\s\\]*)/gi)) {
+    try { links.add(canonical(new URL(m[1],listUrl).toString())); } catch {}
+  }
+  return links;
+}
 async function collectNaukrigulf() {
   const links=new Set();
   for(const listUrl of naukriLists) {
     try {
       const html=await get(listUrl);
-      for(const m of html.matchAll(/href=["'](https?:\/\/(?:www\.|mobile\.)?naukrigulf\.com\/[^"'#?]+-jobs-in-[^"'#?]+-jid-[^"'#?]+)["']/gi)) links.add(canonical(m[1]));
-      for(const m of html.matchAll(/href=["'](\/[^"'#?]+-jobs-in-[^"'#?]+-jid-[^"'#?]+)["']/gi)) links.add(canonical(new URL(m[1],listUrl).toString()));
+      for(const x of naukriLinks(html,listUrl)) links.add(x);
     } catch(e){ console.warn(`Naukrigulf list: ${e.message}`); }
     await sleep(450);
   }
+  console.log(`Naukrigulf candidate links: ${links.size}`);
   const found=[];
-  for(const url of [...links].slice(0,24)) {
+  for(const url of [...links].slice(0,30)) {
     try {
       const html=await get(url);
       const j=jobJsonLd(html);
