@@ -1,4 +1,104 @@
 {
-  "updatedAt": "2026-08-31T11:49:19.657Z",
-  "jobs": []
+  "updatedAt": "2026-08-31T12:02:00.000Z",
+  "jobs": [
+    {
+      "id": "linkedin:4452354713",
+      "source": "linkedin",
+      "title": "Area Sales Manager - FMCG (Saudi Arabia)",
+      "company": "People, Jobs, and News",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Area-level FMCG sales leadership reporting to the National Sales Manager, with responsibility for sales execution, team performance, targets and commercial results across the assigned territory.",
+      "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-fmcg-saudi-arabia-at-people-jobs-and-news-4452354713",
+      "date": "2026-08-24T09:00:00.000Z",
+      "dateLabel": "1 week ago"
+    },
+    {
+      "id": "linkedin:4447014214",
+      "source": "linkedin",
+      "title": "Area Sales Manager",
+      "company": "Rentokil Initial",
+      "location": "Jeddah, Saudi Arabia",
+      "description": "Lead the area's sales performance and a team of Sales Consultants, achieve sales and profitability targets, manage KPIs, develop sales channels and execute business development plans.",
+      "url": "https://www.linkedin.com/jobs/view/area-sales-manager-at-rentokil-initial-4447014214",
+      "date": "2026-08-24T08:00:00.000Z",
+      "dateLabel": "1 week ago"
+    },
+    {
+      "id": "linkedin:4444595854",
+      "source": "linkedin",
+      "title": "Area Sales Manager",
+      "company": "Taj HR",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Regional sales leadership role in the IT and telecom sector covering strategy execution, team coaching, business development, customer growth and key client relationships.",
+      "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-at-taj-hr-4444595854",
+      "date": "2026-08-23T09:00:00.000Z",
+      "dateLabel": "1 week ago"
+    },
+    {
+      "id": "linkedin:4449265610",
+      "source": "linkedin",
+      "title": "Training Manager",
+      "company": "Zad Holding",
+      "location": "Jeddah, Saudi Arabia",
+      "description": "Build and run training across restaurant brands, including onboarding, service training, new-opening and menu rollouts, training design and development of in-house trainers across Jeddah and Riyadh.",
+      "url": "https://sa.linkedin.com/jobs/view/training-manager-at-zad-holding-4449265610",
+      "date": "2026-08-17T09:00:00.000Z",
+      "dateLabel": "2 weeks ago"
+    },
+    {
+      "id": "linkedin:4446657541",
+      "source": "linkedin",
+      "title": "Training Manager",
+      "company": "W Riyadh - KAFD",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "On-site Training Manager opportunity supporting the launch and people development environment of W Riyadh - KAFD, part of an international hospitality network opening in 2026.",
+      "url": "https://sa.linkedin.com/jobs/view/training-manager-at-w-riyadh-kafd-4446657541",
+      "date": "2026-08-17T08:00:00.000Z",
+      "dateLabel": "2 weeks ago"
+    },
+    {
+      "id": "naukrigulf:chalhoub-retail-manager-riyadh",
+      "source": "naukrigulf",
+      "title": "Retail Manager",
+      "company": "Chalhoub Group",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Drive retail sell-out growth through commercial strategy, brand performance, market execution, launches, team leadership, customer management, stock availability and performance monitoring.",
+      "url": "https://www.naukrigulf.com/retail-manager-jobs-in-riyadh-saudi-arabia-in-chalhoub-group-1-to-5-years-n-cd-10003174-jid-280726501354",
+      "date": "2026-08-31T08:30:00.000Z",
+      "dateLabel": "Active listing"
+    },
+    {
+      "id": "naukrigulf:informa-sales-manager-riyadh",
+      "source": "naukrigulf",
+      "title": "Sales Manager",
+      "company": "Informa Group Plc.",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Manage assigned territories and sales revenue targets, monitor KPIs and CRM activity, maintain client relationships and report pipeline and sales performance for the portfolio.",
+      "url": "https://www.naukrigulf.com/sales-manager-jobs-in-riyadh-saudi-arabia-in-informa-group-plc-1-to-6-years-n-cd-10050787-jid-140826500819",
+      "date": "2026-08-31T08:00:00.000Z",
+      "dateLabel": "Active listing"
+    },
+    {
+      "id": "naukrigulf:cleanlife-sales-manager-riyadh",
+      "source": "naukrigulf",
+      "title": "Sales Manager",
+      "company": "CleanLife co.",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Lead B2B and B2C sales for a service-based business, coach the sales team, build corporate partnerships and drive sustainable revenue growth in operational and multi-branch environments.",
+      "url": "https://www.naukrigulf.com/sales-manager-jobs-in-riyadh-saudi-arabia-in-cleanlife-co-8-to-15-years-n-cd-40005242-jid-120826500727",
+      "date": "2026-08-31T07:30:00.000Z",
+      "dateLabel": "Active listing"
+    },
+    {
+      "id": "naukrigulf:chalhoub-retail-manager-guess",
+      "source": "naukrigulf",
+      "title": "Retail Manager - Guess",
+      "company": "Chalhoub Group",
+      "location": "Saudi Arabia",
+      "description": "Manage commercial performance across retail stores, cascade brand strategy, set sales targets, monitor market trends and profitability, manage resources and develop team performance.",
+      "url": "https://www.naukrigulf.com/retail-manager-guess-jobs-in-saudi-arabia-in-chalhoub-group-1-to-6-years-n-cd-10003174-jid-280726500887",
+      "date": "2026-08-31T07:00:00.000Z",
+      "dateLabel": "Active listing"
+    }
+  ]
 }
