@@ -1,0 +1,90 @@
+name: Reweight Job Fit Description First
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/reweight-job-fit-description-first.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make job description the primary fit signal
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          p=Path('cv-studio/jobs.html')
+          s=p.read_text(encoding='utf-8')
+          pattern=r"function score\(j\)\{[\s\S]*?\}\nfunction dateValue"
+          new=r'''function score(j){
+  var title=clean(j.title),description=clean(j.description||''),company=clean(j.company||'');
+  var n=42,reasons=[];
+
+  // Primary signal: responsibilities and requirements in the job description.
+  var descriptionSignals=[
+    ['field force',8],['retail operations',8],['sales operations',8],['training',7],['learning and development',7],['learning development',7],
+    ['sales',6],['retail',6],['commercial',5],['business development',5],['channel',5],['dealer',5],['promoter',5],['territory',5],
+    ['kpi',5],['target',4],['team',4],['leadership',4],['coach',4],['performance',4],['stakeholder',3],['customer',3],
+    ['launch',3],['onboarding',4],['capability',4],['multi store',4],['multi-store',4],['regional',3],['area',3],['operations',5]
+  ];
+  descriptionSignals.forEach(function(x){
+    if(description.indexOf(x[0])>-1){
+      n+=x[1];
+      if(reasons.indexOf(x[0])<0&&reasons.length<4)reasons.push(x[0]);
+    }
+  });
+
+  // Secondary signal: title alignment. It helps, but can no longer dominate the score.
+  var titleSignals=[
+    [/field force manager|field operations manager/,10,'field force'],
+    [/training manager|retail training manager|sales training manager/,10,'training'],
+    [/retail operations manager/,10,'retail operations'],
+    [/sales operations manager/,10,'sales operations'],
+    [/area sales manager/,10,'area sales'],
+    [/regional sales manager/,9,'regional sales'],
+    [/retail excellence manager/,9,'retail excellence'],
+    [/learning.*development manager|talent development manager|learning design.*manager/,8,'learning & development'],
+    [/retail manager/,8,'retail'],
+    [/commercial manager/,7,'commercial'],
+    [/sales manager/,7,'sales'],
+    [/store manager/,5,'store management']
+  ];
+  for(var i=0;i<titleSignals.length;i++){
+    if(titleSignals[i][0].test(title)){
+      n+=titleSignals[i][1];
+      if(reasons.indexOf(titleSignals[i][2])<0&&reasons.length<4)reasons.push(titleSignals[i][2]);
+      break;
+    }
+  }
+
+  // Generic seniority/location support only.
+  if(/manager|lead|head|supervisor|مدير|رئيس|مشرف/.test(title))n+=2;
+  if(/saudi|riyadh|jeddah|dammam|khobar|ksa|السعود/.test(description+' '+company))n+=1;
+
+  // Penalize clearly unrelated specialist roles unless the description strongly contains relevant sales/retail/operations/training work.
+  if(/finance|accounting|engineering|quality assurance|legal|procurement/.test(title) && !/sales|retail|training|operations|field force/.test(description))n-=20;
+
+  return{value:Math.max(40,Math.min(98,n)),reasons:Array.from(new Set(reasons)).slice(0,4)}
+}
+function dateValue'''
+          s2,n=re.subn(pattern,new,s,count=1)
+          if n!=1:
+              raise SystemExit('score function not found')
+          p.write_text(s2,encoding='utf-8')
+          PY
+      - name: Publish weighting change
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- cv-studio/jobs.html
+          git diff --cached --quiet || git commit -m "Prioritize job description in fit scoring"
+          git pull --rebase origin main
+          git push
