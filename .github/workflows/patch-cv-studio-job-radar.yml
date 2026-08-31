@@ -1,0 +1,47 @@
+name: Patch CV Studio Job Radar
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/patch-cv-studio-job-radar.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add Job Radar entry and job handoff
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('cv-studio/index.html')
+          s=p.read_text(encoding='utf-8')
+
+          old='<button id="langBtn" type="button"><span class="en">العربية</span><span class="ar">English</span></button><a href="../">'
+          new='<button id="langBtn" type="button"><span class="en">العربية</span><span class="ar">English</span></button><a href="jobs.html"><span class="en">Job Radar</span><span class="ar">رادار الوظائف</span></a><a href="../">'
+          if 'href="jobs.html"' not in s:
+              if old not in s:
+                  raise SystemExit('CV Studio header marker not found')
+              s=s.replace(old,new,1)
+
+          s=s.replace('Design, page size, visual identity, QR placement and language direction stay fixed.','Design, page size, visual identity and language direction stay fixed.')
+          s=s.replace('التصميم، مقاس الصفحة، الهوية البصرية، موقع QR واتجاه اللغة تبقى ثابتة.','التصميم، مقاس الصفحة، الهوية البصرية واتجاه اللغة تبقى ثابتة.')
+
+          handoff='''<script id="jobRadarHandoff">\n(function(){\n  try{\n    var q=new URLSearchParams(location.search);\n    if(q.get('job')!=='1')return;\n    var raw=localStorage.getItem('cvStudioJob');\n    if(!raw)return;\n    var job=JSON.parse(raw);\n    function fill(){\n      var title=document.getElementById('jobTitle'),jd=document.getElementById('jd');\n      if(!title||!jd){setTimeout(fill,120);return}\n      title.value=job.title||'';\n      jd.value=job.description||'';\n      title.dispatchEvent(new Event('input',{bubbles:true}));\n      jd.dispatchEvent(new Event('input',{bubbles:true}));\n      title.scrollIntoView({behavior:'smooth',block:'center'});\n    }\n    if(document.readyState==='complete')setTimeout(fill,160);\n    else window.addEventListener('load',function(){setTimeout(fill,160)});\n  }catch(e){}\n})();\n</script>'''
+          if 'id="jobRadarHandoff"' not in s:
+              s=s.replace('</body>',handoff+'\n</body>',1)
+
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Publish CV Studio update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- cv-studio/index.html
+          git diff --cached --quiet || git commit -m "Connect Job Radar to CV Studio"
+          git push
