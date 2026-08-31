@@ -2,21 +2,33 @@ import fs from 'node:fs/promises';
 
 const OUT = new URL('../cv-studio/jobs.json', import.meta.url);
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/152 Safari/537.36';
+
+// Broad role families related to the verified CV. The radar searches multiple result pages for each family.
 const roles = [
-  'Area Sales Manager',
-  'Regional Sales Manager',
-  'Retail Operations Manager',
-  'Training Manager',
-  'Retail Manager',
-  'Sales Operations Manager',
-  'Field Force Manager',
-  'Retail Excellence Manager',
-  'Learning Development Manager'
+  'Area Sales Manager','Regional Sales Manager','Sales Manager','Sales Operations Manager','Commercial Manager',
+  'Retail Operations Manager','Retail Excellence Manager','Retail Manager','Store Operations Manager','Area Manager Retail',
+  'Training Manager','Retail Training Manager','Sales Training Manager','Learning Development Manager','Talent Development Manager',
+  'Capability Development Manager','Field Force Manager','Field Operations Manager','Channel Manager','Trade Marketing Manager',
+  'Sales Enablement Manager','Business Development Manager','Territory Manager','Regional Manager'
 ];
+const linkedinStarts = [0,25,50,75];
+
 const naukriLists = [
+  'https://www.naukrigulf.com/area-sales-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/regional-sales-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/sales-manager-jobs-in-saudi-arabia',
   'https://www.naukrigulf.com/sales-manager-jobs-in-riyadh',
   'https://www.naukrigulf.com/retail-manager-jobs-in-saudi-arabia',
-  'https://www.naukrigulf.com/training-manager-jobs-in-riyadh'
+  'https://www.naukrigulf.com/retail-operations-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/area-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/training-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/training-manager-jobs-in-riyadh',
+  'https://www.naukrigulf.com/learning-development-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/operations-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/commercial-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/channel-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/business-development-manager-jobs-in-saudi-arabia',
+  'https://www.naukrigulf.com/territory-manager-jobs-in-saudi-arabia'
 ];
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -38,9 +50,10 @@ function canonical(raw='') {
 }
 function relevant(text='') {
   const t = text.toLowerCase();
-  const role = /(sales|retail|training|field force|operations|learning|development|commercial|store manager|مبيعات|تدريب|عمليات|تجزئة)/i.test(t);
-  const place = /(saudi|riyadh|jeddah|dammam|khobar|ksa|السعود|الرياض|جدة|الدمام|الخبر)/i.test(t);
-  return role && place;
+  const role = /(sales|retail|training|field force|field operations|sales operations|retail operations|learning|development|commercial|channel|trade marketing|business development|territory|store manager|area manager|regional manager|capability|enablement|مبيعات|تدريب|عمليات|تجزئة|تطوير|تجاري)/i.test(t);
+  const place = /(saudi|riyadh|jeddah|jiddah|makkah|mecca|madinah|dammam|khobar|jubail|abha|khamis|tabuk|qassim|ksa|السعود|الرياض|جدة|مكة|المدينة|الدمام|الخبر|أبها|تبوك)/i.test(t);
+  const negative = /(software developer|software engineer|cyber|network engineer|accountant|finance manager|legal counsel|procurement manager|construction manager|project engineer|nurse|pharmac)/i.test(t);
+  return role && place && !negative;
 }
 function isoDate(raw) {
   const d = Date.parse(raw || '');
@@ -78,7 +91,7 @@ function linkedinDescription(html='') {
     const m = html.match(re);
     if (m) {
       const text = decode(m[1]);
-      if (text.length > 80) return text.slice(0, 2400);
+      if (text.length > 80) return text.slice(0, 2600);
     }
   }
   return '';
@@ -99,34 +112,38 @@ async function enrichLinkedIn(job) {
 async function collectLinkedIn() {
   const discovered = new Map();
   for (const role of roles) {
-    const url='https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords='+encodeURIComponent(role)+'&location='+encodeURIComponent('Saudi Arabia')+'&start=0';
-    try {
-      const html=await get(url);
-      for (const b of blocks(html,'/jobs/view/')) {
-        const hm=b.match(/href=["'](https?:\/\/[^"']*linkedin\.com\/jobs\/view\/[^"'?&]+[^"']*)["']/i);
-        if(!hm) continue;
-        const jobUrl=canonical(hm[1]);
-        const title=clsText(b,'base-search-card__title');
-        const company=clsText(b,'base-search-card__subtitle');
-        const location=clsText(b,'job-search-card__location') || 'Saudi Arabia';
-        const tm=b.match(/<time[^>]*datetime=["']([^"']+)["']/i);
-        const date=isoDate(tm?.[1]);
-        if(!title || !relevant(`${title} ${company} ${location}`)) continue;
-        const id=linkedinId(jobUrl) || jobUrl;
-        if(!discovered.has(id)) discovered.set(id,{
-          id:`linkedin:${id}`,
-          source:'linkedin', title, company, location,
-          description:`${title} opportunity at ${company || 'an employer'} in ${location}.`,
-          url:jobUrl, date, dateLabel:labelDate(date)
-        });
-      }
-    } catch(e) { console.warn(`LinkedIn ${role}: ${e.message}`); }
-    await sleep(350);
+    for (const start of linkedinStarts) {
+      const url='https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords='+encodeURIComponent(role)+'&location='+encodeURIComponent('Saudi Arabia')+'&start='+start;
+      try {
+        const html=await get(url);
+        for (const b of blocks(html,'/jobs/view/')) {
+          const hm=b.match(/href=["'](https?:\/\/[^"']*linkedin\.com\/jobs\/view\/[^"'?&]+[^"']*)["']/i);
+          if(!hm) continue;
+          const jobUrl=canonical(hm[1]);
+          const title=clsText(b,'base-search-card__title');
+          const company=clsText(b,'base-search-card__subtitle');
+          const location=clsText(b,'job-search-card__location') || 'Saudi Arabia';
+          const tm=b.match(/<time[^>]*datetime=["']([^"']+)["']/i);
+          const date=isoDate(tm?.[1]);
+          if(!title || !relevant(`${title} ${company} ${location}`)) continue;
+          const id=linkedinId(jobUrl) || jobUrl;
+          if(!discovered.has(id)) discovered.set(id,{
+            id:`linkedin:${id}`,
+            source:'linkedin', title, company, location,
+            description:`${title} opportunity at ${company || 'an employer'} in ${location}.`,
+            url:jobUrl, date, dateLabel:labelDate(date)
+          });
+        }
+      } catch(e) { console.warn(`LinkedIn ${role} start=${start}: ${e.message}`); }
+      await sleep(110);
+    }
   }
+  console.log(`LinkedIn candidates: ${discovered.size}`);
   const found=[];
-  for (const job of [...discovered.values()].slice(0,80)) {
-    found.push(await enrichLinkedIn(job));
-    await sleep(180);
+  for (const job of [...discovered.values()].slice(0,180)) {
+    const enriched=await enrichLinkedIn(job);
+    if(relevant(`${enriched.title} ${enriched.company} ${enriched.location} ${enriched.description}`)) found.push(enriched);
+    await sleep(90);
   }
   return found;
 }
@@ -168,26 +185,26 @@ async function collectNaukrigulf() {
       const html=await get(listUrl);
       for(const x of naukriLinks(html,listUrl)) links.add(x);
     } catch(e){ console.warn(`Naukrigulf list: ${e.message}`); }
-    await sleep(450);
+    await sleep(170);
   }
   console.log(`Naukrigulf candidate links: ${links.size}`);
   const found=[];
-  for(const url of [...links].slice(0,30)) {
+  for(const url of [...links].slice(0,120)) {
     try {
       const html=await get(url);
       const j=jobJsonLd(html);
       let title=decode(j?.title||'');
       let company=decode(j?.hiringOrganization?.name||'');
       let location=locationFromJob(j);
-      let description=decode(j?.description||'').slice(0,2400);
+      let description=decode(j?.description||'').slice(0,2600);
       let date=isoDate(j?.datePosted);
       if(!title) title=decode(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i)?.[1]||'');
       if(!company) company=decode(html.match(/(?:company|employer)[^>]*>[\s\S]{0,300}?<[^>]+>([\s\S]*?)<\//i)?.[1]||'');
-      if(!description) description=`${title} opportunity in ${location}. Open the original Naukrigulf posting for full details.`;
+      if(!description) description=`${title} opportunity in ${location}.`;
       if(!title || !relevant(`${title} ${company} ${location} ${description}`)) continue;
       found.push({id:`naukrigulf:${url}`,source:'naukrigulf',title,company,location,description,url,date,dateLabel:labelDate(date)});
     } catch(e){ console.warn(`Naukrigulf detail: ${e.message}`); }
-    await sleep(260);
+    await sleep(90);
   }
   return found;
 }
@@ -211,6 +228,6 @@ const cutoff=Date.now()-45*86400000;
 const jobs=[...map.values()]
   .filter(j=>{const t=Date.parse(j.date||''); return !Number.isFinite(t)||t>=cutoff;})
   .sort((a,b)=>(Date.parse(b.date)||0)-(Date.parse(a.date)||0))
-  .slice(0,180);
+  .slice(0,320);
 await fs.writeFile(OUT,JSON.stringify({updatedAt:new Date().toISOString(),jobs},null,2)+'\n','utf8');
 console.log(`Job Radar: ${fresh.length} fresh results, ${jobs.length} total.`);
