@@ -1,0 +1,43 @@
+name: Add City Date Filters
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/add-city-date-filters.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Patch Job Radar filters
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('cv-studio/jobs.html')
+          s=p.read_text(encoding='utf-8')
+          s=s.replace('<div class="toolbar" style="grid-template-columns:1fr"><select class="control" id="sort"><option value="score">Best match</option><option value="new">Newest first</option></select></div>', '<div class="toolbar"><select class="control" id="city"><option value="all">All cities</option></select><select class="control" id="posted"><option value="0">Any posting date</option><option value="1">Last 24 hours</option><option value="3">Last 3 days</option><option value="7" selected>Last 7 days</option><option value="14">Last 14 days</option><option value="30">Last 30 days</option></select><select class="control" id="sort"><option value="score">Best match</option><option value="new">Newest first</option></select></div>')
+          s=s.replace('Publicly indexed LinkedIn and Naukrigulf job pages are collected into one private radar. Click any job card to open the original posting and apply on the source platform.','All roles shown are already relevant to your CV. Filter only by city and posting date, then open the original job to apply.')
+          s=s.replace('تُجمع إعلانات الوظائف العامة المفهرسة من LinkedIn وNaukrigulf في رادار واحد. اضغط على أي إعلان للانتقال مباشرة إلى الإعلان الأصلي والتقديم من المنصة.','كل الوظائف المعروضة مرتبطة بسيرتك مسبقًا. فلتر فقط حسب المدينة وتاريخ الإعلان ثم افتح الإعلان الأصلي للتقديم.')
+          s=s.replace('Jobs shown here are already selected for relevance to the verified career data used by CV Studio. Match scores are only a ranking aid. The radar does not log in to your job-platform accounts and tracks public/indexed job pages only.','Jobs are pre-selected for CV relevance. Use city and posting date as your main filters; match score only ranks the results.')
+          s=s.replace('الوظائف المعروضة هنا مختارة مسبقًا لارتباطها ببياناتك المهنية الموثقة في CV Studio، ونسبة التطابق تستخدم فقط لترتيب الأفضل. الرادار لا يسجل الدخول إلى حساباتك ويتابع الإعلانات العامة والمفهرسة فقط.','الوظائف مختارة مسبقًا لتوافقها مع سيرتك. استخدم المدينة وتاريخ الإعلان كفلاتر أساسية، ونسبة التطابق فقط لترتيب النتائج.')
+          marker="function dateValue(j){var d=Date.parse(j.date||'');return isNaN(d)?0:d}"
+          if 'function cityOf(j)' not in s:
+              s=s.replace(marker, marker+"\nfunction cityOf(j){var loc=String(j.location||'').trim();if(!loc)return 'Other';return loc.split(',')[0].trim()||'Other'}\nfunction populateCities(){var cities=Array.from(new Set(jobs.map(cityOf))).filter(Boolean).sort();$('city').innerHTML='<option value=\"all\">'+(lang==='ar'?'كل المدن':'All cities')+'</option>'+cities.map(function(c){return'<option value=\"'+esc(c)+'\">'+esc(c)+'</option>'}).join('')}" )
+          old="function render(){var list=jobs.map(function(j){var s=score(j);j._score=s.value;j._reasons=s.reasons;return j}).filter(function(j){if(source!=='all'&&j.source!==source)return false;return true});"
+          new="function render(){var city=$('city').value,days=+$('posted').value,now=Date.now();var list=jobs.map(function(j){var s=score(j);j._score=s.value;j._reasons=s.reasons;return j}).filter(function(j){if(source!=='all'&&j.source!==source)return false;if(city!=='all'&&cityOf(j)!==city)return false;if(days>0){var dv=dateValue(j);if(!dv||now-dv>days*86400000)return false}return true});"
+          s=s.replace(old,new,1)
+          s=s.replace("$('sort').onchange=render;","$('city').onchange=render;$('posted').onchange=render;$('sort').onchange=render;")
+          s=s.replace("$('updatedAt').textContent=d.updatedAt?new Date(d.updatedAt).toLocaleString(lang==='ar'?'ar-SA':'en-GB'):'—';render()","$('updatedAt').textContent=d.updatedAt?new Date(d.updatedAt).toLocaleString(lang==='ar'?'ar-SA':'en-GB'):'—';populateCities();render()")
+          p.write_text(s,encoding='utf-8')
+          PY
+      - name: Publish
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- cv-studio/jobs.html
+          git diff --cached --quiet || git commit -m "Add city and date filters to Job Radar"
+          git pull --rebase origin main
+          git push
