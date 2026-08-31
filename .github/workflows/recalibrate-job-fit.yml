@@ -1,0 +1,67 @@
+name: Recalibrate Job Radar Fit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/recalibrate-job-fit.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recalibrate CV fit scoring
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          p=Path('cv-studio/jobs.html')
+          s=p.read_text(encoding='utf-8')
+          pattern=r"function score\(j\)\{[\s\S]*?\}\nfunction dateValue"
+          new="""function score(j){
+  var title=clean(j.title),body=clean((j.title||'')+' '+(j.description||'')+' '+(j.company||''));
+  var n=48,reasons=[];
+  var direct=[
+    [/field force manager|field operations manager/,94,'field force'],
+    [/training manager|retail training manager|sales training manager/,93,'training'],
+    [/retail operations manager/,93,'retail operations'],
+    [/sales operations manager/,92,'sales operations'],
+    [/area sales manager/,92,'area sales'],
+    [/regional sales manager/,91,'regional sales'],
+    [/retail excellence manager/,90,'retail excellence'],
+    [/learning.*development manager|talent development manager|learning design.*manager/,86,'learning & development'],
+    [/retail manager/,86,'retail'],
+    [/commercial manager/,83,'commercial'],
+    [/sales manager/,82,'sales'],
+    [/store manager/,74,'store management']
+  ];
+  for(var i=0;i<direct.length;i++){if(direct[i][0].test(title)){n=Math.max(n,direct[i][1]);reasons.push(direct[i][2]);break}}
+  var boosts=[
+    ['field force',4],['retail operations',4],['sales operations',4],['training',3],['sales',3],['retail',3],
+    ['kpi',2],['target',2],['team',2],['leadership',2],['coach',2],['performance',2],['channel',2],['dealer',2],
+    ['promoter',2],['launch',1],['territory',2],['customer',1],['stakeholder',1],['onboarding',2],['capability',2]
+  ];
+  boosts.forEach(function(x){if(body.indexOf(x[0])>-1){n+=x[1];if(reasons.indexOf(x[0])<0&&reasons.length<4)reasons.push(x[0])}});
+  if(/saudi|riyadh|jeddah|dammam|khobar|ksa|السعود/.test(body))n+=2;
+  if(/manager|lead|head|supervisor|مدير|رئيس|مشرف/.test(title))n+=2;
+  if(/finance|accounting|engineering|quality assurance|legal|procurement/.test(title)&&!/sales|retail|training|operations/.test(title))n-=18;
+  return{value:Math.max(45,Math.min(98,n)),reasons:Array.from(new Set(reasons)).slice(0,4)}
+}
+function dateValue"""
+          s2,n=re.subn(pattern,new,s,count=1)
+          if n!=1: raise SystemExit('score function not found')
+          p.write_text(s2,encoding='utf-8')
+          PY
+      - name: Publish scoring update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- cv-studio/jobs.html
+          git diff --cached --quiet || git commit -m "Recalibrate Job Radar fit scoring"
+          git pull --rebase origin main
+          git push
