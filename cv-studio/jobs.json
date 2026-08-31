@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T11:52:35.820Z",
+  "updatedAt": "2026-08-31T11:54:10.970Z",
   "jobs": [
     {
       "id": "naukrigulf:chalhoub-retail-manager-riyadh",
@@ -68,13 +68,35 @@
       "dateLabel": "31 Aug 2026"
     },
     {
-      "id": "linkedin:4460109515",
+      "id": "linkedin:4459751240",
       "source": "linkedin",
-      "title": "Senior Quality Assurance Manager (M3) - QA Training and Competency Lead",
-      "company": "Mace",
+      "title": "Dark Store Manager",
+      "company": "Keemart",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Dark Store Manager opportunity at Keemart in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/dark-store-manager-at-keemart-4459751240",
+      "date": "2026-08-30T00:00:00.000Z",
+      "dateLabel": "30 Aug 2026"
+    },
+    {
+      "id": "linkedin:4391599435",
+      "source": "linkedin",
+      "title": "Regional Commercial Manager - Beauty - Jeddah, KSA",
+      "company": "Chalhoub Group",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "Regional Commercial Manager - Beauty - Jeddah, KSA opportunity at Chalhoub Group in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/regional-commercial-manager-beauty-jeddah-ksa-at-chalhoub-group-4391599435",
+      "date": "2026-08-27T00:00:00.000Z",
+      "dateLabel": "27 Aug 2026"
+    },
+    {
+      "id": "linkedin:4440673840",
+      "source": "linkedin",
+      "title": "Manager, Leadership Learning Center",
+      "company": "Maaden",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Senior Quality Assurance Manager (M3) - QA Training and Competency Lead opportunity at Mace in Riyadh, Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/senior-quality-assurance-manager-m3-qa-training-and-competency-lead-at-mace-4460109515",
+      "description": "Manager, Leadership Learning Center opportunity at Maaden in Riyadh, Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/manager-leadership-learning-center-at-maaden-4440673840",
       "date": "2026-08-27T00:00:00.000Z",
       "dateLabel": "27 Aug 2026"
     },
@@ -86,6 +108,17 @@
       "location": "Mecca, Makkah, Saudi Arabia",
       "description": "Finance Operations Professional - Great Opportunity for Saudi National opportunity at Siemens in Mecca, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/finance-operations-professional-great-opportunity-for-saudi-national-at-siemens-4439967822",
+      "date": "2026-08-27T00:00:00.000Z",
+      "dateLabel": "27 Aug 2026"
+    },
+    {
+      "id": "linkedin:4460109515",
+      "source": "linkedin",
+      "title": "Senior Quality Assurance Manager (M3) - QA Training and Competency Lead",
+      "company": "Mace",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Senior Quality Assurance Manager (M3) - QA Training and Competency Lead opportunity at Mace in Riyadh, Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/senior-quality-assurance-manager-m3-qa-training-and-competency-lead-at-mace-4460109515",
       "date": "2026-08-27T00:00:00.000Z",
       "dateLabel": "27 Aug 2026"
     },
@@ -112,15 +145,15 @@
       "dateLabel": "26 Aug 2026"
     },
     {
-      "id": "linkedin:4437214354",
+      "id": "linkedin:4457910604",
       "source": "linkedin",
-      "title": "Store Manager - Yves Saint Laurent - Beauty - Westfield Mall (Jeddah)",
-      "company": "Chalhoub Group",
+      "title": "Store Manager",
+      "company": "Fendi",
       "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "Store Manager - Yves Saint Laurent - Beauty - Westfield Mall (Jeddah) opportunity at Chalhoub Group in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-yves-saint-laurent-beauty-westfield-mall-jeddah-at-chalhoub-group-4437214354",
-      "date": "2026-08-25T00:00:00.000Z",
-      "dateLabel": "25 Aug 2026"
+      "description": "Store Manager opportunity at Fendi in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-fendi-4457910604",
+      "date": "2026-08-26T00:00:00.000Z",
+      "dateLabel": "26 Aug 2026"
     },
     {
       "id": "linkedin:4458770723",
@@ -141,6 +174,17 @@
       "location": "Jiddah, Makkah, Saudi Arabia",
       "description": "Store Manager opportunity at Fendi in Jiddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/store-manager-at-fendi-4457474950",
+      "date": "2026-08-25T00:00:00.000Z",
+      "dateLabel": "25 Aug 2026"
+    },
+    {
+      "id": "linkedin:4437214354",
+      "source": "linkedin",
+      "title": "Store Manager - Yves Saint Laurent - Beauty - Westfield Mall (Jeddah)",
+      "company": "Chalhoub Group",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "Store Manager - Yves Saint Laurent - Beauty - Westfield Mall (Jeddah) opportunity at Chalhoub Group in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-yves-saint-laurent-beauty-westfield-mall-jeddah-at-chalhoub-group-4437214354",
       "date": "2026-08-25T00:00:00.000Z",
       "dateLabel": "25 Aug 2026"
     },
@@ -167,17 +211,6 @@
       "dateLabel": "1 week ago"
     },
     {
-      "id": "linkedin:4455866863",
-      "source": "linkedin",
-      "title": "Area Sales Manager",
-      "company": "Puratos",
-      "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "Area Sales Manager opportunity at Puratos in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-at-puratos-4455866863",
-      "date": "2026-08-24T00:00:00.000Z",
-      "dateLabel": "24 Aug 2026"
-    },
-    {
       "id": "linkedin:4456865666",
       "source": "linkedin",
       "title": "Area Sales Manager",
@@ -185,6 +218,17 @@
       "location": "Jiddah, Makkah, Saudi Arabia",
       "description": "Area Sales Manager opportunity at BanoPuratos in Jiddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-at-banopuratos-4456865666",
+      "date": "2026-08-24T00:00:00.000Z",
+      "dateLabel": "24 Aug 2026"
+    },
+    {
+      "id": "linkedin:4455866863",
+      "source": "linkedin",
+      "title": "Area Sales Manager",
+      "company": "Puratos",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "Area Sales Manager opportunity at Puratos in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-at-puratos-4455866863",
       "date": "2026-08-24T00:00:00.000Z",
       "dateLabel": "24 Aug 2026"
     },
@@ -222,6 +266,17 @@
       "dateLabel": "23 Aug 2026"
     },
     {
+      "id": "linkedin:4375683695",
+      "source": "linkedin",
+      "title": "Store Manager",
+      "company": "Apparel Group",
+      "location": "Dammam, Eastern, Saudi Arabia",
+      "description": "Store Manager opportunity at Apparel Group in Dammam, Eastern, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-apparel-group-4375683695",
+      "date": "2026-08-21T00:00:00.000Z",
+      "dateLabel": "21 Aug 2026"
+    },
+    {
       "id": "linkedin:4455288850",
       "source": "linkedin",
       "title": "CS Training & Development Manager",
@@ -240,17 +295,6 @@
       "location": "Jeddah, Makkah, Saudi Arabia",
       "description": "Store Manager Prada Beauty - Westfield Mall (Jeddah) opportunity at Chalhoub Group in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/store-manager-prada-beauty-westfield-mall-jeddah-at-chalhoub-group-4435699163",
-      "date": "2026-08-21T00:00:00.000Z",
-      "dateLabel": "21 Aug 2026"
-    },
-    {
-      "id": "linkedin:4375683695",
-      "source": "linkedin",
-      "title": "Store Manager",
-      "company": "Apparel Group",
-      "location": "Dammam, Eastern, Saudi Arabia",
-      "description": "Store Manager opportunity at Apparel Group in Dammam, Eastern, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-apparel-group-4375683695",
       "date": "2026-08-21T00:00:00.000Z",
       "dateLabel": "21 Aug 2026"
     },
@@ -288,6 +332,17 @@
       "dateLabel": "19 Aug 2026"
     },
     {
+      "id": "linkedin:4453430549",
+      "source": "linkedin",
+      "title": "Store manager - Corneliani",
+      "company": "Majid Al Futtaim",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Store manager - Corneliani opportunity at Majid Al Futtaim in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-corneliani-at-majid-al-futtaim-4453430549",
+      "date": "2026-08-19T00:00:00.000Z",
+      "dateLabel": "19 Aug 2026"
+    },
+    {
       "id": "linkedin:4455798198",
       "source": "linkedin",
       "title": "Learning Area Manager (Saudi Nationals Only), Learning & Development",
@@ -297,6 +352,28 @@
       "url": "https://sa.linkedin.com/jobs/view/learning-area-manager-saudi-nationals-only-learning-development-at-amazon-4455798198",
       "date": "2026-08-19T00:00:00.000Z",
       "dateLabel": "19 Aug 2026"
+    },
+    {
+      "id": "linkedin:4455767826",
+      "source": "linkedin",
+      "title": "Manager, Sales Training / Product Coaching",
+      "company": "Alcon",
+      "location": "Jiddah, Makkah, Saudi Arabia",
+      "description": "Manager, Sales Training / Product Coaching opportunity at Alcon in Jiddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/manager-sales-training-product-coaching-at-alcon-4455767826",
+      "date": "2026-08-18T00:00:00.000Z",
+      "dateLabel": "18 Aug 2026"
+    },
+    {
+      "id": "linkedin:4442704468",
+      "source": "linkedin",
+      "title": "Deputy Store Manager",
+      "company": "Bvlgari",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "Deputy Store Manager opportunity at Bvlgari in Jeddah, Makkah, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/deputy-store-manager-at-bvlgari-4442704468",
+      "date": "2026-08-18T00:00:00.000Z",
+      "dateLabel": "18 Aug 2026"
     },
     {
       "id": "linkedin:4452586717",
@@ -332,13 +409,13 @@
       "dateLabel": "2 weeks ago"
     },
     {
-      "id": "linkedin:4452231297",
+      "id": "linkedin:4455296156",
       "source": "linkedin",
-      "title": "Retail District Manager - Carrefour",
-      "company": "Majid Al Futtaim",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Retail District Manager - Carrefour opportunity at Majid Al Futtaim in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-carrefour-at-majid-al-futtaim-4452231297",
+      "title": "Area Sales Manager II",
+      "company": "Almarai - المراعي",
+      "location": "Dammam, Eastern, Saudi Arabia",
+      "description": "Area Sales Manager II opportunity at Almarai - المراعي in Dammam, Eastern, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-ii-at-almarai-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%B9%D9%8A-4455296156",
       "date": "2026-08-17T00:00:00.000Z",
       "dateLabel": "17 Aug 2026"
     },
@@ -350,6 +427,17 @@
       "location": "Abhā, 'Asir, Saudi Arabia",
       "description": "Store Manager opportunity at Abdullah Al-Othaim Markets in Abhā, 'Asir, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/store-manager-at-abdullah-al-othaim-markets-4452234109",
+      "date": "2026-08-17T00:00:00.000Z",
+      "dateLabel": "17 Aug 2026"
+    },
+    {
+      "id": "linkedin:4452231297",
+      "source": "linkedin",
+      "title": "Retail District Manager - Carrefour",
+      "company": "Majid Al Futtaim",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Retail District Manager - Carrefour opportunity at Majid Al Futtaim in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-carrefour-at-majid-al-futtaim-4452231297",
       "date": "2026-08-17T00:00:00.000Z",
       "dateLabel": "17 Aug 2026"
     },
@@ -453,17 +541,6 @@
       "dateLabel": "06 Aug 2026"
     },
     {
-      "id": "linkedin:4449468370",
-      "source": "linkedin",
-      "title": "Retail Manager",
-      "company": "O100",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Retail Manager opportunity at O100 in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/retail-manager-at-o100-4449468370",
-      "date": "2026-08-05T00:00:00.000Z",
-      "dateLabel": "05 Aug 2026"
-    },
-    {
       "id": "linkedin:4449155224",
       "source": "linkedin",
       "title": "Sales & Distribution Manager",
@@ -471,6 +548,17 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Sales & Distribution Manager opportunity at Majid Al Futtaim in Riyadh, Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/sales-distribution-manager-at-majid-al-futtaim-4449155224",
+      "date": "2026-08-05T00:00:00.000Z",
+      "dateLabel": "05 Aug 2026"
+    },
+    {
+      "id": "linkedin:4449468370",
+      "source": "linkedin",
+      "title": "Retail Manager",
+      "company": "O100",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Retail Manager opportunity at O100 in Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/retail-manager-at-o100-4449468370",
       "date": "2026-08-05T00:00:00.000Z",
       "dateLabel": "05 Aug 2026"
     },
@@ -486,17 +574,6 @@
       "dateLabel": "04 Aug 2026"
     },
     {
-      "id": "linkedin:4447917029",
-      "source": "linkedin",
-      "title": "Retail District Manager",
-      "company": "MANGO",
-      "location": "Eastern, Saudi Arabia",
-      "description": "Retail District Manager opportunity at MANGO in Eastern, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
-      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-at-mango-4447917029",
-      "date": "2026-08-03T00:00:00.000Z",
-      "dateLabel": "03 Aug 2026"
-    },
-    {
       "id": "linkedin:4447942491",
       "source": "linkedin",
       "title": "Sales Support Supervisor | alfanar Electric",
@@ -504,6 +581,17 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Sales Support Supervisor | alfanar Electric opportunity at alfanar in Riyadh, Riyadh, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
       "url": "https://sa.linkedin.com/jobs/view/sales-support-supervisor-alfanar-electric-at-alfanar-4447942491",
+      "date": "2026-08-03T00:00:00.000Z",
+      "dateLabel": "03 Aug 2026"
+    },
+    {
+      "id": "linkedin:4447917029",
+      "source": "linkedin",
+      "title": "Retail District Manager",
+      "company": "MANGO",
+      "location": "Eastern, Saudi Arabia",
+      "description": "Retail District Manager opportunity at MANGO in Eastern, Saudi Arabia. Open the original LinkedIn posting for the full responsibilities and requirements.",
+      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-at-mango-4447917029",
       "date": "2026-08-03T00:00:00.000Z",
       "dateLabel": "03 Aug 2026"
     },
