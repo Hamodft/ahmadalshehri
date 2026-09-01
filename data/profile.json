@@ -19,7 +19,7 @@
     "en": "Riyadh, Saudi Arabia",
     "ar": "الرياض، المملكة العربية السعودية"
   },
-  "photo": "assets/profile/ahmad-alshehri-profile-transparent.webp?v=20260901-v1",
+  "photo": "data:image/webp;base64,UklGRt5EAABXRUJQVlA4WAoAAAAQAAAA...",
   "monogram": "AA",
   "summaryTitle": {
     "en": "From the shop floor to national scope",
@@ -39,69 +39,30 @@
   },
   "atAGlance": [
     {
-      "label": {
-        "en": "Current role",
-        "ar": "الدور الحالي"
-      },
-      "value": {
-        "en": "Training Manager",
-        "ar": "مدير التدريب"
-      },
-      "note": {
-        "en": "TECNO Mobile — Saudi Arabia",
-        "ar": "TECNO Mobile — المملكة العربية السعودية"
-      }
+      "label": {"en": "Current role", "ar": "الدور الحالي"},
+      "value": {"en": "Training Manager", "ar": "مدير التدريب"},
+      "note": {"en": "TECNO Mobile — Saudi Arabia", "ar": "TECNO Mobile — المملكة العربية السعودية"}
     },
     {
-      "label": {
-        "en": "Experience",
-        "ar": "الخبرة"
-      },
-      "value": {
-        "en": "6+ years",
-        "ar": "أكثر من 6 سنوات"
-      },
-      "note": {
-        "en": "Sales, retail, field force & training",
-        "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"
-      }
+      "label": {"en": "Experience", "ar": "الخبرة"},
+      "value": {"en": "6+ years", "ar": "أكثر من 6 سنوات"},
+      "note": {"en": "Sales, retail, field force & training", "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"}
     },
     {
-      "label": {
-        "en": "Based in",
-        "ar": "مقر الإقامة"
-      },
-      "value": {
-        "en": "Riyadh",
-        "ar": "الرياض"
-      },
-      "note": {
-        "en": "Kingdom of Saudi Arabia",
-        "ar": "المملكة العربية السعودية"
-      }
+      "label": {"en": "Based in", "ar": "مقر الإقامة"},
+      "value": {"en": "Riyadh", "ar": "الرياض"},
+      "note": {"en": "Kingdom of Saudi Arabia", "ar": "المملكة العربية السعودية"}
     },
     {
-      "label": {
-        "en": "Languages",
-        "ar": "اللغات"
-      },
-      "value": {
-        "en": "Arabic & English",
-        "ar": "العربية والإنجليزية"
-      },
-      "note": {
-        "en": "Native / Professional working",
-        "ar": "اللغة الأم / إجادة مهنية"
-      }
+      "label": {"en": "Languages", "ar": "اللغات"},
+      "value": {"en": "Arabic & English", "ar": "العربية والإنجليزية"},
+      "note": {"en": "Native / Professional working", "ar": "اللغة الأم / إجادة مهنية"}
     }
   ],
   "contact": {
     "email": "Ahmadfalshehry@gmail.com",
     "phone": "+966 50 740 8065",
-    "location": {
-      "en": "Riyadh, Saudi Arabia",
-      "ar": "الرياض، المملكة العربية السعودية"
-    },
+    "location": {"en": "Riyadh, Saudi Arabia", "ar": "الرياض، المملكة العربية السعودية"},
     "linkedin": "https://www.linkedin.com/in/ahmadfalshehry"
   },
   "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf"
