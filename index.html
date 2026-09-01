@@ -71,6 +71,25 @@ body{background:#f7f4ee}.site-head{background:rgba(6,15,25,.93)!important;border
 <script type="application/ld+json" id="jsonld"></script>
 <script src="assets/app.js?v=20260820-v13"></script>
 <script>
+/* Count one reference visit per browser profile on this device. */
+(function () {
+  'use strict';
+  var storageKey = 'ahmadalshehri_unique_visitor_v1';
+  try {
+    if (localStorage.getItem(storageKey)) return;
+    localStorage.setItem(storageKey, new Date().toISOString());
+
+    var counter = document.createElement('script');
+    counter.async = true;
+    counter.src = 'https://gc.zgo.at/count.js';
+    counter.dataset.goatcounter = 'https://ahmadalshehri.goatcounter.com/count';
+    document.head.appendChild(counter);
+  } catch (error) {
+    /* Privacy modes that block local storage are intentionally not counted. */
+  }
+})();
+</script>
+<script>
 (function(){
 'use strict';
 var LOGOS={'TECNO Mobile':'assets/logos/tecno.svg','TECNO':'assets/logos/tecno.svg','HONOR':'assets/logos/honor.svg','HUAWEI':'assets/logos/huawei.svg'};

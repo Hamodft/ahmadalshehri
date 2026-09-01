@@ -3,5 +3,6 @@ Allow: /
 Disallow: /ahmadalshehri/admin/
 Disallow: /ahmadalshehri/cv-studio/
 Disallow: /ahmadalshehri/tailor-cv/
+Disallow: /ahmadalshehri/visitor/
 
 Sitemap: https://hamodft.github.io/ahmadalshehri/sitemap.xml
