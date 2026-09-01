@@ -470,3 +470,5 @@ html[dir="rtl"] .drawer{transform:translateX(-102%)}
 
 /* Keep the transparent profile portrait flush with the frame bottom. */
 .profile-photo-stage { background-position: center bottom; }
+
+.profile-photo-stage { background-position: center bottom !important; }
