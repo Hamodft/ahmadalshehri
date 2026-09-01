@@ -466,3 +466,7 @@ html[dir="rtl"] .drawer{transform:translateX(-102%)}
   .hl{background:#fff}
   .role,.cert,.pcard{break-inside:avoid}
 }
+
+
+/* Keep the transparent profile portrait flush with the frame bottom. */
+.profile-photo-stage { background-position: center bottom; }
