@@ -59,3 +59,11 @@
       "note": {"en": "Native / Professional working", "ar": "اللغة الأم / إجادة مهنية"}
     }
   ],
+  "contact": {
+    "email": "Ahmadfalshehry@gmail.com",
+    "phone": "+966 50 740 8065",
+    "location": {"en": "Riyadh, Saudi Arabia", "ar": "الرياض، المملكة العربية السعودية"},
+    "linkedin": "https://www.linkedin.com/in/ahmadfalshehry"
+  },
+  "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf"
+}
