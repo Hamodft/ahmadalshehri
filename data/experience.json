@@ -68,18 +68,144 @@
       },
       "responsibilities": {
         "en": [
-          "Managed national field-force sales execution, target allocation, performance monitoring, and retail productivity across KSA.",
-          "Owned the sales performance cycle from target breakdown through month-end closing, achieving an average 89% target performance.",
-          "Tracked sales KPIs, productivity, market execution, and regional performance to identify risks and growth opportunities.",
-          "Coordinated with regional teams and retail stakeholders to strengthen execution and deliver commercial objectives.",
-          "Analysed competitor activity and market conditions to support sales strategy and corrective action plans."
+          "Managed sales targets and daily performance follow-up for field-force teams across Saudi Arabia.",
+          "Followed performance from target allocation to month-end closing, achieving an average of 89% of the 2024 sales target.",
+          "Used sales reports, promoter productivity, and field observations to identify gaps and agree on corrective actions with regional teams.",
+          "Worked with regional managers and retail partners to improve in-store execution and respond to competitor activity."
         ],
         "ar": [
-          "إدارة تنفيذ مبيعات القوى الميدانية على مستوى المملكة، وتوزيع المستهدفات، ومتابعة الأداء، وإنتاجية التجزئة.",
-          "إدارة دورة أداء المبيعات كاملة من تفصيل المستهدفات حتى الإقفال الشهري، بمتوسط تحقيق بلغ 89% من المستهدف.",
-          "متابعة مؤشرات أداء المبيعات والإنتاجية والتنفيذ في السوق والأداء الإقليمي لرصد المخاطر وفرص النمو.",
-          "التنسيق مع الفرق الإقليمية وشركاء التجزئة لتعزيز التنفيذ وتحقيق الأهداف التجارية.",
-          "تحليل نشاط المنافسين وظروف السوق لدعم استراتيجية المبيعات وخطط الإجراءات التصحيحية."
+          "إدارة مستهدفات المبيعات والمتابعة اليومية لأداء فرق القوى الميدانية على مستوى المملكة العربية السعودية.",
+          "متابعة الأداء من توزيع المستهدفات حتى الإقفال الشهري، بمتوسط تحقيق بلغ 89% من مستهدف المبيعات لعام 2024.",
+          "استخدام تقارير المبيعات وإنتاجية المروجين والملاحظات الميدانية لتحديد الفجوات والاتفاق على الإجراءات التصحيحية مع الفرق الإقليمية.",
+          "العمل مع مديري المناطق وشركاء التجزئة لتحسين التنفيذ داخل المتاجر والاستجابة لتحركات المنافسين."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 1,
+      "visible": true
+    },
+    {
+      "id": "exp-3",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Area Manager",
+        "ar": "مدير منطقة"
+      },
+      "period": {
+        "en": "2023 – 2024",
+        "ar": "2023 – 2024"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "regional",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Led regional sales teams and managed store-level execution, sales targets, KPIs, and team productivity.",
+          "Built working relationships with retail partners and key store stakeholders to improve execution and business performance.",
+          "Implemented sales action plans based on field visits, customer insights, and competitor monitoring.",
+          "Coached teams on needs discovery, product recommendation, negotiation, objection handling, and closing."
+        ],
+        "ar": [
+          "قيادة فرق المبيعات الإقليمية وإدارة التنفيذ على مستوى المتاجر ومستهدفات المبيعات ومؤشرات الأداء وإنتاجية الفريق.",
+          "بناء علاقات عمل مع شركاء التجزئة وأصحاب المصلحة الرئيسيين في المتاجر لتحسين التنفيذ وأداء الأعمال.",
+          "تطبيق خطط عمل للمبيعات مبنية على الزيارات الميدانية ورؤى العملاء ومتابعة المنافسين.",
+          "تدريب الفرق على اكتشاف الاحتياج، والتوصية بالمنتج، والتفاوض، ومعالجة الاعتراضات، وإتمام البيع."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+{
+  "items": [
+    {
+      "id": "exp-1",
+      "company": "TECNO Mobile",
+      "logo": "",
+      "title": {
+        "en": "Training Manager",
+        "ar": "مدير التدريب"
+      },
+      "period": {
+        "en": "2025 – Present",
+        "ar": "2025 – حتى الآن"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": true,
+      "scope": "national",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Prepare and deliver nationwide product-launch and sales training for TECNO retail and field teams across Saudi Arabia.",
+          "Develop localized product knowledge, sales scripts, competitor comparisons, one-page guides, exams, and follow-up content for store teams.",
+          "Work with sales, marketing, and field-force teams to identify execution gaps through sales results, field feedback, and competitor activity.",
+          "Support dealer and retail-channel training through in-person workshops, online sessions, and regional events."
+        ],
+        "ar": [
+          "إعداد وتنفيذ برامج تدريب إطلاق المنتجات والمبيعات لفرق التجزئة والميدان في TECNO على مستوى المملكة العربية السعودية.",
+          "تطوير محتوى محلي يشمل معرفة المنتجات، وسيناريوهات البيع، ومقارنات المنافسين، والأدلة المختصرة، والاختبارات، ومحتوى المتابعة لفرق المتاجر.",
+          "العمل مع فرق المبيعات والتسويق والقوى الميدانية لتحديد فجوات التنفيذ من خلال نتائج المبيعات وملاحظات الميدان وحركة المنافسين.",
+          "دعم تدريب الموزعين وقنوات التجزئة من خلال ورش العمل الحضورية والجلسات عن بُعد والفعاليات الإقليمية."
+        ]
+      },
+      "achievements": [],
+      "kpis": [],
+      "skills": [],
+      "projects": [],
+      "documents": [],
+      "order": 0,
+      "visible": true
+    },
+    {
+      "id": "exp-2",
+      "company": "HONOR",
+      "logo": "",
+      "title": {
+        "en": "Field Force Management Manager",
+        "ar": "مدير إدارة القوى الميدانية"
+      },
+      "period": {
+        "en": "2024",
+        "ar": "2024"
+      },
+      "location": {
+        "en": "Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      },
+      "current": false,
+      "scope": "national",
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "responsibilities": {
+        "en": [
+          "Managed sales targets and daily performance follow-up for field-force teams across Saudi Arabia.",
+          "Followed performance from target allocation to month-end closing, achieving an average of 89% of the 2024 sales target.",
+          "Used sales reports, promoter productivity, and field observations to identify gaps and agree on corrective actions with regional teams.",
+          "Worked with regional managers and retail partners to improve in-store execution and respond to competitor activity."
+        ],
+        "ar": [
+          "إدارة مستهدفات المبيعات والمتابعة اليومية لأداء فرق القوى الميدانية على مستوى المملكة العربية السعودية.",
+          "متابعة الأداء من توزيع المستهدفات حتى الإقفال الشهري، بمتوسط تحقيق بلغ 89% من مستهدف المبيعات لعام 2024.",
+          "استخدام تقارير المبيعات وإنتاجية المروجين والملاحظات الميدانية لتحديد الفجوات والاتفاق على الإجراءات التصحيحية مع الفرق الإقليمية.",
+          "العمل مع مديري المناطق وشركاء التجزئة لتحسين التنفيذ داخل المتاجر والاستجابة لتحركات المنافسين."
         ]
       },
       "achievements": [],
@@ -257,139 +383,7 @@
       "visible": true
     }
   ]
-}{
-  "items": [
-    {
-      "id": "exp-1",
-      "company": "TECNO Mobile",
-      "logo": "",
-      "title": {
-        "en": "Training Manager",
-        "ar": "مدير التدريب"
-      },
-      "period": {
-        "en": "2025 – Present",
-        "ar": "2025 – حتى الآن"
-      },
-      "location": {
-        "en": "Saudi Arabia",
-        "ar": "المملكة العربية السعودية"
-      },
-      "current": true,
-      "scope": "national",
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "responsibilities": {
-        "en": [
-          "Lead nationwide training and sales capability initiatives aligned with product launches, sales priorities, and retail execution.",
-          "Partner with sales, marketing, field-force, and retail stakeholders to improve customer engagement and sales productivity.",
-          "Develop product, competitive, and consultative-selling programmes that translate technical features into customer value.",
-          "Analyse sales performance, field feedback, customer behaviour, and competitor activity to identify capability and execution gaps.",
-          "Monitor training KPIs and field performance, and recommend actions to strengthen execution and commercial results."
-        ],
-        "ar": [
-          "قيادة مبادرات التدريب وتطوير قدرات البيع على مستوى المملكة بما يتوافق مع إطلاق المنتجات وأولويات المبيعات والتنفيذ في التجزئة.",
-          "العمل مع فرق المبيعات والتسويق والقوى الميدانية وشركاء التجزئة لتحسين تفاعل العملاء وإنتاجية المبيعات.",
-          "تطوير برامج المنتجات والتنافسية والبيع الاستشاري التي تحوّل المزايا التقنية إلى قيمة ملموسة للعميل.",
-          "تحليل أداء المبيعات والملاحظات الميدانية وسلوك العملاء ونشاط المنافسين لتحديد فجوات القدرات والتنفيذ.",
-          "متابعة مؤشرات أداء التدريب والأداء الميداني، والتوصية بالإجراءات اللازمة لتعزيز التنفيذ والنتائج التجارية."
-        ]
-      },
-      "achievements": [],
-      "kpis": [],
-      "skills": [],
-      "projects": [],
-      "documents": [],
-      "order": 0,
-      "visible": true
-    },
-    {
-      "id": "exp-2",
-      "company": "HONOR",
-      "logo": "",
-      "title": {
-        "en": "Field Force Management Manager",
-        "ar": "مدير إدارة القوى الميدانية"
-      },
-      "period": {
-        "en": "2024",
-        "ar": "2024"
-      },
-      "location": {
-        "en": "Saudi Arabia",
-        "ar": "المملكة العربية السعودية"
-      },
-      "current": false,
-      "scope": "national",
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "responsibilities": {
-        "en": [
-          "Managed national field-force sales execution, target allocation, performance monitoring, and retail productivity across KSA.",
-          "Owned the sales performance cycle from target breakdown through month-end closing, achieving an average 89% target performance.",
-          "Tracked sales KPIs, productivity, market execution, and regional performance to identify risks and growth opportunities.",
-          "Coordinated with regional teams and retail stakeholders to strengthen execution and deliver commercial objectives.",
-          "Analysed competitor activity and market conditions to support sales strategy and corrective action plans."
-        ],
-        "ar": [
-          "إدارة تنفيذ مبيعات القوى الميدانية على مستوى المملكة، وتوزيع المستهدفات، ومتابعة الأداء، وإنتاجية التجزئة.",
-          "إدارة دورة أداء المبيعات كاملة من تفصيل المستهدفات حتى الإقفال الشهري، بمتوسط تحقيق بلغ 89% من المستهدف.",
-          "متابعة مؤشرات أداء المبيعات والإنتاجية والتنفيذ في السوق والأداء الإقليمي لرصد المخاطر وفرص النمو.",
-          "التنسيق مع الفرق الإقليمية وشركاء التجزئة لتعزيز التنفيذ وتحقيق الأهداف التجارية.",
-          "تحليل نشاط المنافسين وظروف السوق لدعم استراتيجية المبيعات وخطط الإجراءات التصحيحية."
-        ]
-      },
-      "achievements": [],
-      "kpis": [],
-      "skills": [],
-      "projects": [],
-      "documents": [],
-      "order": 1,
-      "visible": true
-    },
-    {
-      "id": "exp-3",
-      "company": "HONOR",
-      "logo": "",
-      "title": {
-        "en": "Area Manager",
-        "ar": "مدير منطقة"
-      },
-      "period": {
-        "en": "2023 – 2024",
-        "ar": "2023 – 2024"
-      },
-      "location": {
-        "en": "Saudi Arabia",
-        "ar": "المملكة العربية السعودية"
-      },
-      "current": false,
-      "scope": "regional",
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "responsibilities": {
-        "en": [
-          "Led regional sales teams and managed store-level execution, sales targets, KPIs, and team productivity.",
-          "Built working relationships with retail partners and key store stakeholders to improve execution and business performance.",
-          "Implemented sales action plans based on field visits, customer insights, and competitor monitoring.",
-          "Coached teams on needs discovery, product recommendation, negotiation, objection handling, and closing."
-        ],
-        "ar": [
-          "قيادة فرق المبيعات الإقليمية وإدارة التنفيذ على مستوى المتاجر ومستهدفات المبيعات ومؤشرات الأداء وإنتاجية الفريق.",
-          "بناء علاقات عمل مع شركاء التجزئة وأصحاب المصلحة الرئيسيين في المتاجر لتحسين التنفيذ وأداء الأعمال.",
-          "تطبيق خطط عمل للمبيعات مبنية على الزيارات الميدانية ورؤى العملاء ومتابعة المنافسين.",
-          "تدريب الفرق على اكتشاف الاحتياج، والتوصية بالمنتج، والتفاوض، ومعالجة الاعتراضات، وإتمام البيع."
-        ]
-      },
-      "achievements": [],
-      "kpis": [],
-      "skills": [],
+}      "skills": [],
       "projects": [],
       "documents": [],
       "order": 2,
