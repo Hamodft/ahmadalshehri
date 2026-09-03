@@ -7,12 +7,12 @@
         "ar": "استراتيجية المبيعات"
       },
       "category": {
-        "en": "Sales & commercial",
-        "ar": "المبيعات والجانب التجاري"
+        "en": "Sales & Retail",
+        "ar": "المبيعات والتجزئة"
       },
       "categoryNote": {
-        "en": "Owning the number, from planning to close",
-        "ar": "تحمّل مسؤولية الرقم، من التخطيط حتى الإقفال"
+        "en": "Sales planning and retail execution",
+        "ar": "تخطيط المبيعات والتنفيذ في التجزئة"
       },
       "categoryKey": "cat-1",
       "level": "",
@@ -30,12 +30,12 @@
         "ar": "تخطيط المستهدفات"
       },
       "category": {
-        "en": "Sales & commercial",
-        "ar": "المبيعات والجانب التجاري"
+        "en": "Sales & Retail",
+        "ar": "المبيعات والتجزئة"
       },
       "categoryNote": {
-        "en": "Owning the number, from planning to close",
-        "ar": "تحمّل مسؤولية الرقم، من التخطيط حتى الإقفال"
+        "en": "Sales planning and retail execution",
+        "ar": "تخطيط المبيعات والتنفيذ في التجزئة"
       },
       "categoryKey": "cat-1",
       "level": "",
@@ -53,12 +53,12 @@
         "ar": "تنفيذ المبيعات"
       },
       "category": {
-        "en": "Sales & commercial",
-        "ar": "المبيعات والجانب التجاري"
+        "en": "Sales & Retail",
+        "ar": "المبيعات والتجزئة"
       },
       "categoryNote": {
-        "en": "Owning the number, from planning to close",
-        "ar": "تحمّل مسؤولية الرقم، من التخطيط حتى الإقفال"
+        "en": "Sales planning and retail execution",
+        "ar": "تخطيط المبيعات والتنفيذ في التجزئة"
       },
       "categoryKey": "cat-1",
       "level": "",
@@ -76,12 +76,12 @@
         "ar": "البيع الاستشاري"
       },
       "category": {
-        "en": "Sales & commercial",
-        "ar": "المبيعات والجانب التجاري"
+        "en": "Sales & Retail",
+        "ar": "المبيعات والتجزئة"
       },
       "categoryNote": {
-        "en": "Owning the number, from planning to close",
-        "ar": "تحمّل مسؤولية الرقم، من التخطيط حتى الإقفال"
+        "en": "Sales planning and retail execution",
+        "ar": "تخطيط المبيعات والتنفيذ في التجزئة"
       },
       "categoryKey": "cat-1",
       "level": "",
@@ -113,7 +113,7 @@
       "projects": [],
       "evidence": "",
       "order": 5,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-6",
@@ -136,7 +136,7 @@
       "projects": [],
       "evidence": "",
       "order": 6,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-7",
@@ -159,7 +159,7 @@
       "projects": [],
       "evidence": "",
       "order": 7,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-8",
@@ -182,7 +182,7 @@
       "projects": [],
       "evidence": "",
       "order": 8,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-9",
@@ -191,12 +191,12 @@
         "ar": "تنفيذ إطلاق المنتجات"
       },
       "category": {
-        "en": "Sales & commercial",
-        "ar": "المبيعات والجانب التجاري"
+        "en": "Sales & Retail",
+        "ar": "المبيعات والتجزئة"
       },
       "categoryNote": {
-        "en": "Owning the number, from planning to close",
-        "ar": "تحمّل مسؤولية الرقم، من التخطيط حتى الإقفال"
+        "en": "Sales planning and retail execution",
+        "ar": "تخطيط المبيعات والتنفيذ في التجزئة"
       },
       "categoryKey": "cat-1",
       "level": "",
@@ -204,7 +204,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 9,
+      "order": 5,
       "visible": true
     },
     {
@@ -214,12 +214,12 @@
         "ar": "إدارة القوى الميدانية"
       },
       "category": {
-        "en": "Operations",
-        "ar": "العمليات"
+        "en": "Operations & Performance",
+        "ar": "العمليات والأداء"
       },
       "categoryNote": {
-        "en": "Making execution visible and measurable",
-        "ar": "جعل التنفيذ واضحاً وقابلاً للقياس"
+        "en": "Field teams, KPIs and channel operations",
+        "ar": "الفرق الميدانية ومؤشرات الأداء وعمليات القنوات"
       },
       "categoryKey": "cat-2",
       "level": "",
@@ -227,7 +227,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 10,
+      "order": 6,
       "visible": true
     },
     {
@@ -237,12 +237,12 @@
         "ar": "عمليات التجزئة والقنوات"
       },
       "category": {
-        "en": "Operations",
-        "ar": "العمليات"
+        "en": "Operations & Performance",
+        "ar": "العمليات والأداء"
       },
       "categoryNote": {
-        "en": "Making execution visible and measurable",
-        "ar": "جعل التنفيذ واضحاً وقابلاً للقياس"
+        "en": "Field teams, KPIs and channel operations",
+        "ar": "الفرق الميدانية ومؤشرات الأداء وعمليات القنوات"
       },
       "categoryKey": "cat-2",
       "level": "",
@@ -250,7 +250,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 11,
+      "order": 7,
       "visible": true
     },
     {
@@ -260,12 +260,12 @@
         "ar": "إدارة مؤشرات الأداء"
       },
       "category": {
-        "en": "Operations",
-        "ar": "العمليات"
+        "en": "Operations & Performance",
+        "ar": "العمليات والأداء"
       },
       "categoryNote": {
-        "en": "Making execution visible and measurable",
-        "ar": "جعل التنفيذ واضحاً وقابلاً للقياس"
+        "en": "Field teams, KPIs and channel operations",
+        "ar": "الفرق الميدانية ومؤشرات الأداء وعمليات القنوات"
       },
       "categoryKey": "cat-2",
       "level": "",
@@ -273,7 +273,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 12,
+      "order": 8,
       "visible": true
     },
     {
@@ -283,12 +283,12 @@
         "ar": "إدارة الأداء"
       },
       "category": {
-        "en": "Operations",
-        "ar": "العمليات"
+        "en": "Operations & Performance",
+        "ar": "العمليات والأداء"
       },
       "categoryNote": {
-        "en": "Making execution visible and measurable",
-        "ar": "جعل التنفيذ واضحاً وقابلاً للقياس"
+        "en": "Field teams, KPIs and channel operations",
+        "ar": "الفرق الميدانية ومؤشرات الأداء وعمليات القنوات"
       },
       "categoryKey": "cat-2",
       "level": "",
@@ -296,7 +296,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 13,
+      "order": 9,
       "visible": true
     },
     {
@@ -320,7 +320,7 @@
       "projects": [],
       "evidence": "",
       "order": 14,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-15",
@@ -343,7 +343,7 @@
       "projects": [],
       "evidence": "",
       "order": 15,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-16",
@@ -352,12 +352,12 @@
         "ar": "تحليل السوق والمنافسين"
       },
       "category": {
-        "en": "Operations",
-        "ar": "العمليات"
+        "en": "Operations & Performance",
+        "ar": "العمليات والأداء"
       },
       "categoryNote": {
-        "en": "Making execution visible and measurable",
-        "ar": "جعل التنفيذ واضحاً وقابلاً للقياس"
+        "en": "Field teams, KPIs and channel operations",
+        "ar": "الفرق الميدانية ومؤشرات الأداء وعمليات القنوات"
       },
       "categoryKey": "cat-2",
       "level": "",
@@ -365,7 +365,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 16,
+      "order": 10,
       "visible": true
     },
     {
@@ -379,8 +379,8 @@
         "ar": "القيادة"
       },
       "categoryNote": {
-        "en": "Building teams that hit the plan",
-        "ar": "بناء فرق تحقق الخطة"
+        "en": "Team leadership and coordination",
+        "ar": "قيادة الفرق والتنسيق"
       },
       "categoryKey": "cat-3",
       "level": "",
@@ -388,7 +388,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 17,
+      "order": 11,
       "visible": true
     },
     {
@@ -402,8 +402,8 @@
         "ar": "القيادة"
       },
       "categoryNote": {
-        "en": "Building teams that hit the plan",
-        "ar": "بناء فرق تحقق الخطة"
+        "en": "Team leadership and coordination",
+        "ar": "قيادة الفرق والتنسيق"
       },
       "categoryKey": "cat-3",
       "level": "",
@@ -411,7 +411,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 18,
+      "order": 12,
       "visible": true
     },
     {
@@ -435,7 +435,7 @@
       "projects": [],
       "evidence": "",
       "order": 19,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-20",
@@ -448,8 +448,8 @@
         "ar": "القيادة"
       },
       "categoryNote": {
-        "en": "Building teams that hit the plan",
-        "ar": "بناء فرق تحقق الخطة"
+        "en": "Team leadership and coordination",
+        "ar": "قيادة الفرق والتنسيق"
       },
       "categoryKey": "cat-3",
       "level": "",
@@ -457,7 +457,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 20,
+      "order": 13,
       "visible": true
     },
     {
@@ -481,7 +481,7 @@
       "projects": [],
       "evidence": "",
       "order": 21,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-23",
@@ -494,8 +494,8 @@
         "ar": "التدريب"
       },
       "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
+        "en": "Training design, delivery and evaluation",
+        "ar": "تصميم التدريب وتنفيذه وتقييمه"
       },
       "categoryKey": "cat-4",
       "level": "",
@@ -503,7 +503,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 23,
+      "order": 14,
       "visible": true
     },
     {
@@ -517,8 +517,8 @@
         "ar": "التدريب"
       },
       "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
+        "en": "Training design, delivery and evaluation",
+        "ar": "تصميم التدريب وتنفيذه وتقييمه"
       },
       "categoryKey": "cat-4",
       "level": "",
@@ -526,13 +526,13 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 24,
+      "order": 15,
       "visible": true
     },
     {
       "id": "skl-25",
       "name": {
-        "en": "Material development",
+        "en": "Training Material Development",
         "ar": "إعداد المواد التدريبية"
       },
       "category": {
@@ -540,8 +540,8 @@
         "ar": "التدريب"
       },
       "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
+        "en": "Training design, delivery and evaluation",
+        "ar": "تصميم التدريب وتنفيذه وتقييمه"
       },
       "categoryKey": "cat-4",
       "level": "",
@@ -549,7 +549,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 25,
+      "order": 16,
       "visible": true
     },
     {
@@ -563,8 +563,8 @@
         "ar": "التدريب"
       },
       "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
+        "en": "Training design, delivery and evaluation",
+        "ar": "تصميم التدريب وتنفيذه وتقييمه"
       },
       "categoryKey": "cat-4",
       "level": "",
@@ -572,22 +572,22 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 26,
+      "order": 17,
       "visible": true
     },
     {
       "id": "skl-27",
       "name": {
-        "en": "Product training",
-        "ar": "تدريب المنتجات"
+        "en": "Product & Sales Training",
+        "ar": "تدريب المنتجات والمبيعات"
       },
       "category": {
         "en": "Training",
         "ar": "التدريب"
       },
       "categoryNote": {
-        "en": "Turning commercial priorities into field behaviour",
-        "ar": "تحويل الأولويات التجارية إلى سلوك ميداني"
+        "en": "Training design, delivery and evaluation",
+        "ar": "تصميم التدريب وتنفيذه وتقييمه"
       },
       "categoryKey": "cat-4",
       "level": "",
@@ -595,7 +595,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 27,
+      "order": 18,
       "visible": true
     },
     {
@@ -619,7 +619,7 @@
       "projects": [],
       "evidence": "",
       "order": 28,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-29",
@@ -632,8 +632,8 @@
         "ar": "الأدوات"
       },
       "categoryNote": {
-        "en": "Day-to-day working environment",
-        "ar": "بيئة العمل اليومية"
+        "en": "Reporting and presentation tools",
+        "ar": "أدوات التقارير والعروض التقديمية"
       },
       "categoryKey": "cat-5",
       "level": "",
@@ -641,7 +641,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 29,
+      "order": 19,
       "visible": true
     },
     {
@@ -655,8 +655,8 @@
         "ar": "الأدوات"
       },
       "categoryNote": {
-        "en": "Day-to-day working environment",
-        "ar": "بيئة العمل اليومية"
+        "en": "Reporting and presentation tools",
+        "ar": "أدوات التقارير والعروض التقديمية"
       },
       "categoryKey": "cat-5",
       "level": "",
@@ -664,7 +664,7 @@
       "roles": [],
       "projects": [],
       "evidence": "",
-      "order": 30,
+      "order": 20,
       "visible": true
     },
     {
@@ -688,7 +688,7 @@
       "projects": [],
       "evidence": "",
       "order": 31,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-32",
@@ -711,7 +711,7 @@
       "projects": [],
       "evidence": "",
       "order": 32,
-      "visible": true
+      "visible": false
     },
     {
       "id": "skl-33",
@@ -734,7 +734,7 @@
       "projects": [],
       "evidence": "",
       "order": 33,
-      "visible": true
+      "visible": false
     }
   ]
 }
