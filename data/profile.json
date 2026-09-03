@@ -27,42 +27,79 @@
   },
   "summary": {
     "en": [
-      "I build sales capability where it actually happens — in stores, with field teams, against a target. Six years in Saudi consumer technology took me from selling handsets on the floor to running national field-force execution, and then to leading the training function that makes that execution repeatable.",
-      "That route matters. Because I have carried a target myself, coached the people who carry one, and owned the numbers at national level, I can translate commercial priorities into what a consultant needs to say and do in front of a customer — and read the resulting KPIs to see whether it worked.",
-      "Core strengths sit across sales strategy and execution, field force management, KPI and performance management, retail and channel operations, training and capability development, and stakeholder management — with hands-on experience in product launches, consultative selling, negotiation, and market and competitor analysis."
+      "I started in frontline smartphone retail before moving into regional training, sales management, and national field-force operations. This experience gave me a practical understanding of what sales teams need—from clear targets and consistent follow-up to training that improves customer conversations and in-store results.",
+      "In my current role as Training Manager at TECNO, I prepare launch, product, and sales programmes and work closely with sales, marketing, and field teams to turn commercial priorities into practical actions. I use sales results, field feedback, and competitor activity to identify gaps and improve execution."
     ],
     "ar": [
-      "أبني قدرات البيع في المكان الذي تحدث فيه فعلياً — داخل المتاجر، مع الفرق الميدانية، وأمام المستهدف. ست سنوات في قطاع التقنية الاستهلاكية بالمملكة نقلتني من بيع الأجهزة مباشرة إلى إدارة التنفيذ الميداني على مستوى المملكة، ثم إلى قيادة وظيفة التدريب التي تجعل هذا التنفيذ قابلاً للتكرار.",
-      "هذا المسار له أثر واضح. فلأنني حملتُ المستهدف بنفسي، ودرّبت من يحملونه، وتوليتُ مسؤولية الأرقام على المستوى الوطني، أستطيع ترجمة الأولويات التجارية إلى ما ينبغي للمستشار قوله وفعله أمام العميل — ثم قراءة مؤشرات الأداء الناتجة للتحقق من النتيجة.",
-      "تتركز نقاط القوة في استراتيجية المبيعات وتنفيذها، وإدارة القوى الميدانية، وإدارة مؤشرات الأداء، وعمليات التجزئة والقنوات، والتدريب وتطوير القدرات، وإدارة أصحاب المصلحة — مع خبرة عملية في إطلاق المنتجات، والبيع الاستشاري، والتفاوض، وتحليل السوق والمنافسين."
+      "بدأت عملي في مبيعات الهواتف داخل المتاجر، ثم انتقلت إلى التدريب الإقليمي وإدارة المبيعات وفرق العمل الميدانية على مستوى المملكة. منحتني هذه التجربة فهمًا عمليًا لما يحتاجه فريق المبيعات، من وضوح المستهدف والمتابعة المستمرة إلى تدريب ينعكس على طريقة التعامل مع العميل والنتائج داخل المتجر.",
+      "في عملي الحالي مديرًا للتدريب في TECNO، أُعد برامج الإطلاق وتدريب المنتجات والمبيعات، وأعمل مع فرق المبيعات والتسويق والميدان لتحويل الأولويات التجارية إلى خطوات قابلة للتطبيق. أعتمد على نتائج المبيعات وملاحظات الفرق وحركة المنافسين لتحديد الفجوات وتحسين التنفيذ."
     ]
   },
   "atAGlance": [
     {
-      "label": {"en": "Current role", "ar": "الدور الحالي"},
-      "value": {"en": "Training Manager", "ar": "مدير التدريب"},
-      "note": {"en": "TECNO Mobile — Saudi Arabia", "ar": "TECNO Mobile — المملكة العربية السعودية"}
+      "label": {
+        "en": "Current role",
+        "ar": "الدور الحالي"
+      },
+      "value": {
+        "en": "Training Manager",
+        "ar": "مدير التدريب"
+      },
+      "note": {
+        "en": "TECNO Mobile — Saudi Arabia",
+        "ar": "TECNO Mobile — المملكة العربية السعودية"
+      }
     },
     {
-      "label": {"en": "Experience", "ar": "الخبرة"},
-      "value": {"en": "6+ years", "ar": "أكثر من 6 سنوات"},
-      "note": {"en": "Sales, retail, field force & training", "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"}
+      "label": {
+        "en": "Experience",
+        "ar": "الخبرة"
+      },
+      "value": {
+        "en": "6+ years",
+        "ar": "أكثر من 6 سنوات"
+      },
+      "note": {
+        "en": "Sales, retail, field force & training",
+        "ar": "مبيعات وتجزئة وقوى ميدانية وتدريب"
+      }
     },
     {
-      "label": {"en": "Based in", "ar": "مقر الإقامة"},
-      "value": {"en": "Riyadh", "ar": "الرياض"},
-      "note": {"en": "Kingdom of Saudi Arabia", "ar": "المملكة العربية السعودية"}
+      "label": {
+        "en": "Based in",
+        "ar": "مقر الإقامة"
+      },
+      "value": {
+        "en": "Riyadh",
+        "ar": "الرياض"
+      },
+      "note": {
+        "en": "Kingdom of Saudi Arabia",
+        "ar": "المملكة العربية السعودية"
+      }
     },
     {
-      "label": {"en": "Languages", "ar": "اللغات"},
-      "value": {"en": "Arabic & English", "ar": "العربية والإنجليزية"},
-      "note": {"en": "Native / Professional working", "ar": "اللغة الأم / إجادة مهنية"}
+      "label": {
+        "en": "Languages",
+        "ar": "اللغات"
+      },
+      "value": {
+        "en": "Arabic & English",
+        "ar": "العربية والإنجليزية"
+      },
+      "note": {
+        "en": "Native / Professional working",
+        "ar": "اللغة الأم / إجادة مهنية"
+      }
     }
   ],
   "contact": {
     "email": "Ahmadfalshehry@gmail.com",
     "phone": "+966 50 740 8065",
-    "location": {"en": "Riyadh, Saudi Arabia", "ar": "الرياض، المملكة العربية السعودية"},
+    "location": {
+      "en": "Riyadh, Saudi Arabia",
+      "ar": "الرياض، المملكة العربية السعودية"
+    },
     "linkedin": "https://www.linkedin.com/in/ahmadfalshehry"
   },
   "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf"
