@@ -84,7 +84,7 @@
     var frame = document.createElement('iframe');
     frame.setAttribute('aria-hidden', 'true');
     frame.tabIndex = -1;
-    frame.style.cssText = 'position:fixed;left:-12000px;top:0;width:1050px;height:1400px;border:0;opacity:0;pointer-events:none;';
+    frame.style.cssText = 'position:fixed;left:0;top:0;width:1050px;height:1400px;border:0;opacity:0;pointer-events:none;';
     frame.src = '../cv.html?local=1&request=' + encodeURIComponent(RESULT.requestId) + '&lang=' + encodeURIComponent(LANG);
     document.body.appendChild(frame);
     await new Promise(function (resolve, reject) {
