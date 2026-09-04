@@ -316,7 +316,7 @@
 
     el('statusStrip').innerHTML = career.openToOpportunities
       ? '<div class="status-strip"><span class="status-dot"></span>' +
-        '<b>' + bi({ en: 'Open to opportunities', ar: 'منفتح على الفرص' }) + '</b>' +
+        
         '<span>' + bi(career.availability) + ' · ' + bi(career.preferredLocation) + '</span>' +
         (career.targetRoles && career.targetRoles.length
           ? '<ul class="role-chips">' + career.targetRoles.map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul>'
