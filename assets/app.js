@@ -31,7 +31,7 @@
   }
   function el(id) { return document.getElementById(id); }
   function cvUrl(l) {
-    return 'downloads/Ahmad-Alshehri-CV-' + (l === 'ar' ? 'ar' : 'en') + '.pdf';
+    return 'cv.html?lang=' + (l === 'ar' ? 'ar' : 'en');
   }
   function syncCvLinks(l) {
     var ar = l === 'ar';
@@ -39,9 +39,9 @@
       var a = el(id);
       if (!a) return;
       a.href = cvUrl(l);
-      a.setAttribute('download', ar ? 'Ahmad-Alshehri-CV-ar.pdf' : 'Ahmad-Alshehri-CV-en.pdf');
+      a.removeAttribute('download');
       a.setAttribute('hreflang', l);
-      a.setAttribute('aria-label', ar ? 'تحميل السيرة الذاتية العربية بصيغة PDF' : 'Download English CV as PDF');
+      a.setAttribute('aria-label', ar ? 'فتح السيرة الذاتية العربية المحدثة' : 'Open the updated English CV');
     });
   }
   function visible(list) {
