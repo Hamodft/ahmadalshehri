@@ -85,7 +85,7 @@
     frame.setAttribute('aria-hidden', 'true');
     frame.tabIndex = -1;
     frame.style.cssText = 'position:fixed;left:-12000px;top:0;width:1050px;height:1400px;border:0;opacity:0;pointer-events:none;';
-    frame.src = '../tailored-cv-render.html?local=1&request=' + encodeURIComponent(RESULT.requestId) + '&lang=' + encodeURIComponent(LANG);
+    frame.src = '../cv.html?local=1&request=' + encodeURIComponent(RESULT.requestId) + '&lang=' + encodeURIComponent(LANG);
     document.body.appendChild(frame);
     await new Promise(function (resolve, reject) {
       var timer = setTimeout(function () { reject(new Error(LANG === 'ar' ? 'استغرق تجهيز قالب السيرة وقتًا أطول من المتوقع.' : 'The CV template took too long to load.')); }, 20000);
