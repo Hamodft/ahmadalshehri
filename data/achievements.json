@@ -1,6 +1,102 @@
 {
   "items": [
     {
+      "id": "ach-6",
+      "title": {
+        "en": "Stores reached through training",
+        "ar": "متجرًا شملها التدريب"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 0,
+      "visible": true,
+      "value": "240",
+      "unit": {
+        "en": " max",
+        "ar": " كحد أقصى"
+      }
+    },
+    {
+      "id": "ach-7",
+      "title": {
+        "en": "Product launches supported",
+        "ar": "إطلاقات منتجات دعمتها"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 1,
+      "visible": true,
+      "value": "8",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
+      "id": "ach-8",
+      "title": {
+        "en": "Training materials, guides and tests created",
+        "ar": "مادة ودليلًا واختبارًا تدريبيًا أعددتها"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 2,
+      "visible": true,
+      "value": "48",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
+      "id": "ach-9",
+      "title": {
+        "en": "Training attendance",
+        "ar": "نسبة الحضور في التدريب"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 3,
+      "visible": true,
+      "value": "98",
+      "unit": {
+        "en": "%",
+        "ar": "%"
+      }
+    },
+    {
       "id": "ach-4",
       "title": {
         "en": "Professional training hours",
@@ -15,8 +111,8 @@
       "category": "",
       "evidence": "",
       "auto": "trainingHours",
-      "featured": true,
-      "order": 0,
+      "featured": false,
+      "order": 4,
       "visible": true,
       "value": "298",
       "unit": {
@@ -39,58 +135,10 @@
       "category": "",
       "evidence": "",
       "auto": "manual",
-      "featured": true,
-      "order": 1,
+      "featured": false,
+      "order": 5,
       "visible": true,
       "value": "77",
-      "unit": {
-        "en": "",
-        "ar": ""
-      }
-    },
-    {
-      "id": "ach-6",
-      "title": {
-        "en": "Stores reached",
-        "ar": "متجرًا وصلها التدريب"
-      },
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "year": "",
-      "company": "TECNO",
-      "category": "",
-      "evidence": "",
-      "auto": "manual",
-      "featured": true,
-      "order": 2,
-      "visible": true,
-      "value": "240",
-      "unit": {
-        "en": "",
-        "ar": ""
-      }
-    },
-    {
-      "id": "ach-7",
-      "title": {
-        "en": "Product launches supported",
-        "ar": "إطلاقات منتجات ساهمت في دعمها"
-      },
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "year": "",
-      "company": "TECNO",
-      "category": "",
-      "evidence": "",
-      "auto": "manual",
-      "featured": true,
-      "order": 3,
-      "visible": true,
-      "value": "8",
       "unit": {
         "en": "",
         "ar": ""
@@ -112,7 +160,7 @@
       "evidence": "",
       "auto": "years",
       "featured": false,
-      "order": 4,
+      "order": 6,
       "visible": true,
       "value": "6",
       "unit": {
@@ -136,7 +184,7 @@
       "evidence": "",
       "auto": "manual",
       "featured": false,
-      "order": 5,
+      "order": 7,
       "visible": true,
       "value": "89",
       "unit": {
@@ -160,7 +208,7 @@
       "evidence": "",
       "auto": "manual",
       "featured": false,
-      "order": 6,
+      "order": 8,
       "visible": true,
       "value": "3",
       "unit": {
