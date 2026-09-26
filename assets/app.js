@@ -273,11 +273,11 @@
       groups[k].list.push(c);
     });
     var m = metrics();
-    el('certTotal').innerHTML = bi({ en: m.trainingHours + ' hours total', ar: m.trainingHours + ' ساعة إجمالاً' });
-    el('certNote').innerHTML = bi({
-      en: m.certifications + ' completed programmes in training delivery, management, quality, and customer experience.',
-      ar: m.certifications + ' برامج مكتملة في تنفيذ التدريب والإدارة والجودة وتجربة العميل.'
+    el('certTotal').innerHTML = bi({
+      en: m.certifications + ' completed programmes · ' + m.trainingHours + ' training hours',
+      ar: m.certifications + ' برامج مكتملة · ' + m.trainingHours + ' ساعة تدريبية'
     });
+    el('certNote').innerHTML = '';
     el('certGroups').innerHTML = order.map(function (k) {
       var g = groups[k];
       return '<div class="cert-group"><h3>' + bi(g.cat) + '</h3><ul class="certs">' +
