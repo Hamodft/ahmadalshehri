@@ -1,6 +1,102 @@
 {
   "items": [
     {
+      "id": "ach-4",
+      "title": {
+        "en": "Professional training hours",
+        "ar": "ساعات تدريب مهني"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "",
+      "category": "",
+      "evidence": "",
+      "auto": "trainingHours",
+      "featured": true,
+      "order": 0,
+      "visible": true,
+      "value": "298",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
+      "id": "ach-5",
+      "title": {
+        "en": "People trained",
+        "ar": "متدربًا تم تدريبهم"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 1,
+      "visible": true,
+      "value": "77",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
+      "id": "ach-6",
+      "title": {
+        "en": "Stores reached",
+        "ar": "متجرًا وصلها التدريب"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 2,
+      "visible": true,
+      "value": "240",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
+      "id": "ach-7",
+      "title": {
+        "en": "Product launches supported",
+        "ar": "إطلاقات منتجات ساهمت في دعمها"
+      },
+      "description": {
+        "en": "",
+        "ar": ""
+      },
+      "year": "",
+      "company": "TECNO",
+      "category": "",
+      "evidence": "",
+      "auto": "manual",
+      "featured": true,
+      "order": 3,
+      "visible": true,
+      "value": "8",
+      "unit": {
+        "en": "",
+        "ar": ""
+      }
+    },
+    {
       "id": "ach-1",
       "title": {
         "en": "Years across sales, retail operations, field force and training",
@@ -15,8 +111,8 @@
       "category": "",
       "evidence": "",
       "auto": "years",
-      "featured": true,
-      "order": 0,
+      "featured": false,
+      "order": 4,
       "visible": true,
       "value": "6",
       "unit": {
@@ -39,8 +135,8 @@
       "category": "",
       "evidence": "",
       "auto": "manual",
-      "featured": true,
-      "order": 1,
+      "featured": false,
+      "order": 5,
       "visible": true,
       "value": "89",
       "unit": {
@@ -63,37 +159,13 @@
       "category": "",
       "evidence": "",
       "auto": "manual",
-      "featured": true,
-      "order": 2,
+      "featured": false,
+      "order": 6,
       "visible": true,
       "value": "3",
       "unit": {
         "en": " promotions",
         "ar": " ترقيات"
-      }
-    },
-    {
-      "id": "ach-4",
-      "title": {
-        "en": "Accredited professional training in facilitation, management and quality",
-        "ar": "تدريب مهني معتمد في التيسير والإدارة والجودة"
-      },
-      "description": {
-        "en": "",
-        "ar": ""
-      },
-      "year": "",
-      "company": "",
-      "category": "",
-      "evidence": "",
-      "auto": "trainingHours",
-      "featured": true,
-      "order": 3,
-      "visible": true,
-      "value": "298",
-      "unit": {
-        "en": " hrs",
-        "ar": " ساعة"
       }
     }
   ]
