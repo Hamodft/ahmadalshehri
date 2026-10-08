@@ -1,6 +1,17 @@
 {
-  "updatedAt": "2026-10-07T23:04:11.840Z",
+  "updatedAt": "2026-10-08T05:58:51.043Z",
   "jobs": [
+    {
+      "id": "linkedin:4475739175",
+      "source": "linkedin",
+      "title": "Sales Manager-Saudi Only",
+      "company": "The Luxury Collection",
+      "location": "Ad Diriyah, Riyadh, Saudi Arabia",
+      "description": "Sales Manager-Saudi Only opportunity at The Luxury Collection in Ad Diriyah, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/sales-manager-saudi-only-at-the-luxury-collection-4475739175",
+      "date": "2026-10-08T00:00:00.000Z",
+      "dateLabel": "08 Oct 2026"
+    },
     {
       "id": "linkedin:4476922336",
       "source": "linkedin",
@@ -40,7 +51,7 @@
       "title": "Sales Manager",
       "company": "IHG Hotels & Resorts",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "As a Sales manager, you will be responsible for developing and implementing sales and marketing strategies for the hotel to ensure positive goal achievement. You will be responsible for selling hotel rooms, meeting spaces, and food and beverage services through direct client contact. People Manage daily activities and plan and assign tasks to ensure adequate staffing. Support the sales team through training and feedback to improve performance, setting individual development goals. Ensure colleagues are trained on required standards and provided with the necessary tools to work efficiently. assist with any team-related issues, such as recommending performance improvements. Foster teamwork by building strong relationships among different departments. Financial Work towards achieving set sales targets and increasing overall profitability. Assist in achieving expected revenues by participating in budget preparation and financial planning. Develop and implement sales plans aimed at increasing occupancy, raising average rates, and boosting food and beverage sales. Prepare regular reports and market analysis to guide business activities and increase revenue. Guest Experience Provide assistance to guests when they need support or information Offer guests information about programs, local attractions, and restaurants to enhance their experience. Build relationships with key clients to enhance group sales opportunities. Coordinate activities between sales and other departments to ensure high-quality service delivery. Responsible Business Enhance the hotel's reputation and brand within the local community. Work on improving marketing activities and overall hotel sales performance in collaboration with other departments. Execute additional tasks as needed to ensure smooth operations. Accountability This position encompasses sales responsibilities in a hotel, which may include managing some administrative aspects of sales. Bato to four years of experience in hotel sales or hospitality. choler’s degree or higher education qualification in marketing or a related field. Proficiency in the local language. Knowledge of additional languages is considered a plus. Don't quite meet every single requirement, but still believe you'd be a great fit for the job? We'll never know unless you hit the 'Apply' button. Start your journey with us today.",
+      "description": "Sales Manager opportunity at IHG Hotels & Resorts in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-ihg-hotels-resorts-4474468251",
       "date": "2026-10-07T00:00:00.000Z",
       "dateLabel": "07 Oct 2026"
@@ -64,6 +75,61 @@
       "location": "Al Khobar, Eastern, Saudi Arabia",
       "description": "Sales Manager (Saudis only) opportunity at Kempinski Hotels in Al Khobar, Eastern, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-saudis-only-at-kempinski-hotels-4474648669",
+      "date": "2026-10-07T00:00:00.000Z",
+      "dateLabel": "07 Oct 2026"
+    },
+    {
+      "id": "linkedin:4465591944",
+      "source": "linkedin",
+      "title": "Supervisor.Operations - Ambient - KAEC DC (1)",
+      "company": "Panda Retail Company – Savola Group",
+      "location": "Rābigh, Makkah, Saudi Arabia",
+      "description": "Supervisor.Operations - Ambient - KAEC DC (1) opportunity at Panda Retail Company – Savola Group in Rābigh, Makkah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/supervisor-operations-ambient-kaec-dc-1-at-panda-retail-company-%E2%80%93-savola-group-4465591944",
+      "date": "2026-10-07T00:00:00.000Z",
+      "dateLabel": "07 Oct 2026"
+    },
+    {
+      "id": "linkedin:4457904585",
+      "source": "linkedin",
+      "title": "Manager - Learning Design and Delivery",
+      "company": "Qiddiya | القدية",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Manager - Learning Design and Delivery opportunity at Qiddiya | القدية in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/manager-learning-design-and-delivery-at-qiddiya-%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D8%A9-4457904585",
+      "date": "2026-10-07T00:00:00.000Z",
+      "dateLabel": "07 Oct 2026"
+    },
+    {
+      "id": "linkedin:4465473537",
+      "source": "linkedin",
+      "title": "Senior Manager - Leadership Development",
+      "company": "Qiddiya | القدية",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Senior Manager - Leadership Development opportunity at Qiddiya | القدية in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/senior-manager-leadership-development-at-qiddiya-%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D8%A9-4465473537",
+      "date": "2026-10-07T00:00:00.000Z",
+      "dateLabel": "07 Oct 2026"
+    },
+    {
+      "id": "linkedin:4476595937",
+      "source": "linkedin",
+      "title": "Transformation Manager",
+      "company": "Cenomi Retail",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Transformation Manager opportunity at Cenomi Retail in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/transformation-manager-at-cenomi-retail-4476595937",
+      "date": "2026-10-07T00:00:00.000Z",
+      "dateLabel": "07 Oct 2026"
+    },
+    {
+      "id": "linkedin:4475457086",
+      "source": "linkedin",
+      "title": "Partner and Customer Enablement Lead",
+      "company": "Jobgether",
+      "location": "Saudi Arabia",
+      "description": "Partner and Customer Enablement Lead opportunity at Jobgether in Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/partner-and-customer-enablement-lead-at-jobgether-4475457086",
       "date": "2026-10-07T00:00:00.000Z",
       "dateLabel": "07 Oct 2026"
     },
@@ -112,39 +178,6 @@
       "dateLabel": "07 Oct 2026"
     },
     {
-      "id": "linkedin:4465591944",
-      "source": "linkedin",
-      "title": "Supervisor.Operations - Ambient - KAEC DC (1)",
-      "company": "Panda Retail Company – Savola Group",
-      "location": "Rābigh, Makkah, Saudi Arabia",
-      "description": "Supervisor.Operations - Ambient - KAEC DC (1) opportunity at Panda Retail Company – Savola Group in Rābigh, Makkah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/supervisor-operations-ambient-kaec-dc-1-at-panda-retail-company-%E2%80%93-savola-group-4465591944",
-      "date": "2026-10-07T00:00:00.000Z",
-      "dateLabel": "07 Oct 2026"
-    },
-    {
-      "id": "linkedin:4457904585",
-      "source": "linkedin",
-      "title": "Manager - Learning Design and Delivery",
-      "company": "Qiddiya | القدية",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Manager - Learning Design and Delivery opportunity at Qiddiya | القدية in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/manager-learning-design-and-delivery-at-qiddiya-%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D8%A9-4457904585",
-      "date": "2026-10-07T00:00:00.000Z",
-      "dateLabel": "07 Oct 2026"
-    },
-    {
-      "id": "linkedin:4465473537",
-      "source": "linkedin",
-      "title": "Senior Manager - Leadership Development",
-      "company": "Qiddiya | القدية",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Senior Manager - Leadership Development opportunity at Qiddiya | القدية in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/senior-manager-leadership-development-at-qiddiya-%D8%A7%D9%84%D9%82%D8%AF%D9%8A%D8%A9-4465473537",
-      "date": "2026-10-07T00:00:00.000Z",
-      "dateLabel": "07 Oct 2026"
-    },
-    {
       "id": "linkedin:4476523834",
       "source": "linkedin",
       "title": "Project Sales Manager Western Region KSA",
@@ -167,17 +200,6 @@
       "dateLabel": "07 Oct 2026"
     },
     {
-      "id": "linkedin:4476595937",
-      "source": "linkedin",
-      "title": "Transformation Manager",
-      "company": "Cenomi Retail",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Transformation Manager opportunity at Cenomi Retail in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/transformation-manager-at-cenomi-retail-4476595937",
-      "date": "2026-10-07T00:00:00.000Z",
-      "dateLabel": "07 Oct 2026"
-    },
-    {
       "id": "linkedin:4474056888",
       "source": "linkedin",
       "title": "CL Growth Enablement Manager",
@@ -194,7 +216,7 @@
       "title": "Manager Central Province Sales",
       "company": "Riyadh Air | طيران الرياض",
       "location": "Riyadh Region",
-      "description": "Riyadh Air (RX), headquartered in the Saudi Capital, is the new national airline that’s shaping the future of flying. It seeks to lead the aviation industry by transforming Saudi Arabia into a global aviation and trade hub – a digitally native airline that will connect the kingdom to more than 100 destinations. About The Role Are you ready to lead trade sales in the Kingdom’s largest indirect market and turn strong market presence into measurable share growth? This role is central to commercial performance across the Central Province trade channel. It carries ownership of sales plans, revenue delivery, and market share growth across a strategically important market. A core part of the role is leading the account management team across travel management companies, online travel agencies, and travel agents. The position also holds the most strategic agency relationships and sets a clear direction for coverage, focus, and performance. Working closely with Lead Account Managers, this role drives weekly portfolio reviews, target setting, and coaching to raise execution standards. It also leads negotiations on commercial agreements, incentive structures, and joint marketing campaigns with top-tier partners. The role calls for sharp commercial judgment across group demand, labor movement, and leisure traffic. Tactical action will be needed to support route performance on specific dates while keeping channel spend, incentive cost, and campaign investment within budget. You will also surface market intelligence on competitor pricing, capacity, and agency performance to support pricing and network planning. In parallel, the role escalates channel system constraints, including New Distribution Capability (NDC), group handling, and corporate platform issues, and follows them through to resolution with internal teams. This is a high-impact leadership role where your commercial instinct, market influence, and team direction will directly shape revenue growth and trade channel success. About You Degree qualified, you will demonstrate a minimum of 8 years of airline or travel commercial experience, including at least 5 years leading trade sales in Saudi Arabia. You will bring established relationships across major travel management companies, online travel agencies, and travel agencies in the Central Province, along with strong distribution knowledge, commercial negotiation skills, analytical command of revenue and market share data, and the leadership presence to coach teams and deliver results in a fast-paced launch environment. This is your opportunity to shape the f",
+      "description": "Manager Central Province Sales opportunity at Riyadh Air | طيران الرياض in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/manager-central-province-sales-at-riyadh-air-%D8%B7%D9%8A%D8%B1%D8%A7%D9%86-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-4465796303",
       "date": "2026-10-06T00:00:00.000Z",
       "dateLabel": "06 Oct 2026"
@@ -255,17 +277,6 @@
       "dateLabel": "06 Oct 2026"
     },
     {
-      "id": "linkedin:4476179423",
-      "source": "linkedin",
-      "title": "Sales Supervisor - (Odoo ERP Sales Experience - Riyadh)",
-      "company": "NOK Human Capital",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Job Title: Saudi Sales Manager – ERP/CRM Solutions Location: Riyadh, Saudi Arabia Work Condition: Onsite About Us At NOK Human Capital, we deliver innovative HR solutions and talent acquisition consultancy across the MENA region. We connect top-tier talent with industry-leading organizations to drive sustainable business growth. Role Overview We are seeking an experienced Saudi Sales Manager (ERP/CRM Solutions) to join our expanding team in Riyadh. In this role, you will lead business development efforts, build strong enterprise client relationships, and drive revenue growth through the sale of enterprise software—with a focus on Odoo and complementary ERP/CRM systems. Key Responsibilities Strategic Sales: Develop and execute strategic plans to consistently meet and exceed ERP/CRM revenue targets. Client Acquisition: Identify, engage, and convert enterprise and SME decision-makers within the Saudi market. Solution Pitching: Present, demonstrate, and pitch ERP/CRM platforms (especially Odoo-based systems). Pipeline Management: Drive the complete sales cycle from lead generation and pipeline tracking to deal closure and forecasting. Cross-Functional Collaboration: Partner with technical and implementation teams to guarantee seamless project delivery. Market Intelligence: Monitor industry trends, competitor movements, and emerging client demands across the ERP/CRM ecosystem. Contract Negotiation: Lead professional commercial negotiations and contract finalizing. Brand Representation: Represent the company in high-level client meetings, trade shows, and industry events. Requirements Location: Based in Riyadh, Saudi Arabia. Experience: Proven track record as a Sales Manager or BDM in enterprise software sales. Domain Expertise: In-depth background in ERP/CRM sales; hands-on experience with Odoo is highly preferred (experience with MS Dynamics, SAP, or Oracle NetSuite is a strong plus). Market Knowledge: Established footprint and network within the Saudi B2B/enterprise landscape. Skills: Exceptional negotiation, presentation, and long-term client relationship management abilities. Languages: Fluent in both Arabic and English (written and spoken).",
-      "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-odoo-erp-sales-experience-riyadh-at-nok-human-capital-4476179423",
-      "date": "2026-10-06T00:00:00.000Z",
-      "dateLabel": "06 Oct 2026"
-    },
-    {
       "id": "linkedin:4476180119",
       "source": "linkedin",
       "title": "Fleet Sales Senior Manager",
@@ -288,17 +299,6 @@
       "dateLabel": "06 Oct 2026"
     },
     {
-      "id": "linkedin:4476161214",
-      "source": "linkedin",
-      "title": "Commercial Manager",
-      "company": "United Group",
-      "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "JOB PURPOSE: The Commercial Manager – Forage & Feed (KSA) manages the commercial activities for forage crops and compound feed in the Saudi market, within United Group's United Forages business unit. The role covers sourcing, procurement, sales, supplier management, customer relationships, pricing, and business development. It draws on knowledge of the GCC livestock and dairy farming market, and on relationships with farms, suppliers, and key stakeholders, to develop and grow the business. KEY ACCOUNTABILITIES: Product Promotion & Market Development Promote UFC products to dairy and livestock farms, feed mills, distributors, and strategic customers across Saudi Arabia. Develop new customers, support product launches, and increase UFC market share through regular visits and product presentations. Identify customer requirements and share product demand, sales forecasts, and market intelligence with UFC commercial and supply teams. Sales & Customer Relationships Lead sales of UFC alfalfa, green fodder, corn, and compound feed across the Saudi market. Build and maintain strong relationships with farms, feed mills, distributors, key customers, and strategic accounts. Maintain regular customer follow-ups and coordinate with internal teams to support order execution, customer satisfaction, and retention. Pricing & Commercial Management Recommend sales pricing based on market trends and competitor activity, and coordinate quotations and commercial offers with UFC management. Monitor Saudi and GCC market conditions and share insights to support sales and commercial decisions. Monitor sales volumes, margins, targets, and customer performance within UFC approved commercial policies. Business Development & Market Growth Develop annual sales plans and grow UFC business in Saudi Arabia through new customers, product promotion, and commercial partnerships. Identify new sales opportunities, including GCC opportunities in coordination with UFC management, and support customer contract negotiations. Maintain customer records and sales forecasts, and report sales activity, pipeline, and performance to senior management. QUALIFICATIONS & EXPERIENCE Bachelor's degree in Agriculture, Animal Science, Business, or a related field. 8+ years of experience in sales and procurement within the dairy and cattle farming sector, preferably with GCC experience.",
-      "url": "https://sa.linkedin.com/jobs/view/commercial-manager-at-united-group-4476161214",
-      "date": "2026-10-06T00:00:00.000Z",
-      "dateLabel": "06 Oct 2026"
-    },
-    {
       "id": "linkedin:4465796304",
       "source": "linkedin",
       "title": "Lead Corporate Sales",
@@ -310,17 +310,6 @@
       "dateLabel": "06 Oct 2026"
     },
     {
-      "id": "linkedin:4465801777",
-      "source": "linkedin",
-      "title": "Sales Manager",
-      "company": "Emerson",
-      "location": "Dhahran, Eastern, Saudi Arabia",
-      "description": "Sales Manager opportunity at Emerson in Dhahran, Eastern, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-emerson-4465801777",
-      "date": "2026-10-06T00:00:00.000Z",
-      "dateLabel": "06 Oct 2026"
-    },
-    {
       "id": "linkedin:4475112487",
       "source": "linkedin",
       "title": "Head of Retail Operations",
@@ -328,6 +317,39 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Head of Retail Operations opportunity at Foreground. in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/head-of-retail-operations-at-foreground-4475112487",
+      "date": "2026-10-06T00:00:00.000Z",
+      "dateLabel": "06 Oct 2026"
+    },
+    {
+      "id": "linkedin:4476179423",
+      "source": "linkedin",
+      "title": "Sales Supervisor - (Odoo ERP Sales Experience - Riyadh)",
+      "company": "NOK Human Capital",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Job Title: Saudi Sales Manager – ERP/CRM Solutions Location: Riyadh, Saudi Arabia Work Condition: Onsite About Us At NOK Human Capital, we deliver innovative HR solutions and talent acquisition consultancy across the MENA region. We connect top-tier talent with industry-leading organizations to drive sustainable business growth. Role Overview We are seeking an experienced Saudi Sales Manager (ERP/CRM Solutions) to join our expanding team in Riyadh. In this role, you will lead business development efforts, build strong enterprise client relationships, and drive revenue growth through the sale of enterprise software—with a focus on Odoo and complementary ERP/CRM systems. Key Responsibilities Strategic Sales: Develop and execute strategic plans to consistently meet and exceed ERP/CRM revenue targets. Client Acquisition: Identify, engage, and convert enterprise and SME decision-makers within the Saudi market. Solution Pitching: Present, demonstrate, and pitch ERP/CRM platforms (especially Odoo-based systems). Pipeline Management: Drive the complete sales cycle from lead generation and pipeline tracking to deal closure and forecasting. Cross-Functional Collaboration: Partner with technical and implementation teams to guarantee seamless project delivery. Market Intelligence: Monitor industry trends, competitor movements, and emerging client demands across the ERP/CRM ecosystem. Contract Negotiation: Lead professional commercial negotiations and contract finalizing. Brand Representation: Represent the company in high-level client meetings, trade shows, and industry events. Requirements Location: Based in Riyadh, Saudi Arabia. Experience: Proven track record as a Sales Manager or BDM in enterprise software sales. Domain Expertise: In-depth background in ERP/CRM sales; hands-on experience with Odoo is highly preferred (experience with MS Dynamics, SAP, or Oracle NetSuite is a strong plus). Market Knowledge: Established footprint and network within the Saudi B2B/enterprise landscape. Skills: Exceptional negotiation, presentation, and long-term client relationship management abilities. Languages: Fluent in both Arabic and English (written and spoken).",
+      "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-odoo-erp-sales-experience-riyadh-at-nok-human-capital-4476179423",
+      "date": "2026-10-06T00:00:00.000Z",
+      "dateLabel": "06 Oct 2026"
+    },
+    {
+      "id": "linkedin:4476161214",
+      "source": "linkedin",
+      "title": "Commercial Manager",
+      "company": "United Group",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "JOB PURPOSE: The Commercial Manager – Forage & Feed (KSA) manages the commercial activities for forage crops and compound feed in the Saudi market, within United Group's United Forages business unit. The role covers sourcing, procurement, sales, supplier management, customer relationships, pricing, and business development. It draws on knowledge of the GCC livestock and dairy farming market, and on relationships with farms, suppliers, and key stakeholders, to develop and grow the business. KEY ACCOUNTABILITIES: Product Promotion & Market Development Promote UFC products to dairy and livestock farms, feed mills, distributors, and strategic customers across Saudi Arabia. Develop new customers, support product launches, and increase UFC market share through regular visits and product presentations. Identify customer requirements and share product demand, sales forecasts, and market intelligence with UFC commercial and supply teams. Sales & Customer Relationships Lead sales of UFC alfalfa, green fodder, corn, and compound feed across the Saudi market. Build and maintain strong relationships with farms, feed mills, distributors, key customers, and strategic accounts. Maintain regular customer follow-ups and coordinate with internal teams to support order execution, customer satisfaction, and retention. Pricing & Commercial Management Recommend sales pricing based on market trends and competitor activity, and coordinate quotations and commercial offers with UFC management. Monitor Saudi and GCC market conditions and share insights to support sales and commercial decisions. Monitor sales volumes, margins, targets, and customer performance within UFC approved commercial policies. Business Development & Market Growth Develop annual sales plans and grow UFC business in Saudi Arabia through new customers, product promotion, and commercial partnerships. Identify new sales opportunities, including GCC opportunities in coordination with UFC management, and support customer contract negotiations. Maintain customer records and sales forecasts, and report sales activity, pipeline, and performance to senior management. QUALIFICATIONS & EXPERIENCE Bachelor's degree in Agriculture, Animal Science, Business, or a related field. 8+ years of experience in sales and procurement within the dairy and cattle farming sector, preferably with GCC experience.",
+      "url": "https://sa.linkedin.com/jobs/view/commercial-manager-at-united-group-4476161214",
+      "date": "2026-10-06T00:00:00.000Z",
+      "dateLabel": "06 Oct 2026"
+    },
+    {
+      "id": "linkedin:4465801777",
+      "source": "linkedin",
+      "title": "Sales Manager",
+      "company": "Emerson",
+      "location": "Dhahran, Eastern, Saudi Arabia",
+      "description": "Sales Manager opportunity at Emerson in Dhahran, Eastern, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-emerson-4465801777",
       "date": "2026-10-06T00:00:00.000Z",
       "dateLabel": "06 Oct 2026"
     },
@@ -414,7 +436,7 @@
       "title": "Sales Section Head - OOH",
       "company": "Nestlé",
       "location": "Medina, Al Madinah, Saudi Arabia",
-      "description": "Sales Section Head - OOH opportunity at Nestlé in Medina, Al Madinah, Saudi Arabia.",
+      "description": "Sales Section Head – Out Of Home Channel Location: Madinah, Saudi Arabia Workplace Type: On-site Department: Sales - Out-of-Home Reports To: Regional HOD Business Manager Employment Type: Full-Time Position Summary Nestlé Waters is the global leader in bottled water, proudly producing Al Manhal and Nestlé Pure Life in Saudi Arabia. As part of our Out-of-Home transformation journey, we are seeking a dynamic, field-oriented Sale Section Head to lead our strategy across B2B, Hotels, Restaurants, Cafés, and Catering channels. This role combines strategic leadership with hands-on execution to expand Nestlé Waters’ footprint in the Saudi market, strengthen distributor partnerships, and deliver exceptional service and commercial excellence across all key accounts. A DAY IN THE LIFE... Develop and execute the Ouf Of Home Channel Business Plan aligned with the company’s growth ambitions and profitability targets. Identify, develop, and secure new business opportunities within hospitality, catering, and coffee chains. Build and maintain long-term partnerships with national chains and key foodservice operators. Lead the transition to Route-to-Market, optimizing coverage, service standards, and ROI. Manage channel pricing, trade terms, and rebate frameworks to ensure financial discipline and competitive positioning. Coach, lead, and inspire a team of sales professionals and key account executives to achieve volume, revenue, and margin objectives. Partner cross-functionally with Trade Marketing, Supply Chain, and Finance to ensure seamless execution and customer satisfaction. Monitor performance through KPIs (Volume, NNS, OTIF, Visibility, Overdue) and lead Quarterly Business Reviews (QBRs) with key stakeholders. Champion Nestlé’s standards of ethics, quality, and sustainability in every customer interaction. What Will Make You Successful Bachelor’s degree in business administration, Marketing, or related field; MBA is a plus. 3 – 5 years of progressive commercial experience in FMCG or Beverages, including 3+ years in B2B/ HORECA channel leadership. Strong track record in key account management, negotiation, and P&L ownership. Deep understanding of Saudi B2B/HORECA ecosystem, procurement cycles, and market dynamics. Excellent analytical, interpersonal, and leadership skills. Proficiency in SAP, Power BI, and MS Excel. Fluent in English; Arabic is an advantage. Valid Saudi Driving License and flexibility to travel nationally. What We Offer At Nestlé When you join Nestlé Waters, you become part of a global team that values integrity, collaboration, and excellence. We b",
       "url": "https://sa.linkedin.com/jobs/view/sales-section-head-ooh-at-nestl%C3%A9-4475555860",
       "date": "2026-10-05T00:00:00.000Z",
       "dateLabel": "05 Oct 2026"
@@ -427,6 +449,83 @@
       "location": "Riyadh Region",
       "description": "Regional Sales Manager opportunity at Trimble Inc. in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/regional-sales-manager-at-trimble-inc-4475816409",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4474246685",
+      "source": "linkedin",
+      "title": "Assistant Store Manager – Retail",
+      "company": "TASC Outsourcing",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Assistant Store Manager – Retail opportunity at TASC Outsourcing in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/assistant-store-manager-%E2%80%93-retail-at-tasc-outsourcing-4474246685",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4474260023",
+      "source": "linkedin",
+      "title": "Retail District Manager",
+      "company": "MANGO",
+      "location": "Eastern, Saudi Arabia",
+      "description": "Retail District Manager opportunity at MANGO in Eastern, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-at-mango-4474260023",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4475824627",
+      "source": "linkedin",
+      "title": "Store Manager",
+      "company": "Louis Vuitton",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Store Manager opportunity at Louis Vuitton in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-louis-vuitton-4475824627",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4375680779",
+      "source": "linkedin",
+      "title": "Store Manager",
+      "company": "Apparel Group",
+      "location": "Jiddah, Makkah, Saudi Arabia",
+      "description": "Store Manager opportunity at Apparel Group in Jiddah, Makkah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-apparel-group-4375680779",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4464758387",
+      "source": "linkedin",
+      "title": "Sales Supervisor",
+      "company": "PepsiCo",
+      "location": "Medina, Al Madinah, Saudi Arabia",
+      "description": "Sales Supervisor opportunity at PepsiCo in Medina, Al Madinah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-at-pepsico-4464758387",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4473632943",
+      "source": "linkedin",
+      "title": "Organizational Development Manager",
+      "company": "Wakeb_Data",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Organizational Development Manager opportunity at Wakeb_Data in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/organizational-development-manager-at-wakeb-data-4473632943",
+      "date": "2026-10-05T00:00:00.000Z",
+      "dateLabel": "05 Oct 2026"
+    },
+    {
+      "id": "linkedin:4473657749",
+      "source": "linkedin",
+      "title": "مديرة معهد تدريب - الخرج",
+      "company": "iHR (International Human Resources)",
+      "location": "Al Kharj, Riyadh, Saudi Arabia",
+      "description": "مديرة معهد تدريب - الخرج opportunity at iHR (International Human Resources) in Al Kharj, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/%D9%85%D8%AF%D9%8A%D8%B1%D8%A9-%D9%85%D8%B9%D9%87%D8%AF-%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AE%D8%B1%D8%AC-at-ihr-international-human-resources-4473657749",
       "date": "2026-10-05T00:00:00.000Z",
       "dateLabel": "05 Oct 2026"
     },
@@ -464,61 +563,6 @@
       "dateLabel": "05 Oct 2026"
     },
     {
-      "id": "linkedin:4474246685",
-      "source": "linkedin",
-      "title": "Assistant Store Manager – Retail",
-      "company": "TASC Outsourcing",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Assistant Store Manager – Retail opportunity at TASC Outsourcing in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/assistant-store-manager-%E2%80%93-retail-at-tasc-outsourcing-4474246685",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4474260023",
-      "source": "linkedin",
-      "title": "Retail District Manager",
-      "company": "MANGO",
-      "location": "Eastern, Saudi Arabia",
-      "description": "Retail District Manager opportunity at MANGO in Eastern, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/retail-district-manager-at-mango-4474260023",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4375680779",
-      "source": "linkedin",
-      "title": "Store Manager",
-      "company": "Apparel Group",
-      "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "Store Manager opportunity at Apparel Group in Jiddah, Makkah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-apparel-group-4375680779",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4475824627",
-      "source": "linkedin",
-      "title": "Store Manager",
-      "company": "Louis Vuitton",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Store Manager opportunity at Louis Vuitton in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-louis-vuitton-4475824627",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4464758387",
-      "source": "linkedin",
-      "title": "Sales Supervisor",
-      "company": "PepsiCo",
-      "location": "Medina, Al Madinah, Saudi Arabia",
-      "description": "Sales Supervisor opportunity at PepsiCo in Medina, Al Madinah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-at-pepsico-4464758387",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
       "id": "linkedin:4473618706",
       "source": "linkedin",
       "title": "Area Manager - Food Service / HoReCa",
@@ -526,28 +570,6 @@
       "location": "Riyadh, Saudi Arabia",
       "description": "About the Role: Sitaf is looking for experienced Area Managers to lead sales teams and develop the business within their assigned regions. The role requires strong people management, a clear focus on achieving results and the ability to develop employees through training and coaching . Flexibility and an active presence in the field are essential. Regions: Central, Eastern, Western and Southern Key Responsibilities: Lead, organize and motivate the sales team, setting clear objectives and expectations. Drive sales growth and profitability, ensuring individual and regional targets are achieved. Provide regular training, coaching and support to strengthen the team’s skills and performance. Monitor results, give constructive feedback and address areas for improvement. Develop customer relationships and identify new business opportunities. Work closely with other departments to meet customer needs and support business priorities. Requirements: Proven experience in foodservice / HoReCa sales , preferably within food distribution. Previous experience managing and developing a sales team . Strong orientation towards objectives, with a track record of delivering results. Ability to train, coach and motivate people. A flexible, practical approach to changing priorities and business needs. Strong communication, organization and negotiation skills. Willingness to travel regularly within the assigned region. English and Arabic languages are both required",
       "url": "https://sa.linkedin.com/jobs/view/area-manager-food-service-horeca-at-sitaf-food-4473618706",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4473632943",
-      "source": "linkedin",
-      "title": "Organizational Development Manager",
-      "company": "Wakeb_Data",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "We are looking for an experienced and driven Organizational Development Manager to join our Talent & Development team. The role is responsible for leading and developing organizational development activities to ensure effective organizational structures, enhance organizational performance, and build functional competencies and organizational capabilities in alignment with the company’s strategic objectives. Key Responsibilities Develop and continuously update the company’s organizational structure in alignment with strategic directions. Develop and maintain job descriptions across all departments and functions. Design and implement initiatives to improve performance and enhance organizational maturity. Review and update organizational policies and procedures to ensure consistency and efficiency. Collaborate with different departments to identify organizational needs and provide appropriate solutions. Analyze organizational processes and identify opportunities for continuous improvement and development. Prepare periodic reports and provide recommendations to senior management. Support organizational change initiatives and contribute to building and strengthening the company’s culture. Qualifications & Requirements Bachelor’s degree in Business Administration, Human Resources, Organizational Development , or a related field. Minimum 9 years of experience in Organizational Development or Human Resources. A professional certification or advanced degree in Organizational Development is preferred. Strong knowledge of HR systems and Organizational Development practices. Strong analytical skills in organizational analysis, organizational design, and policy development. Excellent project management, communication, and influencing skills. Strong ability to lead organizational change and drive performance improvement. Proficiency in Microsoft Office. Fluent in Arabic and English.",
-      "url": "https://sa.linkedin.com/jobs/view/organizational-development-manager-at-wakeb-data-4473632943",
-      "date": "2026-10-05T00:00:00.000Z",
-      "dateLabel": "05 Oct 2026"
-    },
-    {
-      "id": "linkedin:4473657749",
-      "source": "linkedin",
-      "title": "مديرة معهد تدريب - الخرج",
-      "company": "iHR (International Human Resources)",
-      "location": "Al Kharj, Riyadh, Saudi Arabia",
-      "description": "مديرة معهد تدريب - الخرج opportunity at iHR (International Human Resources) in Al Kharj, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/%D9%85%D8%AF%D9%8A%D8%B1%D8%A9-%D9%85%D8%B9%D9%87%D8%AF-%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8-%D8%A7%D9%84%D8%AE%D8%B1%D8%AC-at-ihr-international-human-resources-4473657749",
       "date": "2026-10-05T00:00:00.000Z",
       "dateLabel": "05 Oct 2026"
     },
@@ -651,23 +673,12 @@
       "dateLabel": "05 Oct 2026"
     },
     {
-      "id": "linkedin:4475387134",
-      "source": "linkedin",
-      "title": "Sales Manager (FMCG)",
-      "company": "Hire Fellows",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "You will be responsible for driving the brand's revenue, distribution, availability, and overall sales performance across KSA. This role will lead key sales channels through the distributor, while expanding the brand's presence across Traditional Trade and HORECA through the direct sales team. The ideal candidate is commercially driven, strong in negotiations, and experienced in managing FMCG/F&B sales across multiple channels. Key Responsibilities Sales & revenue: Own sales performance, revenue, distribution, availability, and channel growth while driving profitable growth within the budgeted P&L Channel management: Lead Modern Trade, Online, and Convenience channel performance through the distributor, including forecasting, sell-in/sell-out, availability, execution, and collections Market expansion: Drive growth across Traditional Trade and HORECA through the direct sales team, expanding distribution and strengthening market presence Key accounts: Lead customer negotiations, annual agreements, pricing, trade terms, and commercial plans with key customers Team management: Manage, coach, and develop the sales team, tracking performance against targets, execution standards, and collections Trade marketing: Oversee the execution of trade marketing initiatives in collaboration with the marketing team and distributor Requirements 5+ years of experience in FMCG/F&B sales in KSA Strong experience managing multiple sales channels and distributors Strong commercial, negotiation, and account management skills Experience managing and developing sales teams Strong understanding of sell-in, sell-out, distribution, forecasting, and collections Fluent in Arabic and English Strong analytical, organizational, and communication skills Commercially driven with a hands-on approach to execution",
-      "url": "https://sa.linkedin.com/jobs/view/sales-manager-fmcg-at-hire-fellows-4475387134",
-      "date": "2026-10-04T00:00:00.000Z",
-      "dateLabel": "04 Oct 2026"
-    },
-    {
       "id": "linkedin:4375690425",
       "source": "linkedin",
       "title": "Area Sales Manager",
       "company": "Apparel Group",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Position Objective The objective of the Area Sales Manager role is to oversee the operations and financial performance of multiple retail stores within an assigned area for 1 or more assigned brands in a region. This includes driving sales growth, ensuring exceptional customer service, managing and developing store teams, and maintaining compliance with company standards. The role requires strategic market analysis, financial acumen, and effective communication with senior management/Brand teams to optimize store performance, manage inventory, promotion, marketing campaign implementation in stores and achieve business objectives. Key Responsibility Operations Management Oversee the day-to-day operations of multiple fashion retail stores within the assigned area. Ensure all stores operate efficiently and adhere to company standards, including opening and closing procedures. Delegate tasks, assign responsibilities to store managers, and monitor progress. Adhere and enforce Company SOPs, Policies, and procedures, and loss prevention audit guidelines in all the assigned stores. Also, create measures to ensure compliance by all employees. Interpret and make decisions on operations and visual standards based on store and client needs. Single point contact with Brand Teams to implement business/marketing and other strategy elements in the stores uniformly Financial Management Monitor and analyze sales data, key performance indicators (Units per transaction, Average transaction value, sales per month, sales per square foot, sales turnover, shrinkage control, increase in conversion percentage), and overall financial performance, especially P&L and EBITDA, to identify areas for improvement. Analyze financial reports and make data-driven decisions to improve efficiency and profitability. Monitor and manage budgets, expenses, and financial performance for each store. Implement cost-saving initiatives to enhance profitability while maintaining quality. Customer Experience Ensure exceptional customer service by coaching and setting service standards for the team at all the stores. Conduct regular store visits to assess customer service quality and address any issues immediately. Collaborate with store managers to implement customer feedback and improve the shopping experience. Market Analysis & Strategy Utilize market insights to identify opportunities for growth and adapt strategies accordingly. Stay informed about market trends, consumer behavior, and competitor activities. Develop and execute area-specific marketing and sales strategies to drive footfall and revenu",
+      "description": "Area Sales Manager opportunity at Apparel Group in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-at-apparel-group-4375690425",
       "date": "2026-10-04T00:00:00.000Z",
       "dateLabel": "04 Oct 2026"
@@ -684,12 +695,23 @@
       "dateLabel": "04 Oct 2026"
     },
     {
+      "id": "linkedin:4475387134",
+      "source": "linkedin",
+      "title": "Sales Manager (FMCG)",
+      "company": "Hire Fellows",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Sales Manager (FMCG) opportunity at Hire Fellows in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/sales-manager-fmcg-at-hire-fellows-4475387134",
+      "date": "2026-10-04T00:00:00.000Z",
+      "dateLabel": "04 Oct 2026"
+    },
+    {
       "id": "linkedin:4402960860",
       "source": "linkedin",
       "title": "Sales Manager - BES",
       "company": "Brenntag",
       "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "Brenntag is the global market leader in chemical distribution. The German based international company manages complex supply chains for both chemical manufacturers and consumers by simplifying market access to thousands of products and services. It combines a global network with outstanding local execution. Therefore, Brenntag is the industry’s most effective and preferred channel to the market for partners. At Brenntag, we are committed to providing our customers with products and services through dedication to unparalleled quality distribution. To accomplish this goal, we recognize the need for synergy between our vendors and employees. In order to meet and exceed the developing needs of our customers, we focus on complementing our current lines with new products and services. Further, we continue to expand our physical presence in the markets we serve to provide both our customers and vendors with a more efficient global partnership. Job Description The Sales Manager is responsible for executing Brenntag KSA’s sales strategy and representing the company in a professional manner in their sales territory while growing sales, gross profit and reporting on activities to external and internal audiences. He/she will become part of the Brenntag Essential Business Model. Required Business Acumen Conduct thorough market research and analysis to identify potential customers and opportunities within the western region in Energy, WT, Agro and industrial chemical sector within his/her territory. Managing ongoing, long-term contracts with clients, making sure we fulfil them in accordance with the terms and conditions set forth, and ensuring that it is both profitable and practical. Working with our regional management team as well as the global management team on developing and implementing a strategy in order to accelerate our growth in the regions with their help. Ensuring that all orders are placed on time and that all requirements are met by monitoring the entire supply chain for the products relevant to my clients and placed on time and all of the requirements by the regulating bodies are met. Develop and implement effective sales strategies to achieve sales targets and objectives. Provide technical expertise and product demonstrations to customers, addressing their needs and concerns. Responsible for the development of business for the western region in the energy, WT, Agro & industrial sector, which involves communicating with our international sourcing organization and providing products to our established clientele within the sector. Prepare detailed sales",
+      "description": "Sales Manager - BES opportunity at Brenntag in Jeddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-bes-at-brenntag-4402960860",
       "date": "2026-10-04T00:00:00.000Z",
       "dateLabel": "04 Oct 2026"
@@ -816,17 +838,6 @@
       "dateLabel": "04 Oct 2026"
     },
     {
-      "id": "linkedin:4435699163",
-      "source": "linkedin",
-      "title": "Store Manager Prada Beauty - Westfield Mall (Jeddah)",
-      "company": "Chalhoub Group",
-      "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "INSPIRE | EXHILARATE | DELIGHT For over seven decades, Chalhoub Group has been a partner and creator of luxury experiences in the Middle East. In its pursuit to excel as a hybrid luxury retailer, the Group has curated a portfolio of over 10 owned brands and strengthened its distribution and marketing expertise for over 400 international names across luxury fashion, beauty, jewellery, watches, eyewear, and art de vivre categories. Every step at Chalhoub Group is taken to build a future where luxury dreams become reality — bridging cultures and crafting memorable experiences for our consumers. Be it by constantly reinventing itself, committing to innovation, or embracing new technologies, the Group is shaping the future of luxury retail. It delivers seamless omnichannel experiences across more than 950 stores, online platforms, and mobile apps. Driving this innovation journey is The Greenhouse — the Group’s innovation hub, incubator, and accelerator for startups and emerging businesses, regionally and globally. Chalhoub Group fosters a people-at-heart culture rooted in diversity, equity, and inclusion, and a workplace catalysed by forward thinking and future-proofing. Today, it brings together over 16,000 talented professionals across eight countries in the Middle East, with a presence in LATAM. Their collective efforts have earned the Group the Great Place to Work® certification in several markets. Sustainability is at the core of the Group’s strategy, guided by a clear commitment to people, partners, and the planet. Chalhoub Group is proud to be a member of the United Nations Global Compact, a signatory of the Women’s Empowerment Principles, and to have pledged to reach Net Zero by 2040. What You'll Be Doing Our Store Manager is responsible for driving the store business. They work towards achieving the store sales’ target, build a base of loyal VIP customers by recruiting and retaining them, manage the team and ensure full adherence to the brand’s guidelines and store processes. What You’ll Need To Succeed Drive the Business. Lead by example and represent the brand by communicating its values and philosophy though all actives and interactions with customers and other team members. Define, execute and monitor the store action plan to achieve sales targets and KPIs. Manage the customer database to build strong relationship with customers and create future potential selling opportunities. Team Leadership and Development. What We Can Offer You With us, you will turn your aspirations into reality. We will help shape your journey through enriching experiences",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-prada-beauty-westfield-mall-jeddah-at-chalhoub-group-4435699163",
-      "date": "2026-10-03T00:00:00.000Z",
-      "dateLabel": "03 Oct 2026"
-    },
-    {
       "id": "linkedin:4375683695",
       "source": "linkedin",
       "title": "Store Manager",
@@ -834,6 +845,17 @@
       "location": "Dammam, Eastern, Saudi Arabia",
       "description": "Store Manager opportunity at Apparel Group in Dammam, Eastern, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/store-manager-at-apparel-group-4375683695",
+      "date": "2026-10-03T00:00:00.000Z",
+      "dateLabel": "03 Oct 2026"
+    },
+    {
+      "id": "linkedin:4435699163",
+      "source": "linkedin",
+      "title": "Store Manager Prada Beauty - Westfield Mall (Jeddah)",
+      "company": "Chalhoub Group",
+      "location": "Jiddah, Makkah, Saudi Arabia",
+      "description": "Store Manager Prada Beauty - Westfield Mall (Jeddah) opportunity at Chalhoub Group in Jiddah, Makkah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-prada-beauty-westfield-mall-jeddah-at-chalhoub-group-4435699163",
       "date": "2026-10-03T00:00:00.000Z",
       "dateLabel": "03 Oct 2026"
     },
@@ -887,7 +909,7 @@
       "title": "Saudi Arabia (Jeddah) - Store Manager",
       "company": "Zegna",
       "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "JOB CONTENT To oversee the total operations of the store ranging from merchandising, sales, customer service, staff development to other day-to-day administrative functions, in order to ensure the effective functioning of the store, achievement of business goals and enhancement of the company’s image in the market. Key Responsibilities FUNCTIONAL RESPONSIBILITIES Oversee the day-to-day operations of the store. Review previous days’ sales figures and take proactive initiatives to ensure stores targets are met. Monitor sales KPI’s to ensure budgets are achieved. Monitor staff performance with respect to customer service ensuring that all customers are greeted and met courteously, as well as attended to their needs for information/ repairs/ alterations etc. Guide, coach and train sales people on customer service disciplines. Ensure product knowledge and market/competition intelligence is given as on going in store training. Resolve customer issues as required. Maintain accurate customer database through Amber Loyalty program. Organize the store layout to create the right ambience. Merchandise goods prominently on shelves as per company/ brand specifications, use window/ visual displays to enhance the appeal. Maintain cleanliness / hygiene at all levels of store operations. Replenish stock daily. Verify stock at the beginning and end of each shift, replenish stocks according to season and size. Take a total stock count at least twice a year and monitor compliance with stock transfer procedures, with a view to ensure availability of optimum stocks of the latest items at all times. Identify slow and fast moving items back to buyers on a monthly basis. Supervise the staff with respect to their personal grooming, conduct during business hours, level of product knowledge and customer service. Ensure adherence to all company policies and procedures. Identify and resolve IT system errors as required. Guide, coach, and motivate staff continuously to bring out their potential and enable them to improve their performance. Develop and mentor employees, identify specific training needs. Monitor effectiveness of individual’s progress within the team. Conduct daily store huddles to ensure that teams are up to date with relevant business information. Education, Experience, Functional Skills And Knowledge Education/ Qualification Graduate in any discipline with tertiary qualifications in sales. Experience 5 to 7 years’ experience in high end fashion industry preferably involving direct sales. Functional Skills & Specific Knowledge Excellent communication and interpersonal s",
+      "description": "Saudi Arabia (Jeddah) - Store Manager opportunity at Zegna in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/saudi-arabia-jeddah-store-manager-at-zegna-4437890475",
       "date": "2026-10-02T00:00:00.000Z",
       "dateLabel": "02 Oct 2026"
@@ -920,7 +942,7 @@
       "title": "Sales Manager",
       "company": "OMED Group",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "OMED Group is hiring a Sales Manager – ICT, ELV & Distribution Location: Riyadh, Saudi Arabia | Full-time | On-site We are seeking an experienced sales leader with at least 10 years of relevant experience and a proven track record in Saudi Arabia’s ICT and ELV markets. Strong experience in product distribution, channel development, and project sales is essential. Key Responsibilities: • Develop and execute sales strategies to achieve revenue and profitability targets. • Drive sales of ICT and ELV solutions, including structured cabling, fiber optics, networking, CCTV, access control, and UPS systems. • Identify and win new projects with contractors, system integrators, consultants, developers, and enterprise clients. • Expand distribution channels and build relationships with resellers, dealers, and channel partners. • Manage manufacturer and vendor relationships to develop business opportunities and competitive offers. • Lead the sales team, set clear targets, and monitor performance. • Manage tenders, quotations, pricing, negotiations, and contract closing. • Maintain accurate sales pipelines, forecasts, and reports. • Coordinate with technical, project, and finance teams to support delivery and payment collection. Requirements: • Minimum 10 years of relevant ICT/ELV sales experience, including experience leading a sales team. • Proven experience in ICT/ELV distribution, channel sales, and project sales. • Strong Saudi market knowledge and an established network of clients and channel partners. • Demonstrated success in achieving sales targets, acquiring new accounts, and winning projects. • Strong leadership, negotiation, and commercial skills. • Bachelor’s degree in Engineering, Business, or a related field, or equivalent relevant experience. • Proficiency in English; Arabic is an advantage.",
+      "description": "Sales Manager opportunity at OMED Group in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-omed-group-4472927031",
       "date": "2026-10-01T00:00:00.000Z",
       "dateLabel": "01 Oct 2026"
@@ -948,17 +970,6 @@
       "dateLabel": "01 Oct 2026"
     },
     {
-      "id": "linkedin:4472529453",
-      "source": "linkedin",
-      "title": "Manager - Sales (Medina)",
-      "company": "TBO.COM",
-      "location": "Medina, Al Madinah, Saudi Arabia",
-      "description": "Manager - Sales (Medina) opportunity at TBO.COM in Medina, Al Madinah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/manager-sales-medina-at-tbo-com-4472529453",
-      "date": "2026-10-01T00:00:00.000Z",
-      "dateLabel": "01 Oct 2026"
-    },
-    {
       "id": "linkedin:4472911768",
       "source": "linkedin",
       "title": "Cluster Sales Manager",
@@ -975,7 +986,7 @@
       "title": "Sales & Bids Manager",
       "company": "Confidential Government",
       "location": "Riyadh, Saudi Arabia",
-      "description": "Key Responsibilities Sales & Business Development Identify and evaluate new business opportunities aligned with the organization’s strategic objectives. Develop and maintain strong relationships with clients, government entities, strategic partners, and key stakeholders. Monitor market trends, client requirements, competitor activities, and emerging opportunities. Develop and execute sales strategies to achieve revenue and business development targets. Maintain a robust sales pipeline and regularly report opportunity status, potential value, and probability of conversion. Lead client engagements, presentations, clarification meetings, and commercial negotiations as required. Coordinate with internal teams to ensure effective transition of awarded opportunities into project execution. Bids & Proposals Lead the end-to-end bid management process, from opportunity identification and qualification through submission and award. Review tender documents, RFPs, RFQs, and related requirements to determine scope, commercial considerations, risks, and compliance requirements. Establish bid strategies, timelines, responsibilities, and governance for each opportunity. Coordinate with technical, commercial, finance, legal, procurement, and operations teams to develop integrated proposals. Ensure proposals are compliant, competitive, commercially viable, and submitted within required deadlines. Review pricing, cost assumptions, commercial terms, contractual requirements, and proposed solutions. Manage clarification responses, negotiations, best-and-final offers, and post-submission activities. Maintain a structured database of bids, proposals, pricing information, lessons learned, and historical submissions. Conduct post-bid reviews to identify lessons learned and improve future win strategies. Qualifications Bachelor’s degree in Business Administration, Marketing, Finance, Engineering, or a related field. A Master’s degree or relevant professional certification is preferred. Professional qualifications in sales, business development, project management, or commercial management are advantageous. Experience 7–10 years of relevant experience in sales, business development, bids, tenders, proposals, or commercial management. Proven experience managing complex bids and proposals from opportunity identification through submission and award. Experience working with government, semi-government, large corporate, or project-based organizations is preferred. Experience leading cross-functional teams and managing multiple concurrent opportunities. Strong understanding of commerci",
+      "description": "Sales & Bids Manager opportunity at Confidential Government in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-bids-manager-at-confidential-government-4474113817",
       "date": "2026-10-01T00:00:00.000Z",
       "dateLabel": "01 Oct 2026"
@@ -1030,7 +1041,7 @@
       "title": "Learning Area Manager (Saudi Nationals Only), Learning & Development",
       "company": "Amazon",
       "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "Description About Amazon: At Amazon we believe that every day is still day one. A day to take a first step. A day to look forwards to new challenges. Today is that day for you. It's your day to be part of something great. A day to make your ideas come to life. And your day to join a company that redefines itself every day. That's the energy and passion behind Amazon. We're working to be the most customer-centric company on earth. To get there, we need exceptionally talented, bright and driven people. Our overall mission is simple: We want Amazon to be the place where our customers can find, discover and buy anything online. Whatever our customers want, we will find the means to deliver it. Our Fulfillment Centers are at the heart of Amazon’s world-class and rapidly growing network. They’re where we manage our customers’ orders using industry-leading workflows. This is how we delight our customers! With your help, Amazon will continue to enable people to discover new worlds. This is your chance to make history. About The Role \"Due to government regulations, this position is open only to Saudi nationals.\" The Learning Area Manager is an active member of the Fulfillment Center Operations Learning team, driving and supporting network-wide initiatives. Successful candidates will have a creative, true hands-on approach to execute the day to day actions ensuring daily and weekly compliance is met and data-driven, analytical thinking skills. In addition, effective presentation and persuasion skills are a must. This role requires the ability to influence without authority. Furthermore, the role will partner very closely with Operations and there will be a requirement to understand the warehouse process operation. Execution skills are a must in being able to deliver daily coaching to support the development of our warehouse associates. The role will be based in our Fulfillment Center, in a fast-paced consumer goods environment. The Learning Area Manager Will Actively manage a team of Learning Associates including their deployment, development and productivity. Ensure that the work of the team and individuals is continually aligned to meet internal customer’s needs. Act as a proactive and productive liaison/partner with the corporate department consistently seeking to make a positive impact on key business safety, quality, productivity, and customer experience metrics. Below is not a conclusive list of tasks and is not intended to cover a comprehensive listing of duties or responsibilities. Duties, responsibilities and activities may change, and sometime new ones m",
+      "description": "Learning Area Manager (Saudi Nationals Only), Learning & Development opportunity at Amazon in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/learning-area-manager-saudi-nationals-only-learning-development-at-amazon-4455798198",
       "date": "2026-10-01T00:00:00.000Z",
       "dateLabel": "01 Oct 2026"
@@ -1043,6 +1054,28 @@
       "location": "Riyadh Region",
       "description": "Business Development Manager - (Academy ) - Riyadh opportunity at TÜV SÜD in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/business-development-manager-academy-riyadh-at-t%C3%BCv-s%C3%BCd-4472929984",
+      "date": "2026-10-01T00:00:00.000Z",
+      "dateLabel": "01 Oct 2026"
+    },
+    {
+      "id": "linkedin:4472564111",
+      "source": "linkedin",
+      "title": "Manager, program development and accreditation (1251)",
+      "company": "Team Saudi",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Manager, program development and accreditation (1251) opportunity at Team Saudi in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/manager-program-development-and-accreditation-1251-at-team-saudi-4472564111",
+      "date": "2026-10-01T00:00:00.000Z",
+      "dateLabel": "01 Oct 2026"
+    },
+    {
+      "id": "linkedin:4472529453",
+      "source": "linkedin",
+      "title": "Manager - Sales (Medina)",
+      "company": "TBO.COM",
+      "location": "Medina, Al Madinah, Saudi Arabia",
+      "description": "Manager - Sales (Medina) opportunity at TBO.COM in Medina, Al Madinah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/manager-sales-medina-at-tbo-com-4472529453",
       "date": "2026-10-01T00:00:00.000Z",
       "dateLabel": "01 Oct 2026"
     },
@@ -1173,7 +1206,7 @@
       "title": "Excavator Sales Manager",
       "company": "SANY Saudi Arabia",
       "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "SANY Saudi Arabia is Hiring – Excavator Sales Manager Work Location: Jeddah, Saudi Arabia 💼 Position: Excavator Sales Manager 🎓 Education: Bachelor’s Degree 🏢 Company: SANY Saudi Arabia 📌 Key Responsibilities Lead and drive excavator sales activities across the Western Region of Saudi Arabia . Develop and maintain strong relationships with customers, contractors, dealers, and key accounts . Achieve and exceed assigned sales targets through proactive market development and business expansion . Monitor market trends, competitor activities, customer requirements, and identify new business opportunities. Develop and implement effective sales strategies to increase excavator market share and sales performance . Coordinate closely with internal teams to ensure smooth order execution, delivery, and customer satisfaction . Maintain a strong sales pipeline and provide regular updates on market activities and business opportunities. 🎯 Requirements Bachelor’s degree in business administration , Engineering, Marketing, or a related field. Minimum 8 years of relevant experience in the construction machinery industry , with strong experience in excavator sales . Proven track record of achieving or exceeding sales targets . Strong understanding of the Saudi Arabian construction equipment market , particularly the Western Region. Excellent customer relationship management, negotiation, and business development skills. Ability to work effectively under pressure and meet challenging business objectives. Native Arabic speaker with fluent English communication skills. Flexible and willing to undertake frequent business travel and internal transfers as required. 📩 How to Apply Interested candidates are invited to send their updated CV to: 📧 nizamuddins@sanygroup.com Email Subject: Excavator Sales Manager – Jeddah",
+      "description": "Excavator Sales Manager opportunity at SANY Saudi Arabia in Jeddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/excavator-sales-manager-at-sany-saudi-arabia-4472134339",
       "date": "2026-09-30T00:00:00.000Z",
       "dateLabel": "30 Sept 2026"
@@ -1184,7 +1217,7 @@
       "title": "Excavator Sales Manager",
       "company": "SANY Saudi Arabia",
       "location": "Dammam, Eastern, Saudi Arabia",
-      "description": "SANY Saudi Arabia is Hiring – Excavator Sales Manager Work Location: Dammam, Saudi Arabia 💼 Position: Excavator Sales Manager 🏢 Company: SANY Saudi Arabia 📌 Key Responsibilities Lead and drive excavator sales activities across the Eastern Region of Saudi Arabia . Develop and maintain strong relationships with customers, contractors, dealers, and key accounts . Achieve and exceed assigned sales targets through proactive market development and business expansion . Monitor market trends, competitor activities, and customer requirements to identify new business opportunities . Develop and implement effective sales strategies to strengthen SANY’s excavator business and market presence . Coordinate closely with internal teams to ensure smooth order execution, delivery, and customer satisfaction . Maintain an active sales pipeline and provide regular updates on sales activities, market developments, and business opportunities. 🎯 Requirements Bachelor’s degree in business administration , Engineering, Marketing, or a related field is preferred. Minimum 8 years of experience in the construction machinery industry , with strong experience in excavator sales . Proven track record of consistently achieving or exceeding sales targets . Strong knowledge of the Saudi Arabian construction equipment market , particularly the Eastern Region. Excellent sales, negotiation, customer relationship management, and business development skills . Ability to work effectively under pressure and meet challenging sales objectives. Native Arabic speaker with fluent English communication skills . Flexible and willing to undertake frequent business travel and internal transfers as required. 📩 How to Apply Interested candidates are invited to send their updated CV to: 📧 nizamuddins@sanygroup.com Email Subject: Excavator Sales Manager – Dammam",
+      "description": "Excavator Sales Manager opportunity at SANY Saudi Arabia in Dammam, Eastern, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/excavator-sales-manager-at-sany-saudi-arabia-4472125647",
       "date": "2026-09-30T00:00:00.000Z",
       "dateLabel": "30 Sept 2026"
@@ -1230,6 +1263,28 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Business Development Manager - KSA opportunity at BIC in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/business-development-manager-ksa-at-bic-4473569978",
+      "date": "2026-09-30T00:00:00.000Z",
+      "dateLabel": "30 Sept 2026"
+    },
+    {
+      "id": "linkedin:4471382400",
+      "source": "linkedin",
+      "title": "Area Manager (Watches & Jewelry) - KSA Jeddah",
+      "company": "Trafalgar Luxury Group",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "Area Manager is responsible for aligning the strategies and policies set by the country manager to ensure that the retail operations meet their goals in line with the organizational and business requirements. In addition to ensuring that retail operations meet their financial goals, customer service standards, increasing sales, managing budgets, ensuring customer and employee satisfaction Duties and Essential Job Functions Management: Provides focus and a sense of direction for retail employees. Ensure enforcement and adaptation of corporate values and vision. Maintain, enforce, and carry out the retail goals, policies, and procedures. Manage general activities related to providing the organizational services. Consult with other executives, staff, and team members about general operations and administrative activities. Direct and manage the retail’s financial and budgetary activities under their authority. Analyze financial statements, reports, and other performance indicators and provide the necessary feedback and recommendations. Identify areas of raising efficiency and effectiveness and to improve performance, policies, and programs. Monitor, control and approve capital and non-capital expenditures as related to their area of concern. Endeavor to develop and succeed in maintaining appropriate company image that strives towards excellence in satisfying customers. Develop quantified M.B.O. plans for the direct subordinates and ensure that the process propagates through all levels in line with the respective country management Technical: Conduct managers quarterly review process in conjunction with retail management. Ensure all SBU’s have the correct staffing structures based upon sales performance and allocated budgets. Liaise with managers to optimize stock allocations to maximize sales potential. To maintain viable and healthy relations with strategic accounts, business partners, official entities, financial institutions, and government bodies. Provide operational guidance to accelerate the development of the company’s growth and expansion plans as per the budget. Direct administrative activities related to products or providing services. Advice on pricing, based on forecasts of customer demand and the overall budget and management. Support in developing and implementing product-marketing strategies. Plan or direct activities, such as sales promotions, that require coordination with other departments. Develop and implement innovative brand strategies that differentiate company value proposition from competitors while ensuring the business goals align ",
+      "url": "https://sa.linkedin.com/jobs/view/area-manager-watches-jewelry-ksa-jeddah-at-trafalgar-luxury-group-4471382400",
+      "date": "2026-09-30T00:00:00.000Z",
+      "dateLabel": "30 Sept 2026"
+    },
+    {
+      "id": "linkedin:4472156499",
+      "source": "linkedin",
+      "title": "Head Organization Development",
+      "company": "National Medical Care",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Head Organization Development opportunity at National Medical Care in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/head-organization-development-at-national-medical-care-4472156499",
       "date": "2026-09-30T00:00:00.000Z",
       "dateLabel": "30 Sept 2026"
     },
@@ -1285,28 +1340,6 @@
       "location": "Khamīs Mushayţ, 'Asir, Saudi Arabia",
       "description": "Team Leader, Showroom Sales | EXA Ceramics opportunity at alfanar in Khamīs Mushayţ, 'Asir, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/team-leader-showroom-sales-exa-ceramics-at-alfanar-4473739273",
-      "date": "2026-09-30T00:00:00.000Z",
-      "dateLabel": "30 Sept 2026"
-    },
-    {
-      "id": "linkedin:4471382400",
-      "source": "linkedin",
-      "title": "Area Manager (Watches & Jewelry) - KSA Jeddah",
-      "company": "Trafalgar Luxury Group",
-      "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "Area Manager (Watches & Jewelry) - KSA Jeddah opportunity at Trafalgar Luxury Group in Jeddah, Makkah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/area-manager-watches-jewelry-ksa-jeddah-at-trafalgar-luxury-group-4471382400",
-      "date": "2026-09-30T00:00:00.000Z",
-      "dateLabel": "30 Sept 2026"
-    },
-    {
-      "id": "linkedin:4472156499",
-      "source": "linkedin",
-      "title": "Head Organization Development",
-      "company": "National Medical Care",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Head Organization Development opportunity at National Medical Care in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/head-organization-development-at-national-medical-care-4472156499",
       "date": "2026-09-30T00:00:00.000Z",
       "dateLabel": "30 Sept 2026"
     },
@@ -1448,7 +1481,7 @@
       "title": "Area Sales Manager-Middle East",
       "company": "REJOIN Medical Device Co., Ltd.",
       "location": "Saudi Arabia",
-      "description": "****An English version resume is required**** About the Role The International Area Sales Manager is a core strategic role driving the company's international business expansion. This position is responsible for achieving regional sales targets, building and managing channel networks, and maintaining key customer relationships in assigned territories. The ideal candidate possesses deep expertise in sports medicine/minimally invasive orthopedics, proven distributor management capabilities, and strong cross-cultural business acumen. Reporting Line: Regional Sales Manager Location: Saudi Arabia Area: Saudi Arabia, Kuwait, Qatar and Bahrain Responsibilities Sales Target Achievement: Based on the regional sales strategy, develop area sales plans and independently achieve regional sales targets and product volume objectives. Distributor Development & Management: Independently develop new distributor partners within the region and expand existing channel resources; manage day-to-day distributor collaboration, promptly capture distributor operational dynamics and report to superiors; provide background research and analysis reports for distributor selection, retention, and elimination decisions. Customer Relationship Management, Academic Support, Sales Support & Business Execution: Develop and maintain relationships with clinical KOLs and key hospital customers in the region; provide professional consultation on sports medicine products, surgical technique support, and solutions; assist distributors in bidding and quotation processes; complete product demonstrations, proposal development, contract negotiations, and other full-cycle sales activities to drive end-point sales execution. Market Intelligence Collection & Feedback, and Registration/Market Access Support: Conduct in-depth research on competitive dynamics, market trends, clinical needs, and policy/regulatory changes within the region; collect market share data, competitor commercial activities, and customer product feedback; produce analytical reports for management; assist the registration department with product registration and market access-related support work in the region. Marketing Activity Execution: Collaborate with HQ Marketing and the regional office to execute regional exhibitions, academic conferences, department meetings, and other marketing promotion activities; complete product display and brand promotion-related tasks. Compliance & Administrative Work: Comply with company compliance policies and local industry regulations; complete monthly sales reports, financial demand forecasts, CRM",
+      "description": "Area Sales Manager-Middle East opportunity at REJOIN Medical Device Co., Ltd. in Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/area-sales-manager-middle-east-at-rejoin-medical-device-co-ltd-4473232216",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
@@ -1459,7 +1492,7 @@
       "title": "Sales Supervisor FS - Dammam",
       "company": "MBRF",
       "location": "Dammam, Eastern, Saudi Arabia",
-      "description": "How about building your career at one of the world’s largest food companies? Come work at MBRF , a company present in the lives of thousands of families around the world. From the simplest moments to the most special ones, we nourish life through quality, innovation, and the people who make everything happen. What will you be doing at MBRF? Lead and develop a team of Sales Executives, providing clear direction, coaching and training to drive individual and team performance Own the overall performance of the Food Service channel and drive the achievement of sales targets across the assigned region Plan and optimize sales routes, conduct regular market visits with the team and maintain visit records to track execution and employee development Manage regional accounts and build strong customer relationships to support sustainable business growth and excellent customer service Analyze sales performance, including forecasting, regression and cannibalization, and turn insights into actions that support commercial decisions Plan and execute weekly product promotions, BDA and other channel activities while ensuring effective communication of price changes internally and externally Work closely with Merchandising to improve execution, maximize merchandiser productivity and strengthen shelf share across relevant markets Monitor NTEs and damages to ensure they remain within budget, while identifying opportunities to maximize commercial benefits at the lowest possible cost Regularly assess team performance, identify development needs and follow up on individual development plans Collaborate closely with Trade Marketing, Key Account Development, Sales Excellence, Finance, IT and Logistics to ensure smooth and effective commercial execution Ensure the team operates in line with company policies, HSE standards, food safety requirements and applicable procedures What kind of profile are we looking for? Bachelor’s degree in Business Administration or a related administrative field 3–5 years of experience in the retail/sales channel as a Sales Executive Good command of English, both written and spoken Good knowledge of Microsoft Office and ability to prepare and maintain weekly and monthly reports Familiarity with ERP systems What competencies are key to this role? Strong leadership and people development skills, with the ability to coach and motivate a sales team Strong communication, negotiation and customer relationship skills Commercial and analytical mindset with a strong focus on sales performance and results Good planning, organization and problem-solving skills Cu",
+      "description": "Sales Supervisor FS - Dammam opportunity at MBRF in Dammam, Eastern, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-fs-dammam-at-mbrf-4464343540",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
@@ -1470,7 +1503,7 @@
       "title": "Sales Supervisor",
       "company": "إنتاج | Entaj",
       "location": "Riyadh, Saudi Arabia",
-      "description": "We’re Hiring – Sales Supervisor! Since 2004, Entaj has grown into one of Saudi Arabia’s leading poultry producers, with an annual capacity of over 90 million birds and an ambitious plan to reach 185 million by 2026. Committed to food security and sustainability, Entaj continues to deliver high-quality poultry products using world-class, environmentally friendly technologies. Job Purpose To supervise and support the sales team within the assigned territory, ensuring the achievement of sales targets, effective customer coverage, strong market presence, and high standards of customer service. The role is responsible for executing sales strategies, monitoring team performance, developing customer relationships, and providing market insights to drive sustainable sales growth. Responsibilities Supervise the daily activities of the sales team within the assigned territory to ensure achievement of sales targets, route plans, and customer coverage objectives. Execute approved sales strategies and promotional campaigns to maximize product availability, market penetration, and revenue generation. Monitor key sales performance indicators, including volume, revenue, customer coverage, and product mix, and provide regular feedback and coaching to sales representatives. Maintain strong relationships with key customers and distributors to support customer retention, resolve operational issues, and ensure service excellence. Ensure accurate and timely reporting of sales activities, customer data, and market intelligence through CRM systems and internal reporting tools. Coordinate with Supply Chain, Logistics, and Finance teams to resolve order fulfillment issues, stock availability challenges, and credit-related matters. Identify market trends, competitor activities, and new sales opportunities, providing relevant insights and recommendations to the Sales Manager. Ensure compliance with company policies, pricing guidelines, trade terms, and ethical sales practices. Qualifications: Bachelor’s degree in business administration, or a related field. Experience: 1–3 years of experience in sales, preferably within the FMCG, food, poultry, or related industry. Skills: Excellent communication, negotiation, and customer relationship management skills. Sales performance management and target achievement. Customer relationship management and negotiation skills. Team supervision, coaching, and performance development. Sales reporting, data analysis, and forecasting. Strong problem-solving and operational coordination capabilities. Ability to work effectively in a fast-paced, target-",
+      "description": "Sales Supervisor opportunity at إنتاج | Entaj in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-at-%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-entaj-4471721808",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
@@ -1481,7 +1514,7 @@
       "title": "Sales Manager",
       "company": "GAC Group",
       "location": "Riyadh Region",
-      "description": "Job Description We want you in our team! We are looking for an experienced Sales Manager to join our team in Riyadh. You will lead our sales team and grow our logistics and freight forwarding business across Saudi Arabia. Location: Preferably Riyadh, KSA. (Candidates from other locations within KSA may also be considered) What will your day at GAC look like? As Sales Manager, you will lead and develop the sales team and grow our business across Saudi Arabia. You will expand our customer base, strengthen relationships with key customers, and deliver sustainable revenue and gross profit growth across our logistics and freight forwarding services. Key Responsibilities Lead, coach, and develop the sales team, set clear targets, and hold team members accountable for their performance. Secure new business and develop existing customer relationships across Saudi Arabia. Identify, pursue, and secure opportunities in freight forwarding, project logistics, and integrated logistics services. Manage commercial activities for project cargo, breakbulk, heavy lift and out-of-gauge shipments in collaboration with operational teams. Prepare and manage requests for quotation, tenders, pricing proposals, customer presentations, and contract negotiations. Manage the sales pipeline, prepare account plans, and provide regular sales forecasts and performance reports. Ensure compliance with company policies, approval processes, credit requirements and operational procedures. Deliver revenue and gross profit targets to drive sustainable business growth. Job Requirements What are we looking for? Candidate Requirement Saudi national Education Bachelor's degree in Business Administration, Logistics, Supply Chain Management, Marketing or a related discipline. Experience Five to ten years of sales experience in logistics and freight forwarding. At least three years of experience leading or managing a sales team. A strong record of securing new business and developing key customer accounts in Saudi Arabia. Experience in a multinational organization is highly preferred. Technical & Industry Knowledge Strong knowledge of air freight, sea freight, road transportation, warehousing, and integrated logistics services. Experience handling project cargo, breakbulk, heavy lift and out-of-gauge shipments. Good understanding of Saudi customs clearance processes, import/export documentation, bonded cargo and transit movements. Experience serving customers within oil & gas, energy, EPC, construction, industrial and manufacturing sectors is an advantage. Proven experience achieving revenue and gros",
+      "description": "Sales Manager opportunity at GAC Group in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-gac-group-4471743643",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
@@ -1498,24 +1531,24 @@
       "dateLabel": "29 Sept 2026"
     },
     {
+      "id": "linkedin:4473269036",
+      "source": "linkedin",
+      "title": "GUCCI Store Manager",
+      "company": "Gucci",
+      "location": "Jeddah, Makkah, Saudi Arabia",
+      "description": "GUCCI Store Manager opportunity at Gucci in Jeddah, Makkah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/gucci-store-manager-at-gucci-4473269036",
+      "date": "2026-09-29T00:00:00.000Z",
+      "dateLabel": "29 Sept 2026"
+    },
+    {
       "id": "linkedin:4464351451",
       "source": "linkedin",
       "title": "Sales Supervisor FS - Riyadh",
       "company": "MBRF",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "How about building your career at one of the world’s largest food companies? Come work at MBRF , a company present in the lives of thousands of families around the world. From the simplest moments to the most special ones, we nourish life through quality, innovation, and the people who make everything happen. What will you be doing at MBRF? Lead and develop a team of Sales Executives, providing clear direction, coaching and training to drive individual and team performance Own the overall performance of the Food Service channel and drive the achievement of sales targets across the assigned region Plan and optimize sales routes, conduct regular market visits with the team and maintain visit records to track execution and employee development Manage regional accounts and build strong customer relationships to support sustainable business growth and excellent customer service Analyze sales performance, including forecasting, regression and cannibalization, and turn insights into actions that support commercial decisions Plan and execute weekly product promotions, BDA and other channel activities while ensuring effective communication of price changes internally and externally Work closely with Merchandising to improve execution, maximize merchandiser productivity and strengthen shelf share across relevant markets Monitor NTEs and damages to ensure they remain within budget, while identifying opportunities to maximize commercial benefits at the lowest possible cost Regularly assess team performance, identify development needs and follow up on individual development plans Collaborate closely with Trade Marketing, Key Account Development, Sales Excellence, Finance, IT and Logistics to ensure smooth and effective commercial execution Ensure the team operates in line with company policies, HSE standards, food safety requirements and applicable procedures What kind of profile are we looking for? Bachelor’s degree in Business Administration or a related administrative field 3–5 years of experience in the retail/sales channel as a Sales Executive Good command of English, both written and spoken Good knowledge of Microsoft Office and ability to prepare and maintain weekly and monthly reports Familiarity with ERP systems What competencies are key to this role? Strong leadership and people development skills, with the ability to coach and motivate a sales team Strong communication, negotiation and customer relationship skills Commercial and analytical mindset with a strong focus on sales performance and results Good planning, organization and problem-solving skills Cu",
+      "description": "Sales Supervisor FS - Riyadh opportunity at MBRF in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-supervisor-fs-riyadh-at-mbrf-4464351451",
-      "date": "2026-09-29T00:00:00.000Z",
-      "dateLabel": "29 Sept 2026"
-    },
-    {
-      "id": "linkedin:4473201190",
-      "source": "linkedin",
-      "title": "Store Manager",
-      "company": "Initial Facilities Management",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Store Manager opportunity at Initial Facilities Management in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-initial-facilities-management-4473201190",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
     },
@@ -1531,13 +1564,46 @@
       "dateLabel": "29 Sept 2026"
     },
     {
-      "id": "linkedin:4473269036",
+      "id": "linkedin:4464388871",
       "source": "linkedin",
-      "title": "GUCCI Store Manager",
-      "company": "Gucci",
-      "location": "Jeddah, Makkah, Saudi Arabia",
-      "description": "GUCCI Store Manager opportunity at Gucci in Jeddah, Makkah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/gucci-store-manager-at-gucci-4473269036",
+      "title": "Learning Business Partner (Saudi Nationals Only), Fulfillment Center",
+      "company": "Amazon",
+      "location": "Jiddah, Makkah, Saudi Arabia",
+      "description": "Learning Business Partner (Saudi Nationals Only), Fulfillment Center opportunity at Amazon in Jiddah, Makkah, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/learning-business-partner-saudi-nationals-only-fulfillment-center-at-amazon-4464388871",
+      "date": "2026-09-29T00:00:00.000Z",
+      "dateLabel": "29 Sept 2026"
+    },
+    {
+      "id": "linkedin:4471269897",
+      "source": "linkedin",
+      "title": "Organizational Development",
+      "company": "Confidential",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Organizational Development opportunity at Confidential in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/organizational-development-at-confidential-4471269897",
+      "date": "2026-09-29T00:00:00.000Z",
+      "dateLabel": "29 Sept 2026"
+    },
+    {
+      "id": "linkedin:4473233896",
+      "source": "linkedin",
+      "title": "Area Manager, Fulfillment Center Operations",
+      "company": "Amazon",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Area Manager, Fulfillment Center Operations opportunity at Amazon in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/area-manager-fulfillment-center-operations-at-amazon-4473233896",
+      "date": "2026-09-29T00:00:00.000Z",
+      "dateLabel": "29 Sept 2026"
+    },
+    {
+      "id": "linkedin:4473201190",
+      "source": "linkedin",
+      "title": "Store Manager",
+      "company": "Initial Facilities Management",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Store Manager opportunity at Initial Facilities Management in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/store-manager-at-initial-facilities-management-4473201190",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
     },
@@ -1549,17 +1615,6 @@
       "location": "Jiddah, Makkah, Saudi Arabia",
       "description": "Store Manager - Jeddah مدير معرض جده opportunity at adidas in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/store-manager-jeddah-%D9%85%D8%AF%D9%8A%D8%B1-%D9%85%D8%B9%D8%B1%D8%B6-%D8%AC%D8%AF%D9%87-at-adidas-4471748570",
-      "date": "2026-09-29T00:00:00.000Z",
-      "dateLabel": "29 Sept 2026"
-    },
-    {
-      "id": "linkedin:4464388871",
-      "source": "linkedin",
-      "title": "Learning Business Partner (Saudi Nationals Only), Fulfillment Center",
-      "company": "Amazon",
-      "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "Learning Business Partner (Saudi Nationals Only), Fulfillment Center opportunity at Amazon in Jiddah, Makkah, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/learning-business-partner-saudi-nationals-only-fulfillment-center-at-amazon-4464388871",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
     },
@@ -1619,17 +1674,6 @@
       "dateLabel": "29 Sept 2026"
     },
     {
-      "id": "linkedin:4473233896",
-      "source": "linkedin",
-      "title": "Area Manager, Fulfillment Center Operations",
-      "company": "Amazon",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Description When you join Amazon as an Area Manager, you’ll gain experience leading a large and diverse team to make sure your area of the business keeps pace with demand. In this hands-on role, you’ll learn about the complexity of operations at a global business and what it takes to make everything run seamlessly. While you implement your team’s approach to drive productivity, you’ll also work closely with your colleagues to address challenges, which means no two days will be the same. Key job responsibilities Promote a culture of safety and wellbeing Analyse and implement corrective actions to make sure quality and productivity are at consistently high levels, and business objectives are met across all shifts Support and lead a team and handle administrative work alongside building and supporting a strong team culture Analyse performance and suggest process improvements to optimise work and improve customer service Collaborate with other managers to standardise shift processes A day in the life You’ll work shifts and be based at one of our operational sites. Your main focus will be to maintain safety standards within your team and across your site. You’ll also monitor and maintain process efficiency. Your days will always include prioritising routine team management and daily operational tasks, alongside other tasks like individual escalations, process improvement work and wide-scale operational contingency planning. Being a key part of the operations team involves working with colleagues in other teams and external partners to make sure we stay on track to meet our customer demands and targets. This will involve analysing data and performance metrics with leaders in your business area, as well as discussing the operational pros and cons of technical improvements with engineers. Basic Qualifications 2+ years of employee and performance management experience Bachelor's degree or equivalent, or 2+ years of Amazon (blue badge/FTE) experience Work a flexible schedule/shift/work area, including weekends, nights, and/or holidays Preferred Qualifications 1+ years of performance metrics, process improvement or lean techniques experience Our inclusive culture empowers Amazonians to deliver the best results for our customers. If you have a disability and need a workplace accommodation or adjustment during the application and hiring process, including support for the interview or onboarding process, please visit https://amazon.jobs/content/en/how-we-hire/accommodations for more information. If the country/region you’re applying in isn’t listed, please contact you",
-      "url": "https://sa.linkedin.com/jobs/view/area-manager-fulfillment-center-operations-at-amazon-4473233896",
-      "date": "2026-09-29T00:00:00.000Z",
-      "dateLabel": "29 Sept 2026"
-    },
-    {
       "id": "linkedin:4473259537",
       "source": "linkedin",
       "title": "Sales Team Lead-JIS150519",
@@ -1659,17 +1703,6 @@
       "location": "Riyadh Region",
       "description": "Fleet and Tahreez - Assistant Field Operations Manager - Gravity opportunity at Alturki Holding in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/fleet-and-tahreez-assistant-field-operations-manager-gravity-at-alturki-holding-4471913114",
-      "date": "2026-09-29T00:00:00.000Z",
-      "dateLabel": "29 Sept 2026"
-    },
-    {
-      "id": "linkedin:4471269897",
-      "source": "linkedin",
-      "title": "Organizational Development",
-      "company": "Confidential",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Organizational Development opportunity at Confidential in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/organizational-development-at-confidential-4471269897",
       "date": "2026-09-29T00:00:00.000Z",
       "dateLabel": "29 Sept 2026"
     },
@@ -1729,17 +1762,6 @@
       "dateLabel": "29 Sept 2026"
     },
     {
-      "id": "linkedin:4472767250",
-      "source": "linkedin",
-      "title": "Cluster Sales Manager",
-      "company": "Hilton",
-      "location": "Saudi Arabia",
-      "description": "Cluster Sales Manager opportunity at Hilton in Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/cluster-sales-manager-at-hilton-4472767250",
-      "date": "2026-09-28T00:00:00.000Z",
-      "dateLabel": "28 Sept 2026"
-    },
-    {
       "id": "linkedin:4466674571",
       "source": "linkedin",
       "title": "Portfolio Sales Professional",
@@ -1767,7 +1789,7 @@
       "title": "Sales Manager",
       "company": "Mada Properties | KSA",
       "location": "Riyadh, Saudi Arabia",
-      "description": "We are seeking a results-driven and energetic Sales Manager to lead our sales division in Riyadh. In this role, you will oversee day-to-day sales operations, lead and motivate a high-performing team of sales agents, develop robust sales strategies, and consistently achieve aggressive revenue targets. You will play a vital role in engaging key clients, negotiating high-value contracts, and collaborating cross-functionally to drive overall business expansion. Key Responsibilities Team Leadership & Motivation: Lead, mentor, and manage a sales team of at least 5 sales agents, fostering a collaborative, high-energy, and goal-oriented culture. Daily Activity Management: Establish, monitor, and follow up on daily sales activities, KPIs, pipeline progress, and outreach metrics to ensure consistent productivity. Strategy Execution: Develop and execute comprehensive sales strategies aligned with company objectives to capture market share and hit regional sales targets. Client Engagement & Negotiation: Engage directly with prospective clients and strategic partners, leading contract negotiations to close high-value real estate deals successfully. Cross-Functional Collaboration: Partner closely with marketing, operations, and management departments to streamline the customer journey and optimize sales conversion funnels. Performance Reporting: Track market trends, analyze sales data, and report regularly on performance metrics and forecasting to senior management. Qualifications & Requirements Experience: Minimum of 5 years of total sales experience, with at least 2 years in a dedicated managerial role (Real estate sector experience is strongly preferred). Team Leadership Track Record: Demonstrated history of successfully leading a sales team of at least 5 sales agents, driving motivation, and managing daily operational workflows. Education: Bachelor’s degree in Business Administration, Marketing, or a related field. Languages: Proficiency in both Arabic and English (Fluency preferred). Core Skills: Exceptional sales management, team management, and strategic planning skills. Strong Customer Relationship Management (CRM) and high-level negotiation abilities. Excellent verbal and written communication and interpersonal skills. Ability to thrive, multitask, and deliver results in a fast-paced, dynamic environment.",
+      "description": "Sales Manager opportunity at Mada Properties | KSA in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-mada-properties-ksa-4471373730",
       "date": "2026-09-28T00:00:00.000Z",
       "dateLabel": "28 Sept 2026"
@@ -1795,6 +1817,17 @@
       "dateLabel": "28 Sept 2026"
     },
     {
+      "id": "linkedin:4471560092",
+      "source": "linkedin",
+      "title": "Cluster Sales Manager – MICE - Saudi National",
+      "company": "St. Regis Hotels & Resorts",
+      "location": "Saudi Arabia",
+      "description": "Cluster Sales Manager – MICE - Saudi National opportunity at St. Regis Hotels & Resorts in Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/cluster-sales-manager-%E2%80%93-mice-saudi-national-at-st-regis-hotels-resorts-4471560092",
+      "date": "2026-09-28T00:00:00.000Z",
+      "dateLabel": "28 Sept 2026"
+    },
+    {
       "id": "linkedin:4409021759",
       "source": "linkedin",
       "title": "Sales Supervisor | Al-Futtaim Automotive - BYD | KSA",
@@ -1817,6 +1850,17 @@
       "dateLabel": "28 Sept 2026"
     },
     {
+      "id": "linkedin:4472767250",
+      "source": "linkedin",
+      "title": "Cluster Sales Manager",
+      "company": "Hilton",
+      "location": "Saudi Arabia",
+      "description": "Cluster Sales Manager opportunity at Hilton in Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/cluster-sales-manager-at-hilton-4472767250",
+      "date": "2026-09-28T00:00:00.000Z",
+      "dateLabel": "28 Sept 2026"
+    },
+    {
       "id": "linkedin:4472727896",
       "source": "linkedin",
       "title": "General Sales Manager (FMCG)",
@@ -1824,17 +1868,6 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Rgheeb is looking for an ambitious and experienced General Sales Manager to lead our sales team and drive revenue growth across our diverse product offerings. In this critical role, you will be responsible for developing and executing sales strategies that maximize performance and profitability. You will oversee the sales operations, manage the sales team, and foster a results-oriented culture while ensuring customer satisfaction. The ideal candidate will have a proven track record in sales management, excellent leadership abilities, and a strong understanding of market dynamics. Join Rgheeb to make a significant impact on our sales success! Responsibilities Develop and implement comprehensive sales strategies to achieve company revenue targets. Lead, mentor, and motivate the sales team to meet and exceed sales goals. Analyze market trends and sales metrics to identify growth opportunities. Manage key client relationships and negotiate contracts to maximize profitability. Collaborate with marketing teams to align sales initiatives with promotional efforts. Prepare and present sales forecasts and performance reports to senior management. Conduct regular performance reviews and development plans for sales personnel. Oversee the recruitment and training of new sales staff. Implement best practices and streamline sales processes for operational efficiency. Requirements Proven experience as a General Sales Manager or in a similar sales leadership role. Strong understanding of sales principles and customer relationship management. Exceptional leadership, coaching, and team-building skills. Excellent communication, negotiation, and analytical skills. Demonstrated ability to develop and execute sales strategies successfully. Proficient in CRM software and Microsoft Office Suite. Bachelor's degree in Business Administration, Marketing, or related field is preferred.",
       "url": "https://sa.linkedin.com/jobs/view/general-sales-manager-fmcg-at-rgheeb-%D8%B1%D8%BA%D9%8A%D8%A8-4472727896",
-      "date": "2026-09-28T00:00:00.000Z",
-      "dateLabel": "28 Sept 2026"
-    },
-    {
-      "id": "linkedin:4471560092",
-      "source": "linkedin",
-      "title": "Cluster Sales Manager – MICE - Saudi National",
-      "company": "St. Regis Hotels & Resorts",
-      "location": "Saudi Arabia",
-      "description": "Cluster Sales Manager – MICE - Saudi National opportunity at St. Regis Hotels & Resorts in Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/cluster-sales-manager-%E2%80%93-mice-saudi-national-at-st-regis-hotels-resorts-4471560092",
       "date": "2026-09-28T00:00:00.000Z",
       "dateLabel": "28 Sept 2026"
     },
@@ -1921,7 +1954,7 @@
       "title": "Sales Manager (EBC)",
       "company": "Marriott International",
       "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Sales Manager (EBC) opportunity at Marriott International in Riyadh, Riyadh, Saudi Arabia.",
+      "description": "Additional Information Job Number 26124846 Job Category Sales & Marketing Location King Fahad Road, Sahafah District, Riyadh 13315, Saudi ArabiaVIEW ON MAP Schedule Full Time Located Remotely? N Position Type Management Job Summary Leads and manages activities related to the sales functions for properties within region with a focus on building long-term, value-based customer relationships that enable achievement of property sales objectives. Achieves personal booking goals and makes recommendations on booking goals of direct reports. CANDIDATE PROFILE Education And Experience 2-year degree from an accredited university in Business Administration, Marketing, Hotel and Restaurant Management, or related major; 3 years experience in the sales and marketing or related professional area. OR 4-year bachelor's degree in Business Administration, Marketing, Hotel and Restaurant Management, or related major; 1 year experience in the sales and marketing or related professional area. CORE WORK ACTIVITIES Driving Sales Opportunities to Maximize Revenue Conducts targeted account research to determine potential. Solicits and qualifies existing and new accounts whose business opportunities meet company criteria. Identifies, qualifies and solicits new group business to achieve personal revenue goals, while maintaining brand integrity. Understands competitors' strengths and weaknesses, and knows how to sell against them. Provides positive and aggressive leadership to ensure maximum revenue potential (e.g., sets example with personal booking goals). Recommends booking goals for sales team members for properties within region. Participates in sales calls with members of sales team to acquire new business and/or close on business. Executes and supports the operational aspects of business booked (e.g., generating proposal, writing contract, customer correspondence). Analyzing & Reporting on Sales and Financial Data Analyzes market information by using sales systems and implements strategy to achieve financial room and catering goals for each property. Assists Revenue Management with completing accurate six period projections. Reviews sales and catering guest satisfaction results to identify areas of improvement. Ensuring Exceptional Customer Service Displays leadership in guest hospitality, exemplifies customer service and creates a positive example for guest relations. Interacts with guests to obtain feedback on product quality and service levels. Meets with guests during pre- and post-convention meetings to obtain feedback on quality of product (e.g., rooms, meeting faciliti",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-ebc-at-marriott-international-4471306055",
       "date": "2026-09-27T00:00:00.000Z",
       "dateLabel": "27 Sept 2026"
@@ -1954,7 +1987,7 @@
       "title": "Brand Manager- F&B",
       "company": "Cenomi Retail",
       "location": "Riyadh, Saudi Arabia",
-      "description": "Overview: Founded in 1990 as Fawaz Alhokair Fashion Retail Co., Cenomi Retail has introduced more than 80 international retail and F&B brands to the Kingdom of Saudi Arabia. These include some of the world’s most loved including Zara, Mango, Aldo, Cinnabon, Subway and more. Cenomi Retail operates more than 1,600 stores across 100 shopping centers in 11 countries. We are dedicated to growth and breaking down boundaries to offer a truly unique brand partnership proposition. Position - Brand Manager Reporting To - Operations Director ROLE PURPOSE: To lead the assigned QSR brand as an end-to-end business, ensuring consistent brand standards, outstanding guest experience, disciplined day-to-day operations, capable and engaged teams, sustainable sales growth, and delivery of the approved profit and loss (P&L) plan. The Brand Manager is the primary point of contact between Cenomi Retail and the Brand Principal/Franchisor and is accountable for translating brand strategy into strong store-level execution across the market. 01 KEY ACCOUNTABILITIES Brand Principal & Stakeholder Management Act as the primary and accountable point of contact for the Brand Principal/Franchisor on all business matters, including operations, training, product, quality, marketing, development, supply chain, and financial performance. Own the governance rhythm with the Brand Principal, including business reviews, action trackers, performance updates, approvals, escalations, and closure of agreed actions. Translate franchise standards, strategic priorities, and brand initiatives into clear local execution plans while protecting brand identity and contractual obligations. Coordinate cross-functional stakeholders and ensure one aligned, accurate, and timely company response to the Brand Principal. Day-to-Day Operations Lead daily brand operations across all assigned restaurants and ensure safe, efficient, guest-focused execution during all trading periods. Establish and monitor operating routines covering opening and closing, staffing, production, service flow, order accuracy, speed of service, cleanliness, maintenance, delivery channels, cash controls, and shift management. Review performance dashboards and exception reports daily; identify gaps, assign corrective actions, and verify sustainable closure through store visits and follow-up. Partner with Area/Multi-Unit Managers to improve underperforming restaurants and replicate best practices across the network. Lead operational readiness for new restaurant openings, remodels, seasonal peaks, promotions, and major brand initiatives. P&L, C",
+      "description": "Brand Manager- F&B opportunity at Cenomi Retail in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/brand-manager-f-b-at-cenomi-retail-4472441481",
       "date": "2026-09-27T00:00:00.000Z",
       "dateLabel": "27 Sept 2026"
@@ -2141,7 +2174,7 @@
       "title": "Clinical Sales Representative/Manager",
       "company": "Jenscare Scientific Co., Ltd.",
       "location": "Saudi Arabia",
-      "description": "Position Overview Jenscare is seeking a field-based Sales& Clinical Manager to drive the commercial and clinical development of its product portfolio across the Middle East & Africa. Reporting to the EEMEA Commercial Leader, the role combines commercial responsibility with hands-on clinical support. The successful candidate will be responsible for developing markets, managing distributors and key accounts, supporting therapy adoption, building strong KOL relationships, and providing clinical and procedural support. Key Responsibilities Sales & Market Development Develop and execute territory business plans aligned with regional commercial objectives. Identify and develop new business opportunities, key accounts, and potential markets. Build and maintain strong relationships with KOLs,Interventional Cardiologists, Cardiac Surgeons, Echocardiographers, procurement teams, and hospital decision-makers. Manage and develop distributor relationships, including business planning, forecasting, performance follow-up, and commercial execution. Support commercial negotiations, pricing, tenders, and contracts. Maintain accurate sales forecasts, opportunity pipelines, and case projections. Monitor market trends,competitor activities, and emerging opportunities. Clinical & TherapyDevelopment Provide clinical and technical support during procedures involving Jenscare products. Support patient screening, case planning, devicepreparation, and procedural workflow. Collaborate with heart teams on anatomical assessment and relevant imaging, including CT and TEE. Deliver product and hands-on training to physicians, hospital teams, and distributors. Support KOL development, physician education, workshops, proctorship programs, congresses, and first-case activities. Support the development of reference centers and future case pipelines. Distributor & Cross-Functional Collaboration Work closely with local distributors to execute commercial and clinical action plans and drive sustainable business growth. Work closely with the EEMEA Commercial Leader, Therapy Promotion Team, Marketing, Clinical Affairs, and Business Operations. Collaborate with Regulatory Affairs,Quality, Finance, and other relevant functions as needed. Support reimbursement, regulatory, tender, and market access activities where required. Ensure all activities comply with company policies and applicable regulatory and ethical requirements. Qualifications Required Bachelor’s degree in Medicine, Biomedical Engineering, Nursing,or another relevant medical or clinical field. Minimum of 5 yearsof experience in the Med",
+      "description": "Clinical Sales Representative/Manager opportunity at Jenscare Scientific Co., Ltd. in Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/clinical-sales-representative-manager-at-jenscare-scientific-co-ltd-4470169099",
       "date": "2026-09-25T00:00:00.000Z",
       "dateLabel": "25 Sept 2026"
@@ -2279,17 +2312,6 @@
       "dateLabel": "25 Sept 2026"
     },
     {
-      "id": "linkedin:4471427961",
-      "source": "linkedin",
-      "title": "Senior Manager - International Defense Sales & Sustainment",
-      "company": "Collins Aerospace",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Senior Manager - International Defense Sales & Sustainment opportunity at Collins Aerospace in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/senior-manager-international-defense-sales-sustainment-at-collins-aerospace-4471427961",
-      "date": "2026-09-24T00:00:00.000Z",
-      "dateLabel": "24 Sept 2026"
-    },
-    {
       "id": "linkedin:4450197441",
       "source": "linkedin",
       "title": "Regional GCC Territory Manager NM",
@@ -2301,17 +2323,6 @@
       "dateLabel": "24 Sept 2026"
     },
     {
-      "id": "linkedin:4471461162",
-      "source": "linkedin",
-      "title": "Project Commercial Manager",
-      "company": "DataVolt",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Project Commercial Manager opportunity at DataVolt in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/project-commercial-manager-at-datavolt-4471461162",
-      "date": "2026-09-24T00:00:00.000Z",
-      "dateLabel": "24 Sept 2026"
-    },
-    {
       "id": "linkedin:4426228506",
       "source": "linkedin",
       "title": "Customer Development Manager",
@@ -2319,6 +2330,28 @@
       "location": "Jiddah, Makkah, Saudi Arabia",
       "description": "Customer Development Manager opportunity at Colgate-Palmolive in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/customer-development-manager-at-colgate-palmolive-4426228506",
+      "date": "2026-09-24T00:00:00.000Z",
+      "dateLabel": "24 Sept 2026"
+    },
+    {
+      "id": "linkedin:4471427961",
+      "source": "linkedin",
+      "title": "Senior Manager - International Defense Sales & Sustainment",
+      "company": "Collins Aerospace",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Senior Manager - International Defense Sales & Sustainment opportunity at Collins Aerospace in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/senior-manager-international-defense-sales-sustainment-at-collins-aerospace-4471427961",
+      "date": "2026-09-24T00:00:00.000Z",
+      "dateLabel": "24 Sept 2026"
+    },
+    {
+      "id": "linkedin:4471461162",
+      "source": "linkedin",
+      "title": "Project Commercial Manager",
+      "company": "DataVolt",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Project Commercial Manager opportunity at DataVolt in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/project-commercial-manager-at-datavolt-4471461162",
       "date": "2026-09-24T00:00:00.000Z",
       "dateLabel": "24 Sept 2026"
     },
@@ -2389,6 +2422,17 @@
       "dateLabel": "24 Sept 2026"
     },
     {
+      "id": "linkedin:4459974041",
+      "source": "linkedin",
+      "title": "Regional Sales Manager",
+      "company": "Palo Alto Networks",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "Regional Sales Manager opportunity at Palo Alto Networks in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/regional-sales-manager-at-palo-alto-networks-4459974041",
+      "date": "2026-09-23T00:00:00.000Z",
+      "dateLabel": "23 Sept 2026"
+    },
+    {
       "id": "linkedin:4459547502",
       "source": "linkedin",
       "title": "Marketplace/Retail Sr Coord",
@@ -2429,17 +2473,6 @@
       "location": "Riyadh, Saudi Arabia",
       "description": "Sales Manager (SDA / MDA) opportunity at Lobo Management in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-sda-mda-at-lobo-management-4469310562",
-      "date": "2026-09-23T00:00:00.000Z",
-      "dateLabel": "23 Sept 2026"
-    },
-    {
-      "id": "linkedin:4459974041",
-      "source": "linkedin",
-      "title": "Regional Sales Manager",
-      "company": "Palo Alto Networks",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Regional Sales Manager opportunity at Palo Alto Networks in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/regional-sales-manager-at-palo-alto-networks-4459974041",
       "date": "2026-09-23T00:00:00.000Z",
       "dateLabel": "23 Sept 2026"
     },
@@ -2504,7 +2537,7 @@
       "title": "Sales Manager",
       "company": "Taibah Gifts | هدايا طيبة",
       "location": "Mecca, Makkah, Saudi Arabia",
-      "description": "نبذة عن الشركة هدايا طيبة شركة سعودية رائدة في مجالها، تهتم بالهدايا التذكارية محليًا ودوليًا، وتهدف لتوفير كل ما يحتاجه زوار ومحبو الحرمين الشريفين والتراث السعودي. تتخذ من مكة المكرمة مقرًا لها. الغرض من الوظيفة قيادة نشاط المبيعات والعمليات التشغيلية لمنافذ هدايا طيبة في مكة المكرمة، بما يحقق مستهدفات الإيرادات والربحية، ويضمن انضباط التشغيل وجودة تجربة العميل — بما يليق بخدمة زوار الحرمين الشريفين. يرفع شاغل الوظيفة تقاريره إلى 【المدير العام】. المسؤوليات الرئيسية المبيعات وتنمية الأعمال وضع خطة المبيعات السنوية والشهرية وتوزيع المستهدفات على الفروع والفريق ومتابعة تحقيقها. تنمية قنوات البيع: منافذ التجزئة، المتجر الإلكتروني، حسابات الشركات والجهات، والطلبات الموسمية (رمضان، موسم الحج، العمرة، المناسبات الوطنية). بناء علاقات مع العملاء المؤسسيين 【الفنادق ومجموعات الضيافة / شركات ومؤسسات الحج والعمرة / الجهات الحكومية والشركات للهدايا المؤسسية】 وإبرام اتفاقيات التوريد. إدارة تشكيلة المنتجات بالتنسيق مع المشتريات: تحليل أداء الفئات (العطور، المصاحف، التمور، المجسمات…) وترشيد الأصناف الضعيفة وتعزيز الأعلى ربحية. تحليل أداء المبيعات ومعدلات التحويل ومتوسط قيمة الفاتورة ورفع تقارير دورية للإدارة. اقتراح العروض الترويجية وسياسات التسعير والخصومات ضمن الصلاحيات المعتمدة. التشغيل الإشراف على العمليات اليومية للمنافذ وضمان الالتزام بمعايير التشغيل ومستوى الخدمة. إدارة المخزون: التخطيط للطلبات، ضبط مستويات الأمان، تقليل الهالك والرواكد، والإشراف على الجرد الدوري — مع مراعاة حساسية المواسم (ذروة الحج ورمضان). التنسيق مع المشتريات والموردين محليًا ودوليًا لضمان توفر الأصناف بالجودة والسعر والوقت المناسب. متابعة تجهيز المعارض والعرض البصري للمنتجات بما يعكس هوية العلامة. ضمان الالتزام بالاشتراطات النظامية والبلدية وأنظمة الجهات الرقابية ذات العلاقة 【بما فيها اشتراطات الهيئة العامة للغذاء والدواء على أصناف التمور والعطور】. إدارة الفريق الإشراف على فريق المبيعات وموظفي المنافذ: التوظيف، الجدولة (بما يشمل جداول المواسم والذروة)، التدريب، وتقييم الأداء. بناء خطط تحفيز وعمولات ترفع الإنتاجية بالتنسيق مع إدارة الموارد البشرية. ترسيخ ثقافة الانضباط وخدمة العميل، وتدريب الفريق على التعامل مع العملاء متعددي الجنسيات. التقارير والتحكم إعداد تقارير الأداء (المبيعات، المخزون، المصروفات التشغيلية) ورفعها للإدارة. متابعة مؤشرات الأداء: نسبة تحقيق المستهدف، هامش الربح، معدل دوران المخزون، نسبة الهالك، رضا العملاء. الالتزام بالميزانية التشغيلية وضبط المصروفات. المؤهلات والخبرات المطلوبة بكالوريوس في إدارة الأعمال أو التسويق أو تخصص ذي علاقة. خبرة لا تقل عن 【8】 سنوات في المبيعات والتشغيل، منها 【4】 سنة في موقع إشرافي. خبرة في قطاع التجزئة أو الهدايا أو السلع الاستهلاكية 【تُفضّل الخبرة في سوق مكة المكرمة أو المنطقة المركزية】. إجادة أنظمة نقاط البيع وأنظمة تخطيط الموارد 【مثل: Odoo】 و",
+      "description": "Sales Manager opportunity at Taibah Gifts | هدايا طيبة in Mecca, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-taibah-gifts-%D9%87%D8%AF%D8%A7%D9%8A%D8%A7-%D8%B7%D9%8A%D8%A8%D8%A9-4468588433",
       "date": "2026-09-22T00:00:00.000Z",
       "dateLabel": "22 Sept 2026"
@@ -2526,7 +2559,7 @@
       "title": "Sales Manager - The Jeddah EDITION",
       "company": "EDITION",
       "location": "Jiddah, Makkah, Saudi Arabia",
-      "description": "Additional Information Job Number 26110326 Job Category Sales & Marketing Location 7044 Corniche Road, 2485 Ash Shati, Jeddah 23613, Saudi ArabiaVIEW ON MAP Schedule Full Time Located Remotely? N Position Type Management Job Summary The position is accountable for proactively soliciting and handling sales opportunities. Ensures business is turned over properly and in a timely fashion for proper service delivery. Assists in leading all day-to-day activities related to sales with a focus on building long-term, value-based customer relationships that enable achievement of sales objectives. Achieves personal sales goals. CANDIDATE PROFILE Education And Experience 2-year degree from an accredited university in Business Administration, Marketing, Hotel and Restaurant Management, or related major; 3 years experience in the sales and marketing or related professional area. OR 4-year bachelor's degree in Business Administration, Marketing, Hotel and Restaurant Management, or related major; 1 year experience in the sales and marketing or related professional area. CORE WORK ACTIVITIES Building Successful Relationships that Generate Sales Opportunities Works collaboratively with off-property sales channels to ensure sales efforts are coordinated, complementary and not duplicative. Builds and strengthens relationships with existing and new customers to enable future bookings. Activities include sales calls, entertainment, FAM trips, trade shows, etc. Develops relationships within community to strengthen and expand customer base for sales opportunities. Manages and develops relationships with key internal and external stakeholders. Provides accurate, complete and effective turnover to Event Management. Managing Sales Activities Participates in sales calls with members of sales team to acquire new business and/or close on business. Executes and supports the operational aspects of business booked (e.g., generating proposal, writing contract, customer correspondence). Using Knowledge of Market Trends and Target Customer Information to Maximize Revenue Identifies new business to achieve personal and location revenue goals. Understands the overall market - competitors’ strengths and weaknesses, economic trends, supply and demand etc. and knows how to sell against them. Closes the best opportunities for the location based on market conditions and location needs. Gains understanding of the location’s primary target customer and service expectations; serves the customer by understanding their business, business issues and concerns, to offer better business solution. Providin",
+      "description": "Sales Manager - The Jeddah EDITION opportunity at EDITION in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-the-jeddah-edition-at-edition-4469017289",
       "date": "2026-09-22T00:00:00.000Z",
       "dateLabel": "22 Sept 2026"
@@ -2561,6 +2594,17 @@
       "location": "Jiddah, Makkah, Saudi Arabia",
       "description": "AsstMgr-Training opportunity at Four Points by Sheraton in Jiddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/asstmgr-training-at-four-points-by-sheraton-4469010873",
+      "date": "2026-09-22T00:00:00.000Z",
+      "dateLabel": "22 Sept 2026"
+    },
+    {
+      "id": "linkedin:4451527458",
+      "source": "linkedin",
+      "title": "CKSA - Channel Sales Manager, B2B - Riyadh",
+      "company": "Canon EMEA",
+      "location": "Riyadh, Riyadh, Saudi Arabia",
+      "description": "CKSA - Channel Sales Manager, B2B - Riyadh opportunity at Canon EMEA in Riyadh, Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/cksa-channel-sales-manager-b2b-riyadh-at-canon-emea-4451527458",
       "date": "2026-09-22T00:00:00.000Z",
       "dateLabel": "22 Sept 2026"
     },
@@ -2627,17 +2671,6 @@
       "location": "Riyadh Region",
       "description": "Lead, Channel Strategy Management opportunity at Schneider Electric in Riyadh Region.",
       "url": "https://sa.linkedin.com/jobs/view/lead-channel-strategy-management-at-schneider-electric-4469038439",
-      "date": "2026-09-22T00:00:00.000Z",
-      "dateLabel": "22 Sept 2026"
-    },
-    {
-      "id": "linkedin:4451527458",
-      "source": "linkedin",
-      "title": "CKSA - Channel Sales Manager, B2B - Riyadh",
-      "company": "Canon EMEA",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Job Description Channel Manager is responsible for driving revenue growth through partners, expanding and strengthening the partner ecosystem, enabling partners with the training and tools needed for success, optimizing channel performance through structured KPIs and business reviews, building strong and trusted partner relationships, executing market‑aligned go‑to‑market plans, ensuring operational excellence across contracts and processes, and providing competitive and market insights that help partners position solutions effectively. Responsibilities Grow Canon Saudi Indirect Business Expand Canon Partners Network Enabling key Business Categories through Partners “DIMS, VLP and LFP Enhance Market Coverage especially through System Integrators Capture More Value Business Opportunities especially for Digital transformation projects Enabling New Canon Partner Program Qualifications Canon Core Behaviours Drive for results Focus on the Customer Take ownership and accountability Act as a team player Shows courage and conviction People orientated Caring for self and others About Us Canon Middle East FZ LLC , a subsidiary of Canon Europe, is the operational headquarters for Canon in the Middle East based in Dubai, UAE. At Canon, we’ve been inspiring people to capture and share their world for over 85+ years. As a global leader in imaging and innovation, we’re driven by bold ideas, collaboration, and a commitment to making a positive impact. From cameras to commercial printers, and business consultancy to healthcare technologies, Canon enriches lives and businesses through imaging innovation. Canon's corporate philosophy is Kyosei – 'living and working together for the common good'. Canon invests heavily in R&D, delivering the richest and most innovative products and services to satisfy customers' creative needs. From amateur photographers to professional print companies, Canon enables each customer to realize their own passion for image. Further information about Canon Middle East is available at www.canon-me.com With a strong presence across Middle East for over 25 years, our regional sales offices in UAE, KSA & Qatar support operations across Middle East markets. We’re proud of our diverse, inclusive culture and our philosophy of Kyosei – living and working together for the common good. Why Join Us? Be part of a diverse and energetic team, where 37+ nationalities work together with a common goal. Enjoy a competitive salary, comprehensive benefits, flexible hours, a hybrid working model, and opportunities for professional development. Benefit from continuous",
-      "url": "https://sa.linkedin.com/jobs/view/cksa-channel-sales-manager-b2b-riyadh-at-canon-emea-4451527458",
       "date": "2026-09-22T00:00:00.000Z",
       "dateLabel": "22 Sept 2026"
     },
@@ -2796,17 +2829,6 @@
       "dateLabel": "21 Sept 2026"
     },
     {
-      "id": "linkedin:4469829740",
-      "source": "linkedin",
-      "title": "Sales Manager - Respiratory products",
-      "company": "Yuwell Global",
-      "location": "Saudi Arabia",
-      "description": "Sales Manager - Respiratory products opportunity at Yuwell Global in Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/sales-manager-respiratory-products-at-yuwell-global-4469829740",
-      "date": "2026-09-21T00:00:00.000Z",
-      "dateLabel": "21 Sept 2026"
-    },
-    {
       "id": "linkedin:4467384245",
       "source": "linkedin",
       "title": "Regional Manager - Riyadh",
@@ -2814,6 +2836,17 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Regional Manager - Riyadh opportunity at Chalhoub Group in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/regional-manager-riyadh-at-chalhoub-group-4467384245",
+      "date": "2026-09-21T00:00:00.000Z",
+      "dateLabel": "21 Sept 2026"
+    },
+    {
+      "id": "linkedin:4469829740",
+      "source": "linkedin",
+      "title": "Sales Manager - Respiratory products",
+      "company": "Yuwell Global",
+      "location": "Saudi Arabia",
+      "description": "Sales Manager - Respiratory products opportunity at Yuwell Global in Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/sales-manager-respiratory-products-at-yuwell-global-4469829740",
       "date": "2026-09-21T00:00:00.000Z",
       "dateLabel": "21 Sept 2026"
     },
@@ -3043,19 +3076,8 @@
       "title": "Sales Manager - Saudi Talent",
       "company": "Dar Rayhaan By Rotana",
       "location": "Al Khobar, Eastern, Saudi Arabia",
-      "description": "Job Description We are looking for a dynamic Sales Manager to lead our sales team and drive business growth through effective sales strategies and client relationship management. The Sales Manager will be responsible for setting sales targets, developing sales plans, and ensuring the team meets and exceeds targets. Job Responsibility- Develop and implement strategic sales plans to achieve company goals and targets Manage, coach, and motivate the sales team to meet and exceed sales targets Identify new business opportunities and markets to expand the company's client base Build and maintain strong relationships with key clients and partners Monitor sales performance and provide regular reports and updates to senior management Stay up-to-date with market trends, competitors, and industry developments to inform sales strategies Collaborate with other departments such as marketing and product development to drive overall business growth Candidate Requirements- Proven experience as a Sales Manager or similar role in a related industry Strong leadership and managerial skills to lead and motivate a sales team Excellent communication and negotiation skills Ability to develop and implement successful sales strategies Strong business acumen and understanding of market dynamics Bachelor's degree in Business Administration, Sales, or related field. Skills Strong leadership and team management abilities Excellent communication and negotiation skills Proven track record of achieving and exceeding sales targets In-depth understanding of sales strategies and techniques Ability to analyze market trends and competitors Customer relationship management expertise Strategic planning and problem-solving skills Proficiency in CRM software and sales tools Strong organizational and time management skills Adaptability and resilience in a fast-paced sales environment",
+      "description": "Sales Manager - Saudi Talent opportunity at Dar Rayhaan By Rotana in Al Khobar, Eastern, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-saudi-talent-at-dar-rayhaan-by-rotana-4469757728",
-      "date": "2026-09-20T00:00:00.000Z",
-      "dateLabel": "20 Sept 2026"
-    },
-    {
-      "id": "linkedin:4467317760",
-      "source": "linkedin",
-      "title": "We're Hiring: Sales Manager – Industrial Sector “Oil & Gas”",
-      "company": "Seeleya Ltd. Co",
-      "location": "Jubail, Eastern, Saudi Arabia",
-      "description": "We're Hiring: Sales Manager – Industrial Sector “Oil & Gas” opportunity at Seeleya Ltd. Co in Jubail, Eastern, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/we-re-hiring-sales-manager-%E2%80%93-industrial-sector-%E2%80%9Coil-gas%E2%80%9D-4467317760",
       "date": "2026-09-20T00:00:00.000Z",
       "dateLabel": "20 Sept 2026"
     },
@@ -3067,6 +3089,17 @@
       "location": "Riyadh, Riyadh, Saudi Arabia",
       "description": "Sales Manager opportunity at Marriott International in Riyadh, Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/sales-manager-at-marriott-international-4468473562",
+      "date": "2026-09-20T00:00:00.000Z",
+      "dateLabel": "20 Sept 2026"
+    },
+    {
+      "id": "linkedin:4467317760",
+      "source": "linkedin",
+      "title": "We're Hiring: Sales Manager – Industrial Sector “Oil & Gas”",
+      "company": "Seeleya Ltd. Co",
+      "location": "Jubail, Eastern, Saudi Arabia",
+      "description": "We're Hiring: Sales Manager – Industrial Sector “Oil & Gas” opportunity at Seeleya Ltd. Co in Jubail, Eastern, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/we-re-hiring-sales-manager-%E2%80%93-industrial-sector-%E2%80%9Coil-gas%E2%80%9D-4467317760",
       "date": "2026-09-20T00:00:00.000Z",
       "dateLabel": "20 Sept 2026"
     },
@@ -3324,6 +3357,17 @@
       "dateLabel": "19 Sept 2026"
     },
     {
+      "id": "linkedin:4466660982",
+      "source": "linkedin",
+      "title": "Territory Sales Manager",
+      "company": "ESET Middle East",
+      "location": "Riyadh, Saudi Arabia",
+      "description": "Territory Sales Manager opportunity at ESET Middle East in Riyadh, Saudi Arabia.",
+      "url": "https://sa.linkedin.com/jobs/view/territory-sales-manager-at-eset-middle-east-4466660982",
+      "date": "2026-09-18T00:00:00.000Z",
+      "dateLabel": "18 Sept 2026"
+    },
+    {
       "id": "linkedin:4466902402",
       "source": "linkedin",
       "title": "Sr. Commercial Partnerships & Alliances Manager",
@@ -3342,17 +3386,6 @@
       "location": "Riyadh, Saudi Arabia",
       "description": "Deputy Store Manager opportunity at Bvlgari in Riyadh, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/deputy-store-manager-at-bvlgari-4469165555",
-      "date": "2026-09-18T00:00:00.000Z",
-      "dateLabel": "18 Sept 2026"
-    },
-    {
-      "id": "linkedin:4466660982",
-      "source": "linkedin",
-      "title": "Territory Sales Manager",
-      "company": "ESET Middle East",
-      "location": "Riyadh, Saudi Arabia",
-      "description": "Territory Sales Manager opportunity at ESET Middle East in Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/territory-sales-manager-at-eset-middle-east-4466660982",
       "date": "2026-09-18T00:00:00.000Z",
       "dateLabel": "18 Sept 2026"
     },
@@ -3485,39 +3518,6 @@
       "location": "Jeddah, Makkah, Saudi Arabia",
       "description": "Territory Manager opportunity at Check Point Software in Jeddah, Makkah, Saudi Arabia.",
       "url": "https://sa.linkedin.com/jobs/view/territory-manager-at-check-point-software-4460333703",
-      "date": "2026-09-18T00:00:00.000Z",
-      "dateLabel": "18 Sept 2026"
-    },
-    {
-      "id": "linkedin:4469155331",
-      "source": "linkedin",
-      "title": "Retail and Commercial Interface Manager",
-      "company": "AtkinsRéalis",
-      "location": "Riyadh, Riyadh, Saudi Arabia",
-      "description": "Retail and Commercial Interface Manager opportunity at AtkinsRéalis in Riyadh, Riyadh, Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/retail-and-commercial-interface-manager-at-atkinsr%C3%A9alis-4469155331",
-      "date": "2026-09-18T00:00:00.000Z",
-      "dateLabel": "18 Sept 2026"
-    },
-    {
-      "id": "linkedin:4465462756",
-      "source": "linkedin",
-      "title": "Regional Manager / Operations Manager",
-      "company": "TASC Outsourcing",
-      "location": "Saudi Arabia",
-      "description": "Regional Manager / Operations Manager opportunity at TASC Outsourcing in Saudi Arabia.",
-      "url": "https://sa.linkedin.com/jobs/view/regional-manager-operations-manager-at-tasc-outsourcing-4465462756",
-      "date": "2026-09-18T00:00:00.000Z",
-      "dateLabel": "18 Sept 2026"
-    },
-    {
-      "id": "linkedin:4469236431",
-      "source": "linkedin",
-      "title": "Project Sales Manager Western Region KSA",
-      "company": "LIXIL",
-      "location": "Saudi Arabia",
-      "description": "IMEA (India, Middle East, Africa) Saudi Arabia LE_0175-Grohe Saudi Arabia Ltd. Co Employee Assignment Not remote Full Time 1 October 2026 Ensure the fastest development of profitable sales growth within the market in all channels in line with GROHE’s Mission. The primary purpose of the role is to achieve annual sales targets, drive the increase in market share within this sector and enhance the geographical presence of Grohe within the Country. Primary Responsibilities Collectively accountable for the overall delivery of the Country results and leadership of the organization. You will be one of the main actors in strategic planning for this channel development. Carry out hisresponsibilities in delivering the Sales Mission in line with corporate objectives and KPIs. Carry out his/her responsibilities in delivering his/ her Project Channel Sales Mission Assigned for the country’s Market in line with Corporate Objectives and KPIs . Projectmanagement write and maintain project specifications within Grohe project system Align regularly with the Line Manager on mid and long-term strategies for the country, and ensure local implementation is in full compliance with corporate guideline Provide high-quality information and analysis in support of strategic priorities and initiatives Identify key channels and targetsin region for project business Forecast accurate projectssales by month, quarter, and year Maintain professional relationship with designers and architectures in the country Develop and maintain data base / records of all key project contacts in region as required and prepare report for senior management. Qualifications And Education Bachelor’s degree in architecture, MBA (is a plus) Fluent written and spoken English & Arabic, good command of other languages to be considered a plus. 5-7 years of experience in a comparable position Demonstrate success at working in a fast-paced, rapidly growing, highly competitive, and deadline-oriented environment whilst maintaining Grohe’s quality and reputation for excellence",
-      "url": "https://sa.linkedin.com/jobs/view/project-sales-manager-western-region-ksa-at-lixil-4469236431",
       "date": "2026-09-18T00:00:00.000Z",
       "dateLabel": "18 Sept 2026"
     }
