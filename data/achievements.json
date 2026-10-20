@@ -1,75 +1,87 @@
 {
   "items": [
     {
-      "id": "ach-7",
+      "id": "career-progression",
       "title": {
-        "ar": "إطلاقات منتجات دعمتها بالتدريب",
-        "en": "Product launches supported with training"
+        "ar": "من المبيعات إلى الإدارة",
+        "en": "From sales to management"
       },
       "description": {
-        "en": "",
-        "ar": ""
+        "ar": "تدرّجت من البيع المباشر داخل المتاجر إلى إدارة منطقة، ثم إدارة القوى الميدانية على مستوى المملكة.",
+        "en": "Progressed from in-store sales to area management, then national field force management."
       },
       "year": "",
-      "company": "TECNO",
+      "company": "",
       "category": "",
       "evidence": "",
       "auto": "manual",
       "featured": true,
-      "order": 1,
+      "order": -3,
       "visible": true,
-      "value": "8",
+      "value": "",
       "unit": {
-        "en": "",
-        "ar": ""
+        "ar": "",
+        "en": ""
+      },
+      "cvDescription": {
+        "ar": "تدرّج من البيع المباشر إلى إدارة منطقة، ثم إدارة القوى الميدانية في المملكة.",
+        "en": "Progressed from direct sales to area and national field force management."
       }
     },
     {
-      "id": "ach-8",
+      "id": "national-team-leadership",
       "title": {
-        "ar": "مادة تدريبية أعددتها، تشمل الأدلة والاختبارات",
-        "en": "Training materials I created, including guides and tests"
+        "ar": "قيادة الفرق على مستوى المملكة",
+        "en": "Leading teams across Saudi Arabia"
       },
       "description": {
-        "en": "",
-        "ar": ""
+        "ar": "أدرت مستهدفات المبيعات وتابعت أداء الفرق يوميًا، بالتنسيق مع مديري المناطق وشركاء التجزئة.",
+        "en": "Managed sales targets and daily team performance in coordination with regional managers and retail partners."
       },
       "year": "",
-      "company": "TECNO",
+      "company": "",
       "category": "",
       "evidence": "",
       "auto": "manual",
       "featured": true,
-      "order": 2,
+      "order": -2,
       "visible": true,
-      "value": "48",
+      "value": "",
       "unit": {
-        "en": "",
-        "ar": ""
+        "ar": "",
+        "en": ""
+      },
+      "cvDescription": {
+        "ar": "إدارة مستهدفات المبيعات ومتابعة أداء الفرق بالتنسيق مع مديري المناطق.",
+        "en": "Managed sales targets and team performance with regional managers."
       }
     },
     {
-      "id": "ach-9",
+      "id": "sales-and-training",
       "title": {
-        "ar": "نسبة حضور المشاركين لجلسات التدريب",
-        "en": "Participant attendance at training sessions"
+        "ar": "خبرة تجمع المبيعات والتدريب",
+        "en": "Connecting sales and training"
       },
       "description": {
-        "en": "",
-        "ar": ""
+        "ar": "أستخدم تقارير المبيعات وملاحظات الميدان لتحديد احتياجات الفرق وتقديم تدريب يناسب عملهم داخل المتاجر.",
+        "en": "Use sales reports and field feedback to identify team needs and deliver training suited to everyday store work."
       },
       "year": "",
-      "company": "TECNO",
+      "company": "",
       "category": "",
       "evidence": "",
       "auto": "manual",
       "featured": true,
-      "order": 3,
+      "order": -1,
       "visible": true,
-      "value": "98",
+      "value": "",
       "unit": {
-        "en": "%",
-        "ar": "%"
+        "ar": "",
+        "en": ""
+      },
+      "cvDescription": {
+        "ar": "ربط احتياجات التدريب بتقارير المبيعات وملاحظات الميدان.",
+        "en": "Connected training needs with sales reports and field feedback."
       }
     },
     {

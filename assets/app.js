@@ -142,19 +142,11 @@
   function t2(v, l) { return (v && (v[l] || v.en)) || ''; }
 
   function renderAchievements() {
-    var m = metrics();
-    var map = { years: m.years, roles: m.roles, trainingHours: m.trainingHours,
-      companies: m.companies, certifications: m.certifications,
-      projects: m.projects, trainingPrograms: m.trainingPrograms };
-    var auto = D.settings.metrics && D.settings.metrics.autoCalculate !== false;
     el('hlGrid').innerHTML = visible(D.achievements.items)
       .filter(function (a) { return a.featured !== false; })
       .map(function (a) {
-        var val = (auto && map[a.auto] != null) ? map[a.auto] : a.value;
-        return '<div class="hl"><p class="hl-fig">' +
-          '<span class="en">' + esc(val) + '<span class="u">' + esc(a.unit.en) + '</span></span>' +
-          '<span class="ar">' + esc(val) + '<span class="u">' + esc(a.unit.ar) + '</span></span>' +
-          '</p><p class="hl-lab">' + bi(a.title) + '</p></div>';
+        return '<article class="career-card"><h3>' + bi(a.title) +
+          '</h3><p>' + bi(a.description) + '</p></article>';
       }).join('');
   }
 
