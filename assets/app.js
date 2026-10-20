@@ -141,15 +141,6 @@
   }
   function t2(v, l) { return (v && (v[l] || v.en)) || ''; }
 
-  function renderAchievements() {
-    el('hlGrid').innerHTML = visible(D.achievements.items)
-      .filter(function (a) { return a.featured !== false; })
-      .map(function (a) {
-        return '<article class="career-card"><h3>' + bi(a.title) +
-          '</h3><p>' + bi(a.description) + '</p></article>';
-      }).join('');
-  }
-
   function renderExperience() {
     el('rail').innerHTML = visible(D.progression.items).map(function (s) {
       return '<li class="rail-step" data-tier="' + esc(s.tier) + '">' +
@@ -508,7 +499,7 @@
 
   function boot(data) {
     D = data;
-    renderBindings(); renderNav(); renderHero(); renderAchievements();
+    renderBindings(); renderNav(); renderHero();
     renderExperience(); renderProjects(); renderTraining();
     renderSkills(); renderCerts(); initCertificatePreviews(); renderEducation(); renderContact(); jsonld();
     var initialLang = D.settings.site.defaultLang || 'en';
