@@ -24,7 +24,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/profile/ahmad-alshehri-profile.png?v=20260819-v11">
-<link rel="stylesheet" href="assets/site.css?v=20260914-v15">
+<link rel="stylesheet" href="assets/site.css?v=20261021-training-highlights">
 <style id="portfolio-v3">
 :root{--v3-bg:#08131f;--v3-bg2:#0d1d2d;--v3-card:#102235;--v3-gold:#d5aa5a;--v3-gold2:#f0d89e;--v3-cream:#f8f3e9;--v3-line:rgba(255,255,255,.12);--v3-soft:rgba(255,255,255,.7)}
 *{box-sizing:border-box}.scroll-v3{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,#f0d89e,#c68f2c);z-index:9999;box-shadow:0 0 20px rgba(213,170,90,.55)}
@@ -51,6 +51,14 @@ body{background:#f7f4ee}.site-head{background:rgba(6,15,25,.93)!important;border
 @media(prefers-reduced-motion:reduce){.rv,.role,.brand-tile,.hl,.rail-step,.profile-photo-stage{transition:none!important;transform:none!important;animation:none!important}.scroll-v3{display:none}}
  .highlights-focus{margin:19px 0 0;text-align:center;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.58)}
 </style>
+<style id="training-highlights-layout">
+#highlights .highlights-title{margin:0 0 28px;font-size:1.3rem;color:#fff;text-align:center}
+#highlights .hl-grid{grid-template-columns:repeat(3,minmax(0,1fr));background:transparent!important;gap:1px}
+#highlights .hl{background:#0d1d2d!important;transform:none;padding:26px 24px}
+#highlights .hl:hover{background:#0d1d2d!important;transform:none}
+#highlights .hl-lab{line-height:1.7}
+@media(max-width:700px){#highlights .hl-grid{grid-template-columns:1fr;gap:0}#highlights .hl{grid-column:auto!important;padding:24px 16px}#highlights .hl+.hl{border-top:1px solid rgba(255,255,255,.12)}#highlights .hl-fig{margin:0 0 10px}#highlights .hl-lab{margin:0}}
+</style>
 </head>
 <body>
 <div class="scroll-v3" id="scrollV3"></div>
@@ -59,7 +67,7 @@ body{background:#f7f4ee}.site-head{background:rgba(6,15,25,.93)!important;border
 <main id="main"><span id="top"></span>
 <section class="hero"><div class="wrap hero-grid"><div class="hero-copy"><div class="hero-badge"><i></i><span class="en">Professional Portfolio</span><span class="ar">الملف المهني</span></div><p class="eyebrow" data-bind="profile.eyebrow"></p><h1 data-bind="profile.name"></h1><p class="hero-role" data-bind="profile.headline"></p><p class="hero-lede" data-bind="profile.lede"></p><p class="hero-meta" id="heroMeta"></p><div class="hero-cta"><a class="btn btn-solid" href="#experience"><span class="en">View experience</span><span class="ar">استعراض الخبرات</span></a><a class="btn btn-gold" id="cvHero" href="#"><span class="en">Export ATS resume</span><span class="ar">تصدير سيرة ATS</span></a><a class="btn btn-line" href="#contact"><span class="en">Contact me</span><span class="ar">تواصل معي</span></a></div></div><aside class="aside-card" aria-label="Profile at a glance"><div class="monogram" id="photoSlot" role="img" aria-label="Portrait"><span class="mg" id="monogram">AA</span></div><ul class="facts" id="facts"></ul></aside></div></section>
 <section class="career-brands" aria-label="Career brands"><div class="wrap"><div class="brand-head"><div><p class="eyebrow"><span class="en">Brand journey</span><span class="ar">المسار عبر العلامات</span></p><h2><span class="en">Career across HUAWEI, HONOR and TECNO</span><span class="ar">مسيرة مهنية عبر HUAWEI وHONOR وTECNO</span></h2></div><p><span class="en">Promoter → Regional Training → Area Management → Field Force Management → Training Manager</span><span class="ar">أخصائي مبيعات ← التدريب الإقليمي ← إدارة المنطقة ← إدارة القوى الميدانية ← مدير التدريب</span></p></div><div class="brand-grid"><button class="brand-tile" data-brand="HUAWEI" type="button"><img src="assets/logos/huawei.svg" alt="HUAWEI"><small>2020–2021</small></button><button class="brand-tile" data-brand="HONOR" type="button"><img src="assets/logos/honor.svg" alt="HONOR"><small>2021–2024</small></button><button class="brand-tile" data-brand="TECNO" type="button"><img src="assets/logos/tecno.svg" alt="TECNO"><small>2024–Present</small></button></div></div></section>
-<section class="highlights" id="highlights" aria-label="Career highlights"><div class="wrap"><div class="hl-grid" id="hlGrid"></div><p class="highlights-focus"><span class="en">Training · Retail Operations · Field Force Development</span><span class="ar">التدريب · عمليات التجزئة · تطوير الفرق الميدانية</span></p></div></section>
+<section class="highlights" id="highlights" aria-label="Career highlights"><div class="wrap"><h2 class="highlights-title"><span class="en">Training highlights</span><span class="ar">أبرز أعمالي في التدريب</span></h2><div class="hl-grid" id="hlGrid"></div><p class="highlights-focus"><span class="en">Training · Retail Operations · Field Force Development</span><span class="ar">التدريب · عمليات التجزئة · تطوير الفرق الميدانية</span></p></div></section>
 <section class="section rv" id="profile"><div class="wrap profile-grid"><div><p class="eyebrow"><span class="en">Summary</span><span class="ar">الملف المهني</span></p><h2 class="sec-title" data-bind="profile.summaryTitle"></h2></div><div class="profile-body" id="summary"></div></div></section>
 <section class="section rv" id="experience"><div class="wrap"><p class="eyebrow"><span class="en">Work Experience</span><span class="ar">الخبرات المهنية</span></p><h2 class="sec-title"><span class="en">Roles and Responsibilities</span><span class="ar">المناصب والمسؤوليات</span></h2><p class="sec-note" id="expNote"></p><ol class="rail" id="rail" aria-label="Roles and Responsibilities"></ol><ol class="roles" id="roles"></ol></div></section>
 <section class="section rv" id="projects"><div class="wrap"><p class="eyebrow"><span class="en">Featured projects</span><span class="ar">مشاريع مختارة</span></p><h2 class="sec-title"><span class="en">Case studies</span><span class="ar">دراسات حالة</span></h2><p class="sec-note"><span class="en">Selected work, with the challenge, the actions taken, and the measurable result.</span><span class="ar">أعمال مختارة، مع التحدي والإجراءات المتخذة والنتيجة القابلة للقياس.</span></p><div class="card-grid" id="projectGrid"></div></div></section>

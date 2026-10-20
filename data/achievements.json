@@ -3,8 +3,8 @@
     {
       "id": "ach-7",
       "title": {
-        "en": "Product launches supported",
-        "ar": "إطلاقات منتجات دعمتها"
+        "ar": "إطلاقات منتجات دعمتها بالتدريب",
+        "en": "Product launches supported with training"
       },
       "description": {
         "en": "",
@@ -27,8 +27,8 @@
     {
       "id": "ach-8",
       "title": {
-        "en": "Training materials, guides and tests created",
-        "ar": "مادة تدريبية تشمل الأدلة والاختبارات"
+        "ar": "مادة تدريبية أعددتها، تشمل الأدلة والاختبارات",
+        "en": "Training materials I created, including guides and tests"
       },
       "description": {
         "en": "",
@@ -51,8 +51,8 @@
     {
       "id": "ach-9",
       "title": {
-        "en": "Training attendance",
-        "ar": "نسبة الحضور في التدريب"
+        "ar": "نسبة حضور المشاركين لجلسات التدريب",
+        "en": "Participant attendance at training sessions"
       },
       "description": {
         "en": "",
