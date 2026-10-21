@@ -12,8 +12,8 @@
     "ar": "عمليات المبيعات / إدارة القوى الميدانية / التدريب وتطوير القدرات"
   },
   "lede": {
-    "en": "Training Manager with 6+ years of experience in Saudi Arabia’s smartphone retail sector. My background covers in-store sales, regional training, sales team management, and field-force operations across Saudi Arabia. I currently focus on product launches, sales capability, and practical training that supports retail execution.",
-    "ar": "مدير تدريب بخبرة تتجاوز 6 سنوات في قطاع تجزئة الهواتف الذكية بالمملكة. تشمل خبرتي المبيعات داخل المتاجر، والتدريب الإقليمي، وإدارة فرق المبيعات، وعمليات القوى الميدانية على مستوى المملكة العربية السعودية. أركز حاليًا على إطلاق المنتجات، وتطوير قدرات البيع، وتقديم تدريب عملي يدعم التنفيذ داخل المتاجر."
+    "ar": "خبرة في إدارة المبيعات والفرق الميدانية وتطوير قدرات فرق التجزئة في قطاع الهواتف الذكية بالمملكة.",
+    "en": "Experience in sales management, field operations and retail team development in Saudi Arabia’s smartphone sector."
   },
   "eyebrow": {
     "en": "Riyadh, Saudi Arabia",
@@ -22,17 +22,15 @@
   "photo": "assets/profile/ahmad-alshehri-profile-transparent-v9.png?v=20260901-v9",
   "monogram": "AA",
   "summaryTitle": {
-    "en": "Professional Background",
-    "ar": "الخلفية المهنية"
+    "ar": "من المبيعات المباشرة إلى الإدارة والتدريب",
+    "en": "From retail sales to management and training"
   },
   "summary": {
-    "en": [
-      "I started in frontline smartphone retail before moving into regional training, sales management, and national field-force operations. This experience gave me a practical understanding of what sales teams need—from clear targets and consistent follow-up to training that improves customer conversations and in-store results.",
-      "In my current role as Training Manager at TECNO, I prepare launch, product, and sales programmes and work closely with sales, marketing, and field teams to turn commercial priorities into practical actions. I use sales results, field feedback, and competitor activity to identify gaps and improve execution."
-    ],
     "ar": [
-      "بدأت عملي في مبيعات الهواتف داخل المتاجر، ثم انتقلت إلى التدريب الإقليمي وإدارة المبيعات وفرق العمل الميدانية على مستوى المملكة. منحتني هذه التجربة فهمًا عمليًا لما يحتاجه فريق المبيعات، من وضوح المستهدف والمتابعة المستمرة إلى تدريب ينعكس على طريقة التعامل مع العميل والنتائج داخل المتجر.",
-      "في عملي الحالي مديرًا للتدريب في TECNO، أُعد برامج الإطلاق وتدريب المنتجات والمبيعات، وأعمل مع فرق المبيعات والتسويق والميدان لتحويل الأولويات التجارية إلى خطوات قابلة للتطبيق. أعتمد على نتائج المبيعات وملاحظات الفرق وحركة المنافسين لتحديد الفجوات وتحسين التنفيذ."
+      "مسار مهني بدأ في مبيعات المتاجر عام 2020، وتدرّج إلى التدريب الإقليمي وإدارة المناطق ثم إدارة القوى الميدانية والتدريب على مستوى المملكة. يجمع هذا المسار بين متابعة الأداء التجاري وفهم احتياجات فرق البيع في الميدان."
+    ],
+    "en": [
+      "A career that began in store sales in 2020 and progressed through regional training and area management to national field-force and training roles. This background combines commercial performance oversight with an understanding of what retail teams need in the field."
     ]
   },
   "atAGlance": [
@@ -102,5 +100,9 @@
     },
     "linkedin": "https://www.linkedin.com/in/ahmadfalshehry"
   },
-  "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf"
+  "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf",
+  "cvSummary": {
+    "ar": "خبرة متدرجة في قطاع تجزئة الهواتف الذكية منذ عام 2020، من البيع المباشر إلى إدارة المناطق والقوى الميدانية والتدريب على مستوى المملكة. تجمع الخبرة بين متابعة أداء المبيعات، وقيادة فرق المتاجر، وتطوير مهارات البيع وفق احتياجات العمل الميداني.",
+    "en": "Progressive experience in smartphone retail since 2020, spanning direct sales, area management, national field operations and training. Background combines sales performance monitoring, retail team leadership and practical sales capability development."
+  }
 }

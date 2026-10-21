@@ -135,19 +135,15 @@
       '<div class="ar">' + (D.profile.summary.ar || []).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</div>';
 
     el('expNote').innerHTML = bi({
-      en: m.roles + ' positions across ' + m.companies + ' global technology brands, with responsibility widening from a single store to regional teams to national operations.',
-      ar: m.roles + ' وظائف عبر ' + m.companies + ' علامات تقنية عالمية، مع اتساع المسؤولية من متجر واحد إلى فرق إقليمية ثم عمليات على مستوى المملكة.'
+      en: 'Responsibilities by role at TECNO, HONOR and HUAWEI.',
+      ar: 'المسؤوليات حسب المنصب في TECNO وHONOR وHUAWEI.'
     });
   }
   function t2(v, l) { return (v && (v[l] || v.en)) || ''; }
 
   function renderExperience() {
-    el('rail').innerHTML = visible(D.progression.items).map(function (s) {
-      return '<li class="rail-step" data-tier="' + esc(s.tier) + '">' +
-        '<p class="rail-yr">' + bi(s.year) + '</p>' +
-        '<p class="rail-co">' + esc(s.company) + '</p>' +
-        '<p class="rail-ttl">' + bi(s.title) + '</p></li>';
-    }).join('');
+    el('rail').innerHTML = '';
+    el('rail').hidden = true;
 
     var SCOPE = {
       store: [{ en: 'Scope — Store', ar: 'النطاق — متجر' }, 1],
@@ -244,7 +240,7 @@
         }).join('') + '</ul>';
       }).join('');
       var wide = (i === order.length - 1 && order.length % 2 === 1) ? ' style="grid-column:1/-1"' : '';
-      return '<div class="comp"' + wide + '><h3>' + bi(g.cat) + '</h3><p>' + bi(g.note) + '</p>' + tags + '</div>';
+      return '<div class="comp"' + wide + '><h3>' + bi(g.cat) + '</h3>' + tags + '</div>';
     }).join('');
   }
 
@@ -563,3 +559,4 @@
     console.error(err);
   });
 })();
+
