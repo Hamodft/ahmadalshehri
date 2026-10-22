@@ -16,15 +16,18 @@ try {
     const fit = await page.evaluate(() => {
       const page = document.querySelector('.page');
       const content = page.querySelector('.ats-content') || page.querySelector('.grid');
-      const bottom = page.getBoundingClientRect().bottom - parseFloat(getComputedStyle(page).paddingBottom);
+      const bottom = page.getBoundingClientRect().top + (297 - 12) * 96 / 25.4;
+      const actualBottom = () => Math.max(...Array.from(content.querySelectorAll('.section')).map(el => el.getBoundingClientRect().bottom));
       let scale = 1;
-      while (content.getBoundingClientRect().bottom > bottom + 0.5 && scale > 0.85) {
+      while (actualBottom() > bottom + 0.5 && scale > 0.80) {
         scale = Math.round((scale - 0.01) * 100) / 100;
         content.style.zoom = String(scale);
       }
-      return { scale, overflow: content.getBoundingClientRect().bottom > bottom + 0.5, jobs: page.querySelectorAll('.job').length };
+      return { scale, contentBottom: actualBottom(), limit: bottom, overflow: actualBottom() > bottom + 0.5, jobs: page.querySelectorAll('.job').length };
     });
     if (fit.overflow || fit.jobs !== 6) throw new Error(`Invalid CV layout ${lang}/${ats}: ${JSON.stringify(fit)}`);
+    const lastSection = await page.evaluate(() => Array.from(document.querySelectorAll('.page .section')).at(-1).innerText);
+    if (!lastSection) throw new Error('Missing final section');
     const stem = `Ahmad-Alshehri-CV-${ats ? 'ATS-' : ''}${lang}`;
     await page.pdf({path:`downloads/${stem}.pdf`,format:'A4',printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false,tagged:true,outline:true,margin:{top:'0',right:'0',bottom:'0',left:'0'}});
     console.log(stem, JSON.stringify(fit));
