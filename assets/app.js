@@ -110,15 +110,7 @@
 
   function renderHero() {
     var m = metrics();
-    var cur = visible(D.experience.items).filter(function (e) { return e.current; })[0];
-    var bits = [];
-    if (cur) {
-      bits.push({
-        en: 'Currently ' + t2(cur.title, 'en') + ', ' + cur.company,
-        ar: 'حالياً ' + t2(cur.title, 'ar') + ' في ' + cur.company
-      });
-    }
-    bits.push({ en: 'National scope, KSA', ar: 'نطاق وطني في المملكة' });
+    var bits = [{ en: 'Sales targets · Team performance · Retail execution', ar: 'مستهدفات المبيعات · أداء الفرق · التنفيذ داخل المتاجر' }];
     el('heroMeta').innerHTML = bits.map(function (b) {
       return '<span><i class="dot"></i>' + bi(b) + '</span>';
     }).join('');
@@ -135,8 +127,8 @@
       '<div class="ar">' + (D.profile.summary.ar || []).map(function (p) { return '<p>' + esc(p) + '</p>'; }).join('') + '</div>';
 
     el('expNote').innerHTML = bi({
-      en: 'Responsibilities by role at TECNO, HONOR and HUAWEI.',
-      ar: 'المسؤوليات حسب المنصب في TECNO وHONOR وHUAWEI.'
+      en: 'Sales and field leadership experience, supported by training and team development.',
+      ar: 'خبرة في قيادة المبيعات والفرق الميدانية، تدعمها خبرة في التدريب وتطوير الفريق.'
     });
   }
   function t2(v, l) { return (v && (v[l] || v.en)) || ''; }
@@ -152,7 +144,7 @@
       international: [{ en: 'Scope — International', ar: 'النطاق — دولي' }, 3]
     };
 
-    el('roles').innerHTML = visible(D.experience.items).map(function (r) {
+    function roleMarkup(r) {
       var sc = SCOPE[r.scope] || SCOPE.store;
       var meter = '';
       for (var i = 1; i <= 3; i++) meter += '<i class="' + (i <= sc[1] ? 'on' : '') + '"></i>';
@@ -175,6 +167,16 @@
         '<p class="scope"><span class="scope-lab">' + bi(sc[0]) + '</span>' +
         '<span class="meter" role="img" aria-label="Scope"> ' + meter + '</span></p>' +
         '</div><div><h3 class="role-title">' + bi(r.title) + '</h3>' + lists + extras + '</div></li>';
+    }
+    var roles = visible(D.experience.items);
+    var groups = [
+      { key: 'sales', title: { en: 'Sales & Field Force Management', ar: 'المبيعات وإدارة الفرق الميدانية' } },
+      { key: 'development', title: { en: 'Training & Team Development', ar: 'التدريب وتطوير الفرق' } }
+    ];
+    el('roles').innerHTML = groups.map(function (group) {
+      var items = roles.filter(function (r) { return (r.focus || 'development') === group.key; });
+      if (!items.length) return '';
+      return '<li class="experience-group"><h3 class="experience-group-title">' + bi(group.title) + '</h3><ol class="roles">' + items.map(roleMarkup).join('') + '</ol></li>';
     }).join('');
   }
 
@@ -559,4 +561,5 @@
     console.error(err);
   });
 })();
+
 

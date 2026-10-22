@@ -1,12 +1,12 @@
 {
   "site": {
     "baseTitle": {
-      "en": "Ahmad Alshehri | Sales Operations, Field Force & Training Manager",
-      "ar": "أحمد الشهري | عمليات المبيعات وإدارة القوى الميدانية والتدريب"
+      "ar": "أحمد الشهري | إدارة المبيعات والفرق الميدانية",
+      "en": "Ahmad Alshehri | Sales & Field Force Management"
     },
     "description": {
-      "en": "Professional profile of Ahmad Alshehri, a Saudi sales operations, field force management, and training professional with experience across national retail operations, team leadership, KPI management, and capability development.",
-      "ar": "الملف المهني لأحمد الشهري، مختص سعودي في عمليات المبيعات وإدارة القوى الميدانية والتدريب، بخبرة في عمليات التجزئة الوطنية وقيادة الفرق وإدارة مؤشرات الأداء وتطوير القدرات."
+      "ar": "خبرة أحمد الشهري في إدارة المبيعات والمناطق والفرق الميدانية، ومتابعة المستهدفات ومؤشرات الأداء وعمليات التجزئة في السعودية.",
+      "en": "Ahmad Alshehri’s experience in sales, area and field-force management, target tracking, performance analysis and retail operations in Saudi Arabia."
     },
     "url": "https://hamodft.github.io/ahmadalshehri/",
     "defaultLang": "en"
@@ -14,9 +14,9 @@
   "career": {
     "openToOpportunities": true,
     "targetRoles": [
-      "Sales Operations",
+      "Area Sales Management",
       "Field Force Management",
-      "Training & Capability Development"
+      "Sales Operations"
     ],
     "preferredLocation": {
       "en": "Riyadh / Kingdom of Saudi Arabia",

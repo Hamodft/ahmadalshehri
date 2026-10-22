@@ -8,12 +8,12 @@
     "ar": "أحمد فارس أحمد الشهري"
   },
   "headline": {
-    "en": "Sales Operations / Field Force Management / Training & Capability Development",
-    "ar": "عمليات المبيعات / إدارة القوى الميدانية / التدريب وتطوير القدرات"
+    "ar": "إدارة المبيعات والفرق الميدانية",
+    "en": "Sales & Field Force Management"
   },
   "lede": {
-    "ar": "خبرة في إدارة المبيعات والفرق الميدانية وتطوير قدرات فرق التجزئة في قطاع الهواتف الذكية بالمملكة.",
-    "en": "Experience in sales management, field operations and retail team development in Saudi Arabia’s smartphone sector."
+    "ar": "إدارة المستهدفات، وقيادة فرق المبيعات، ومتابعة الأداء والتنفيذ داخل المتاجر على مستوى المنطقة والمملكة.",
+    "en": "Sales target management, field-team leadership and in-store performance oversight at regional and national levels."
   },
   "eyebrow": {
     "en": "Riyadh, Saudi Arabia",
@@ -22,30 +22,32 @@
   "photo": "assets/profile/ahmad-alshehri-profile-transparent-v9.png?v=20260901-v9",
   "monogram": "AA",
   "summaryTitle": {
-    "ar": "من المبيعات المباشرة إلى الإدارة والتدريب",
-    "en": "From retail sales to management and training"
+    "ar": "خبرة ميدانية في قيادة المبيعات والفرق",
+    "en": "Hands-on experience leading sales and field teams"
   },
   "summary": {
     "ar": [
-      "مسار مهني بدأ في مبيعات المتاجر عام 2020، وتدرّج إلى التدريب الإقليمي وإدارة المناطق ثم إدارة القوى الميدانية والتدريب على مستوى المملكة. يجمع هذا المسار بين متابعة الأداء التجاري وفهم احتياجات فرق البيع في الميدان."
+      "خبرة في قطاع تجزئة الهواتف الذكية منذ عام 2020، تشمل البيع المباشر وإدارة المناطق والقوى الميدانية على مستوى المملكة. توليت توزيع المستهدفات ومتابعة الإنجاز حتى الإقفال الشهري، وتحليل أداء المبيعات وإنتاجية المروجين، والتنسيق مع مديري المناطق وشركاء التجزئة لمعالجة عوائق البيع.",
+      "أعتمد على الزيارات الميدانية وتقارير الأداء لتحديد ما يحتاجه الفريق من متابعة وتوجيه. وتدعم خبرتي في تدريب المنتجات ومهارات البيع هذا الجانب من خلال مساعدة فرق المتاجر على فهم احتياجات العملاء والتعامل مع الاعتراضات وإتمام البيع."
     ],
     "en": [
-      "A career that began in store sales in 2020 and progressed through regional training and area management to national field-force and training roles. This background combines commercial performance oversight with an understanding of what retail teams need in the field."
+      "Experience in smartphone retail since 2020, covering direct sales, area management and national field-force operations. Responsibilities have included allocating targets, tracking achievement through month-end closing, analyzing sales and promoter productivity, and working with regional managers and retail partners to resolve sales obstacles.",
+      "I use store visits and performance reports to identify where teams need follow-up and coaching. My product and sales training background supports this work by helping store teams understand customer needs, handle objections and close sales."
     ]
   },
   "atAGlance": [
     {
       "label": {
-        "en": "Current role",
-        "ar": "الدور الحالي"
+        "ar": "التخصص الرئيسي",
+        "en": "Primary focus"
       },
       "value": {
-        "en": "Training Manager",
-        "ar": "مدير التدريب"
+        "ar": "المبيعات والفرق الميدانية",
+        "en": "Sales & Field Teams"
       },
       "note": {
-        "en": "TECNO Mobile — Saudi Arabia",
-        "ar": "TECNO Mobile — المملكة العربية السعودية"
+        "ar": "إدارة مناطق وعمليات على مستوى المملكة",
+        "en": "Regional and national operations"
       }
     },
     {
@@ -102,7 +104,7 @@
   },
   "cvUrl": "downloads/Ahmad-Alshehri-CV-en.pdf",
   "cvSummary": {
-    "ar": "خبرة متدرجة في قطاع تجزئة الهواتف الذكية منذ عام 2020، من البيع المباشر إلى إدارة المناطق والقوى الميدانية والتدريب على مستوى المملكة. تجمع الخبرة بين متابعة أداء المبيعات، وقيادة فرق المتاجر، وتطوير مهارات البيع وفق احتياجات العمل الميداني.",
-    "en": "Progressive experience in smartphone retail since 2020, spanning direct sales, area management, national field operations and training. Background combines sales performance monitoring, retail team leadership and practical sales capability development."
+    "ar": "خبرة في إدارة المبيعات والفرق الميدانية بقطاع تجزئة الهواتف الذكية منذ عام 2020. تشمل إدارة المناطق وعمليات القوى الميدانية على مستوى المملكة، وتوزيع المستهدفات ومتابعة الإنجاز، وتحليل أداء المبيعات وإنتاجية المروجين. تدعمها خبرة في التوجيه الميداني وتطوير مهارات البيع.",
+    "en": "Sales and field-force management experience in smartphone retail since 2020. Background covers area management and national field operations, target allocation and achievement tracking, sales and promoter productivity analysis, supported by field coaching and sales skills development."
   }
 }

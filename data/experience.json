@@ -24,14 +24,14 @@
       },
       "responsibilities": {
         "ar": [
-          "إدارة تدريب فرق التجزئة والميدان على مستوى المملكة، من تحديد الاحتياجات إلى تنفيذ البرامج ومتابعتها.",
-          "إعداد محتوى المنتجات وأساليب البيع والمقارنات التنافسية، وتنفيذ تدريب الموزعين وشركاء التجزئة حضوريًا وعن بُعد.",
-          "تحديد فجوات المعرفة والتنفيذ من تقارير المبيعات وملاحظات الميدان، بالتنسيق مع المبيعات والتسويق."
+          "تحديد احتياجات فرق البيع من تقارير المبيعات وملاحظات الميدان، بالتنسيق مع المبيعات والتسويق والقوى الميدانية.",
+          "إعداد وتنفيذ تدريب عملي على شرح فوائد المنتجات والمقارنات التنافسية ومهارات البيع لفرق التجزئة والموزعين.",
+          "متابعة المعرفة بعد التدريب من خلال الاختبارات وجلسات المتابعة، وتعديل المحتوى وفق احتياجات المتاجر."
         ],
         "en": [
-          "Manage training for retail and field teams across Saudi Arabia, from needs assessment to programme delivery and follow-up.",
-          "Develop product, selling-skills and competitor content, and deliver in-person and online training for dealers and retail partners.",
-          "Identify knowledge and execution gaps through sales reports and field feedback, working with sales and marketing."
+          "Identify sales-team development needs through sales reports and field feedback, working with sales, marketing and field-force teams.",
+          "Develop and deliver practical training on product benefits, competitor comparisons and selling skills for retail teams and dealers.",
+          "Follow up on product knowledge through assessments and follow-up sessions, adapting content to store needs."
         ]
       },
       "achievements": [],
@@ -40,7 +40,8 @@
       "projects": [],
       "documents": [],
       "order": 0,
-      "visible": true
+      "visible": true,
+      "focus": "development"
     },
     {
       "id": "exp-2",
@@ -66,14 +67,14 @@
       },
       "responsibilities": {
         "ar": [
-          "إدارة مستهدفات فرق المبيعات على مستوى المملكة بالتنسيق مع مديري المناطق، ومتابعة الإنجاز حتى الإقفال الشهري.",
-          "تحليل تقارير المبيعات وإنتاجية المروجين لتحديد فجوات الأداء ومتابعة الإجراءات التصحيحية مع الفرق الإقليمية.",
-          "التنسيق مع شركاء التجزئة لمعالجة مشكلات التنفيذ داخل المتاجر والاستجابة لتحركات المنافسين."
+          "إدارة مستهدفات فرق المبيعات على مستوى المملكة، من توزيع الأهداف بالتنسيق مع مديري المناطق إلى متابعة الإقفال الشهري.",
+          "تحليل نتائج المبيعات وإنتاجية المروجين ومؤشرات الأداء، وتحديد الإجراءات التصحيحية ومتابعة تنفيذها مع الفرق الإقليمية.",
+          "التنسيق مع شركاء التجزئة لحل مشكلات التنفيذ داخل المتاجر والاستجابة لتحركات المنافسين."
         ],
         "en": [
-          "Managed national sales-team targets with regional managers and tracked progress through month-end closing.",
-          "Analyzed sales reports and promoter productivity to identify performance gaps and follow up on corrective actions with regional teams.",
-          "Worked with retail partners to resolve in-store execution issues and respond to competitor activity."
+          "Managed national sales-team targets, from allocation with regional managers to month-end closing.",
+          "Analyzed sales results, promoter productivity and KPIs, and agreed corrective actions and follow-up with regional teams.",
+          "Coordinated with retail partners to resolve in-store execution issues and respond to competitor activity."
         ]
       },
       "achievements": [],
@@ -82,7 +83,8 @@
       "projects": [],
       "documents": [],
       "order": 1,
-      "visible": true
+      "visible": true,
+      "focus": "sales"
     },
     {
       "id": "exp-3",
@@ -108,14 +110,14 @@
       },
       "responsibilities": {
         "ar": [
-          "الإشراف على فرق المروجين ومتابعة مؤشرات الأداء وتنفيذ خطط المبيعات في متاجر المنطقة.",
-          "إجراء زيارات ميدانية لتقييم أداء الفريق، ومراجعة تجربة العملاء ونشاط المنافسين في نقاط البيع.",
-          "توجيه المروجين في اكتشاف احتياج العميل ومعالجة الاعتراضات، والتنسيق مع مديري المتاجر لمعالجة عوائق البيع."
+          "قيادة فرق المروجين في متاجر المنطقة، ومتابعة تحقيق المستهدفات وإنتاجية الأفراد وتنفيذ خطط المبيعات.",
+          "زيارة المتاجر لتقييم أداء الفريق ورصد عوائق البيع وملاحظات العملاء ونشاط المنافسين، ومتابعة الحلول مع مديري المتاجر.",
+          "توجيه المروجين ميدانيًا في اكتشاف احتياج العميل والتوصية بالمنتج ومعالجة الاعتراضات وإتمام البيع."
         ],
         "en": [
-          "Supervised promoter teams and monitored KPIs and sales-plan execution across the area’s stores.",
-          "Conducted store visits to assess team performance, customer experience and competitor activity.",
-          "Coached promoters in needs discovery and objection handling, and coordinated with store managers to resolve sales obstacles."
+          "Led promoter teams across area stores, tracking target achievement, individual productivity and sales-plan execution.",
+          "Visited stores to assess team performance, sales obstacles, customer feedback and competitor activity, following up on solutions with store managers.",
+          "Coached promoters in customer needs discovery, product recommendations, objection handling and closing."
         ]
       },
       "achievements": [],
@@ -124,7 +126,8 @@
       "projects": [],
       "documents": [],
       "order": 2,
-      "visible": true
+      "visible": true,
+      "focus": "sales"
     },
     {
       "id": "exp-4",
@@ -164,7 +167,8 @@
       "projects": [],
       "documents": [],
       "order": 3,
-      "visible": true
+      "visible": true,
+      "focus": "development"
     },
     {
       "id": "exp-5",
@@ -202,7 +206,8 @@
       "projects": [],
       "documents": [],
       "order": 4,
-      "visible": true
+      "visible": true,
+      "focus": "sales"
     },
     {
       "id": "exp-6",
@@ -240,7 +245,8 @@
       "projects": [],
       "documents": [],
       "order": 5,
-      "visible": true
+      "visible": true,
+      "focus": "sales"
     }
   ]
 }
