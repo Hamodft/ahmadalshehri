@@ -9,14 +9,14 @@
         "ar": "مدير التدريب"
       },
       "period": {
-        "en": "2025 - 2026",
-        "ar": "2025 - 2026"
+        "en": "2025 - Present",
+        "ar": "2025 - حتى الآن"
       },
       "location": {
         "en": "Saudi Arabia",
         "ar": "المملكة العربية السعودية"
       },
-      "current": false,
+      "current": true,
       "scope": "national",
       "description": {
         "en": "",
@@ -24,14 +24,14 @@
       },
       "responsibilities": {
         "ar": [
-          "تحديد احتياجات فرق البيع من تقارير المبيعات وملاحظات الميدان، بالتنسيق مع المبيعات والتسويق والقوى الميدانية.",
+          "إدارة تدريب وتطوير فريق يضم 89 موظفًا، وتحديد احتياجاته من تقارير المبيعات وملاحظات الميدان بالتنسيق مع المبيعات والتسويق والقوى الميدانية.",
           "إعداد وتنفيذ تدريب عملي على شرح فوائد المنتجات والمقارنات التنافسية ومهارات البيع لفرق التجزئة والموزعين.",
           "متابعة المعرفة بعد التدريب من خلال الاختبارات وجلسات المتابعة، وتعديل المحتوى وفق احتياجات المتاجر."
         ],
         "en": [
-          "Identified sales-team development needs through sales reports and field feedback, working with sales, marketing and field-force teams.",
-          "Developed and delivered practical training on product benefits, competitor comparisons and selling skills for retail teams and dealers.",
-          "Followed up on product knowledge through assessments and follow-up sessions, adapting content to store needs."
+          "Manage training and development for an 89-employee team, identifying needs through sales reports and field feedback in coordination with sales, marketing and field-force teams.",
+          "Develop and deliver practical training on product benefits, competitor comparisons and selling skills for retail teams and dealers.",
+          "Follow up on product knowledge through assessments and follow-up sessions, adapting content to store needs."
         ]
       },
       "achievements": [],
@@ -67,13 +67,13 @@
       },
       "responsibilities": {
         "ar": [
-          "إدارة مستهدفات فرق المبيعات على مستوى المملكة، من توزيع الأهداف بالتنسيق مع مديري المناطق إلى متابعة الإقفال الشهري.",
-          "تحليل نتائج المبيعات وإنتاجية المروجين ومؤشرات الأداء، وتحديد الإجراءات التصحيحية ومتابعة تنفيذها مع الفرق الإقليمية.",
+          "إدارة مستهدفات وأداء فريق يضم 145 موظفًا على مستوى المملكة، من توزيع الأهداف بالتنسيق مع مديري المناطق إلى متابعة الإقفال الشهري.",
+          "تحقيق متوسط 89% من مستهدف المبيعات لعام 2024، مع تحليل نتائج المبيعات وإنتاجية الفريق ومتابعة الإجراءات التصحيحية.",
           "التنسيق مع شركاء التجزئة لحل مشكلات التنفيذ داخل المتاجر والاستجابة لتحركات المنافسين."
         ],
         "en": [
-          "Managed national sales-team targets, from allocation with regional managers to month-end closing.",
-          "Analyzed sales results, promoter productivity and KPIs, and agreed corrective actions and follow-up with regional teams.",
+          "Managed sales targets and performance for a 145-employee field team across Saudi Arabia, from target allocation with regional managers to month-end closing.",
+          "Achieved an average of 89% of the 2024 sales target, while analyzing sales results and team productivity and following up on corrective actions.",
           "Coordinated with retail partners to resolve in-store execution issues and respond to competitor activity."
         ]
       },
