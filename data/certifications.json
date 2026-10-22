@@ -25,7 +25,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 1,
+      "order": 7,
       "visible": true
     },
     {
@@ -53,7 +53,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 2,
+      "order": 8,
       "visible": true
     },
     {
@@ -81,7 +81,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 3,
+      "order": 9,
       "visible": true
     },
     {
@@ -109,7 +109,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 4,
+      "order": 10,
       "visible": true
     },
     {
@@ -137,7 +137,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 5,
+      "order": 1,
       "visible": true
     },
     {
@@ -165,7 +165,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 6,
+      "order": 2,
       "visible": true
     },
     {
@@ -193,7 +193,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 7,
+      "order": 3,
       "visible": true
     },
     {
@@ -221,7 +221,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 8,
+      "order": 4,
       "visible": true
     },
     {
@@ -249,7 +249,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 9,
+      "order": 5,
       "visible": true
     },
     {
@@ -277,7 +277,7 @@
       "credentialId": "",
       "file": "",
       "skills": [],
-      "order": 10,
+      "order": 6,
       "visible": true
     }
   ]

@@ -1,23 +1,33 @@
 import { chromium } from 'playwright';
 import { mkdir } from 'node:fs/promises';
-
 const base = 'http://127.0.0.1:4173';
 const browser = await chromium.launch({ headless: true });
 await mkdir('downloads', { recursive: true });
-
-for (const lang of ['en', 'ar']) {
-  const page = await browser.newPage({ viewport: { width: 1280, height: 1600 } });
-  await page.goto(`${base}/cv.html?lang=${lang}`, { waitUntil: 'networkidle' });
-  await page.emulateMedia({ media: 'print' });
-  await page.pdf({
-    path: `downloads/Ahmad-Alshehri-CV-${lang}.pdf`,
-    format: 'A4',
-    printBackground: true,
-    preferCSSPageSize: true,
-    displayHeaderFooter: false,
-    margin: { top: '0', right: '0', bottom: '0', left: '0' }
-  });
-  await page.close();
-}
-
-await browser.close();
+try {
+  for (const lang of ['en', 'ar']) for (const ats of [false, true]) {
+    const page = await browser.newPage({ viewport: { width: 1280, height: 1600 } });
+    await page.goto(`${base}/cv.html?lang=${lang}${ats ? '&format=ats' : ''}`, { waitUntil: 'networkidle' });
+    await page.waitForFunction(() => window.__TAILORED_READY__ || window.__TAILORED_ERROR__);
+    const error = await page.evaluate(() => window.__TAILORED_ERROR__);
+    if (error) throw new Error(error);
+    await page.evaluate(() => document.fonts.ready);
+    await page.emulateMedia({ media: 'print' });
+    // Fit only the content block, then verify it instead of dropping extra pages.
+    const fit = await page.evaluate(() => {
+      const page = document.querySelector('.page');
+      const content = page.querySelector('.ats-content') || page.querySelector('.grid');
+      const bottom = page.getBoundingClientRect().bottom - parseFloat(getComputedStyle(page).paddingBottom);
+      let scale = 1;
+      while (content.getBoundingClientRect().bottom > bottom + 0.5 && scale > 0.85) {
+        scale = Math.round((scale - 0.01) * 100) / 100;
+        content.style.zoom = String(scale);
+      }
+      return { scale, overflow: content.getBoundingClientRect().bottom > bottom + 0.5, jobs: page.querySelectorAll('.job').length };
+    });
+    if (fit.overflow || fit.jobs !== 6) throw new Error(`Invalid CV layout ${lang}/${ats}: ${JSON.stringify(fit)}`);
+    const stem = `Ahmad-Alshehri-CV-${ats ? 'ATS-' : ''}${lang}`;
+    await page.pdf({path:`downloads/${stem}.pdf`,format:'A4',printBackground:true,preferCSSPageSize:true,displayHeaderFooter:false,tagged:true,outline:true,margin:{top:'0',right:'0',bottom:'0',left:'0'}});
+    console.log(stem, JSON.stringify(fit));
+    await page.close();
+  }
+} finally { await browser.close(); }

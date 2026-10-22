@@ -38,7 +38,7 @@
     ['cvNav', 'cvHero', 'cvContact'].forEach(function (id) {
       var a = el(id);
       if (!a) return;
-      a.href = cvUrl(l);
+      a.href = cvUrl(l) + (id === 'cvHero' ? '&format=ats' : '');
       a.removeAttribute('download');
       a.setAttribute('hreflang', l);
       a.setAttribute('aria-label', ar ? 'فتح السيرة الذاتية العربية المحدثة' : 'Open the updated English CV');
@@ -561,5 +561,6 @@
     console.error(err);
   });
 })();
+
 
 

@@ -9,14 +9,14 @@
         "ar": "مدير التدريب"
       },
       "period": {
-        "en": "2025 – Present",
-        "ar": "2025 – حتى الآن"
+        "en": "2025 - 2026",
+        "ar": "2025 - 2026"
       },
       "location": {
         "en": "Saudi Arabia",
         "ar": "المملكة العربية السعودية"
       },
-      "current": true,
+      "current": false,
       "scope": "national",
       "description": {
         "en": "",
@@ -29,9 +29,9 @@
           "متابعة المعرفة بعد التدريب من خلال الاختبارات وجلسات المتابعة، وتعديل المحتوى وفق احتياجات المتاجر."
         ],
         "en": [
-          "Identify sales-team development needs through sales reports and field feedback, working with sales, marketing and field-force teams.",
-          "Develop and deliver practical training on product benefits, competitor comparisons and selling skills for retail teams and dealers.",
-          "Follow up on product knowledge through assessments and follow-up sessions, adapting content to store needs."
+          "Identified sales-team development needs through sales reports and field feedback, working with sales, marketing and field-force teams.",
+          "Developed and delivered practical training on product benefits, competitor comparisons and selling skills for retail teams and dealers.",
+          "Followed up on product knowledge through assessments and follow-up sessions, adapting content to store needs."
         ]
       },
       "achievements": [],
