@@ -557,6 +557,9 @@
     renderBindings(); renderNav(); renderHero();
     renderExperience(); renderProjects(); renderTraining();
     renderSkills(); renderCerts(); initCertificatePreviews(); renderEducation(); renderContact(); jsonld();
+    Object.keys(D.settings.sections || {}).forEach(function (key) {
+      if (D.settings.sections[key] === false && el(key)) el(key).classList.add('is-empty');
+    });
     var initialLang = D.settings.site.defaultLang || 'en';
     try {
       var savedLang = localStorage.getItem('aa_lang');

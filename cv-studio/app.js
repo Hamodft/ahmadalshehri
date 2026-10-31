@@ -54,7 +54,24 @@
   function makeHeadline(themes) { var top = themes.filter(function (x) { return x.score > 0; }).slice(0, 2); if (!top.length) top = [{ key: 'sales' }, { key: 'field' }]; if (top.length === 1) top.push({ key: top[0].key === 'sales' ? 'field' : 'sales' }); return { en: top.map(function (x) { return THEMES[x.key].label.en; }), ar: top.map(function (x) { return THEMES[x.key].label.ar; }) }; }
   function relevanceScore(keywords, themes) { var core = keywords.slice(0, 14), found = core.filter(function (x) { return x.found; }).length, wordCoverage = core.length ? found / core.length : 0.5, activeThemes = themes.filter(function (x) { return x.score > 0; }).slice(0, 6), c = corpusText(), themeCoverage = activeThemes.length ? activeThemes.filter(function (x) { var th = THEMES[x.key]; return th.en.concat(th.ar).some(function (k) { return c.indexOf(normalize(k)) > -1; }); }).length / activeThemes.length : 0.65; return Math.max(45, Math.min(96, Math.round((wordCoverage * 0.72 + themeCoverage * 0.28) * 100))); }
 
+  function clearReadyPdf() {
+    if (READY_PDF_URL) URL.revokeObjectURL(READY_PDF_URL);
+    READY_PDF = null;
+    READY_PDF_URL = '';
+    $('downloadLink').hidden = true;
+    $('downloadLink').removeAttribute('href');
+    $('sharePdfBtn').hidden = true;
+    $('exportStatus').hidden = true;
+    $('retryBtn').hidden = true;
+  }
+  function invalidateResult() {
+    clearReadyPdf();
+    RESULT = null;
+    $('results').hidden = true;
+    $('emptyState').hidden = false;
+  }
   function analyze() {
+    clearReadyPdf();
     var jd = $('jd').value.trim();
     if (jd.length < 80) { showMsg(LANG === 'ar' ? 'ألصق وصفاً وظيفياً أكثر تفصيلاً للحصول على تخصيص أدق.' : 'Paste a more complete job description for an accurate match.', true); return; }
     var jdCount = countMap(words(jd)), themes = detectThemes(jd), keywords = topKeywords(jd), enteredTitle = $('jobTitle').value.trim(), title = enteredTitle || inferTitle(jd) || (LANG === 'ar' ? 'وظيفة مستهدفة' : 'Target Role');
@@ -155,6 +172,9 @@
     if (!RESULT) { analyze(); if (!RESULT) return; }
     var button = $('generateBtn'), frame = null;
     button.disabled = true;
+    var inputs = ['jobTitle', 'jd', 'outLang', 'langBtn', 'analyzeBtn'];
+    inputs.forEach(function (id) { $(id).disabled = true; });
+    clearReadyPdf();
     if ($('retryBtn')) $('retryBtn').hidden = true;
     if ($('downloadLink')) $('downloadLink').hidden = true;
     if ($('sharePdfBtn')) $('sharePdfBtn').hidden = true;
@@ -204,13 +224,14 @@
       if ($('retryBtn')) $('retryBtn').hidden = false;
     } finally {
       button.disabled = false;
+      inputs.forEach(function (id) { $(id).disabled = false; });
       if (frame && frame.parentNode) frame.parentNode.removeChild(frame);
       try { delete window.__AA_TAILORED_RESULT__; } catch (error) { window.__AA_TAILORED_RESULT__ = null; }
     }
   }
   function checkAgain() { return generatePdf(); }
-  function setLang(l) { LANG = l === 'ar' ? 'ar' : 'en'; document.documentElement.lang = LANG; document.documentElement.dir = LANG === 'ar' ? 'rtl' : 'ltr'; document.body.dir = LANG === 'ar' ? 'rtl' : 'ltr'; $('outLang').value = LANG; try { localStorage.setItem('aa_lang', LANG); } catch (e) {} if (RESULT) { RESULT.lang = LANG; RESULT.outputPath = 'downloads/tailored/Ahmad-Alshehri-CV-' + RESULT.slug + '-' + LANG + '-' + RESULT.requestId + '.pdf'; renderResult(); } }
-  function bind() { $('analyzeBtn').addEventListener('click', analyze); $('generateBtn').addEventListener('click', generatePdf); $('retryBtn').addEventListener('click', checkAgain); $('sharePdfBtn').addEventListener('click', shareReadyPdf); $('outLang').addEventListener('change', function () { setLang(this.value); }); $('langBtn').addEventListener('click', function () { setLang(LANG === 'ar' ? 'en' : 'ar'); }); }
+  function setLang(l) { if (l !== LANG) clearReadyPdf(); LANG = l === 'ar' ? 'ar' : 'en'; document.documentElement.lang = LANG; document.documentElement.dir = LANG === 'ar' ? 'rtl' : 'ltr'; document.body.dir = LANG === 'ar' ? 'rtl' : 'ltr'; $('outLang').value = LANG; try { localStorage.setItem('aa_lang', LANG); } catch (e) {} if (RESULT) { RESULT.lang = LANG; RESULT.outputPath = 'downloads/tailored/Ahmad-Alshehri-CV-' + RESULT.slug + '-' + LANG + '-' + RESULT.requestId + '.pdf'; renderResult(); } }
+  function bind() { ['jd', 'jobTitle'].forEach(function (id) { $(id).addEventListener('input', invalidateResult); }); $('analyzeBtn').addEventListener('click', analyze); $('generateBtn').addEventListener('click', generatePdf); $('retryBtn').addEventListener('click', checkAgain); $('sharePdfBtn').addEventListener('click', shareReadyPdf); $('outLang').addEventListener('change', function () { setLang(this.value); }); $('langBtn').addEventListener('click', function () { setLang(LANG === 'ar' ? 'en' : 'ar'); }); }
   function boot() { var saved = 'en'; try { saved = localStorage.getItem('aa_lang') || 'en'; } catch (e) {} setLang(saved); bind(); tokenState(); Promise.all(FILES.map(function (f) { return fetch('../data/' + f + '.json?v=20260823-tailor1', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(f + '.json — ' + r.status); return r.json(); }); })).then(function (all) { FILES.forEach(function (f, i) { D[f] = all[i]; }); $('analyzeBtn').disabled = false; $('loadState').hidden = true; }).catch(function (e) { showMsg((LANG === 'ar' ? 'تعذر تحميل بيانات السيرة: ' : 'Could not load CV data: ') + e.message, true); }); }
 
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();

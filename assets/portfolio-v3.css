@@ -56,3 +56,11 @@ body{background:#f7f4ee}.site-head{background:rgba(6,15,25,.93)!important;border
  .clist a{overflow-wrap:anywhere}
  :is(section,[id]){scroll-margin-top:130px}
 }
+/* Contrast corrections verified against the existing navy and warm-white surfaces. */
+.site-head .brand span{color:#d5aa5a!important}
+.brand-head p{color:#626872}
+.contact .btn-gold{background:#d5aa5a}
+.foot-in,.foot-in a{color:#626872}
+.brand-tile img{width:120px;height:34px;object-fit:contain}
+.v3-role-logo img{width:85px;height:24px;object-fit:contain}
+@media(hover:none){.profile-photo-stage{will-change:auto;transform:none!important}}
