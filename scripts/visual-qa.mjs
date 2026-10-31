@@ -115,6 +115,19 @@ try {
       assert.equal(backup.data.experience.items[0].order,0);
       await context.close();
     });
+    await check('configured monogram still works when no portrait is selected', async () => {
+      const page = await browser.newPage();
+      await page.route('**/data/profile.json*', async route => {
+        const response = await route.fetch();
+        const profile = await response.json();
+        profile.photo = '';
+        profile.monogram = 'QA';
+        await route.fulfill({json:profile});
+      });
+      await page.goto(base); await ready(page);
+      assert.equal(await page.locator('#monogram').innerText(),'QA');
+      await page.close();
+    });
     await check('optional data failure preserves profile and navigation', async () => {
       const page = await browser.newPage();
       await page.route('**/data/certifications.json*', r => r.fulfill({status:503, body:'Unavailable'}));
