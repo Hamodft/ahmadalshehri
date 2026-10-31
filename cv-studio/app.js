@@ -43,8 +43,8 @@
   function makeSummary(themes) {
     var top = themes.filter(function (x) { return x.score > 0; }).slice(0, 3);
     return {
-      en: 'Sales and field-force management experience in Saudi Arabia’s smartphone retail sector since 2020, covering target allocation, team performance and retail execution. Supported by experience in sales coaching and training.' + (top.length ? ' Relevant strengths include ' + top.map(function (x) { return THEMES[x.key].label.en.toLowerCase(); }).join(', ') + '.' : ''),
-      ar: 'خبرة في إدارة المبيعات والفرق الميدانية بقطاع تجزئة الهواتف الذكية بالمملكة منذ عام 2020، تشمل توزيع المستهدفات ومتابعة أداء الفرق والتنفيذ داخل المتاجر، وتدعمها خبرة في التوجيه وتدريب المبيعات.' + (top.length ? ' تشمل مجالات الخبرة المرتبطة بالوظيفة ' + top.map(function (x) { return THEMES[x.key].label.ar; }).join('، ') + '.' : '')
+      en: 'Sales and field-force management experience in Saudi Arabia’s retail sector since 2020, covering target allocation, team performance and retail execution. Supported by experience in sales coaching and training.' + (top.length ? ' Relevant strengths include ' + top.map(function (x) { return THEMES[x.key].label.en.toLowerCase(); }).join(', ') + '.' : ''),
+      ar: 'خبرة في إدارة المبيعات والفرق الميدانية بقطاع التجزئة بالمملكة منذ عام 2020، تشمل توزيع المستهدفات ومتابعة أداء الفرق والتنفيذ داخل المتاجر، وتدعمها خبرة في التوجيه وتدريب المبيعات.' + (top.length ? ' تشمل مجالات الخبرة المرتبطة بالوظيفة ' + top.map(function (x) { return THEMES[x.key].label.ar; }).join('، ') + '.' : '')
     };
   }
   function selectSkills(jdCount, themes) { var all = vis(D.skills.items).map(function (x) { var text = [t(x.name, 'en'), t(x.name, 'ar'), t(x.category, 'en'), t(x.category, 'ar'), x.evidence || ''].join(' '); return { item: x, score: overlapScore(text, jdCount, themes) }; }); function pick(re) { return all.filter(function (x) { return re.test(x.item.categoryKey || ''); }).sort(function (a, b) { return b.score - a.score || (a.item.order || 0) - (b.item.order || 0); }).slice(0, 5).map(function (x) { return x.item.id; }); } return { commercial: pick(/cat-[12]/), leadership: pick(/cat-[34]/) }; }

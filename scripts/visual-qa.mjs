@@ -157,6 +157,7 @@ try {
           await page.waitForFunction(()=>window.__TAILORED_READY__);
           assert.equal(await page.evaluate(()=>window.__TAILORED_ERROR__),undefined);
           assert.equal(await page.locator('.job').count(),6);
+          assert.equal(await page.locator('.more-info').count(), path.includes('format=ats') ? 0 : 1);
           const download = await page.locator('#download').getAttribute('href');
           assert.equal((await page.request.get(`${base}/${download}`)).status(),200);
         }
@@ -198,6 +199,7 @@ try {
         const audit=await page.evaluate(()=>axe.run(document,{runOnly:{type:'tag',values:['wcag2a','wcag2aa','wcag21aa']}}));
         await writeFile(`${out}/axe-${lang}.json`,JSON.stringify(audit,null,2));
         results.push({name:`axe-${lang}`,violations:audit.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.length}))});
+        assert.equal(audit.violations.filter(v=>['critical','serious'].includes(v.impact)).length,0,'Serious accessibility violations remain');
       }
       await page.close();
     });

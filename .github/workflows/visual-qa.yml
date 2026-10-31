@@ -2,6 +2,9 @@ name: Portfolio visual and CV QA
 on:
   pull_request:
     branches: [main]
+concurrency:
+  group: portfolio-qa-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -41,6 +44,8 @@ jobs:
         if: always()
         run: |
           export CHROME_PATH="$(node -e "console.log(require('playwright').chromium.executablePath())")"
+          npx lighthouse http://127.0.0.1:4174 --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-before-mobile --quiet
+          npx lighthouse http://127.0.0.1:4174 --preset=desktop --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-before-desktop --quiet
           npx lighthouse http://127.0.0.1:4173 --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-mobile --quiet
           npx lighthouse http://127.0.0.1:4173 --preset=desktop --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-desktop --quiet
       - name: Upload evidence

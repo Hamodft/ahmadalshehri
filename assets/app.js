@@ -363,12 +363,17 @@
     el('ctaBody').innerHTML = bi(career.ctaBody);
     el('emailBtn').href = 'mailto:' + c.email + '?subject=' + encodeURIComponent('Opportunity for ' + t(D.profile.name));
 
+    var roleLabels = {
+      'Area Sales Management': { en: 'Area Sales Management', ar: 'إدارة مبيعات المناطق' },
+      'Field Force Management': { en: 'Field Force Management', ar: 'إدارة القوى الميدانية' },
+      'Sales Operations': { en: 'Sales Operations', ar: 'عمليات المبيعات' }
+    };
     el('statusStrip').innerHTML = career.openToOpportunities
       ? '<div class="status-strip"><span class="status-dot"></span>' +
         
         '<span>' + bi(career.availability) + ' · ' + bi(career.preferredLocation) + '</span>' +
         (career.targetRoles && career.targetRoles.length
-          ? '<ul class="role-chips">' + career.targetRoles.map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul>'
+          ? '<ul class="role-chips">' + career.targetRoles.map(function (r) { return '<li>' + bi(roleLabels[r] || r) + '</li>'; }).join('') + '</ul>'
           : '') + '</div>'
       : '';
 
