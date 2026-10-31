@@ -12,6 +12,9 @@
   var D = {};                       // loaded data
   var LANG = 'en';
   var html = document.documentElement;
+  var drawerTrigger = null;
+  var drawerBackground = [];
+  var previousOverflow = '';
 
   /* ---------------------------------------------------------------- utils */
   function t(v) {                   // bilingual value -> current language string
@@ -267,7 +270,7 @@
             '<span class="en">' + esc(c.name.en) + '<small>' + esc(c.provider.en) + '</small></span>' +
             '<span class="ar">' + esc(c.name.ar) + '<small>' + esc(c.provider.ar) + '</small></span>';
           var name = c.credentialUrl
-            ? '<a class="cert-link" href="' + esc(c.credentialUrl) + '" target="_blank" rel="noopener" aria-label="View certificate">' +
+            ? '<a class="cert-link" href="' + esc(c.credentialUrl) + '" target="_blank" rel="noopener" aria-label="' + esc(t(c.name)) + '">' +
               inner + '<span class="cert-go" aria-hidden="true">↗</span></a>'
             : inner;
           return '<li class="cert"><p class="cert-name">' + name + '</p>' +
@@ -430,14 +433,63 @@
         block({ en: 'Result', ar: 'النتيجة' }, para(item.result)) +
         block({ en: 'Materials', ar: 'المواد التدريبية' }, links(item.documents));
     }
+    drawerTrigger = document.activeElement;
+    previousOverflow = document.body.style.overflow;
+    drawerBackground = Array.from(document.body.children).filter(function (node) {
+      return node !== el('drawer') && node !== el('drawerBg') && !node.inert && !['SCRIPT', 'STYLE'].includes(node.tagName);
+    });
+    drawerBackground.forEach(function (node) { node.inert = true; });
+    document.body.style.overflow = 'hidden';
+    el('drawer').inert = false;
+    el('drawer').setAttribute('aria-hidden', 'false');
     el('drawerBody').innerHTML = body;
     el('drawer').classList.add('open');
     el('drawerBg').classList.add('open');
     el('drawerClose').focus();
   }
   function closeDrawer() {
+    if (!el('drawer').classList.contains('open')) return;
+    el('drawer').inert = true;
+    el('drawer').setAttribute('aria-hidden', 'true');
+    drawerBackground.forEach(function (node) { node.inert = false; });
+    document.body.style.overflow = previousOverflow;
+    if (drawerTrigger && drawerTrigger.isConnected) drawerTrigger.focus();
     el('drawer').classList.remove('open');
     el('drawerBg').classList.remove('open');
+  }
+
+  function initNavigation() {
+    var button = el('navToggle'), nav = el('nav');
+    var mobile = window.matchMedia('(max-width:1000px)');
+    function close(returnFocus) {
+      nav.classList.remove('is-open');
+      button.setAttribute('aria-expanded', 'false');
+      if (returnFocus) button.focus();
+    }
+    button.addEventListener('click', function () {
+      var open = button.getAttribute('aria-expanded') !== 'true';
+      button.setAttribute('aria-expanded', String(open));
+      nav.classList.toggle('is-open', open);
+    });
+    nav.addEventListener('click', function (e) {
+      var link = e.target.closest('a[href^="#"]');
+      if (!link) return;
+      close(false);
+      var section = document.getElementById(link.hash.slice(1));
+      if (section) { section.tabIndex = -1; section.focus({ preventScroll: true }); }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && nav.classList.contains('is-open')) close(true);
+    });
+    document.addEventListener('click', function (e) {
+      if (!e.target.closest('.site-head')) close(false);
+    });
+    document.querySelector('.site-head').addEventListener('focusout', function () {
+      setTimeout(function () {
+        if (!document.activeElement.closest('.site-head')) close(false);
+      }, 0);
+    });
+    mobile.addEventListener('change', function () { close(false); });
   }
 
   /* ------------------------------------------------------------- language */
@@ -448,6 +500,11 @@
     html.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
     document.body.setAttribute('dir', l === 'ar' ? 'rtl' : 'ltr');
     syncCvLinks(l);
+    el('nav').setAttribute('aria-label', l === 'ar' ? 'التنقل الرئيسي' : 'Primary navigation');
+    el('drawer').setAttribute('aria-label', l === 'ar' ? 'التفاصيل' : 'Details');
+    document.querySelectorAll('.cert-link').forEach(function (a) { a.setAttribute('aria-label', a.querySelector('.' + l).textContent); });
+    var photo = document.querySelector('.profile-photo-stage');
+    if (photo) photo.setAttribute('aria-label', t(D.profile.name));
     try { localStorage.setItem('aa_lang', l); } catch (e) {}
     document.title = t(D.settings.site.baseTitle);
     var d = document.querySelector('meta[name="description"]');
@@ -507,6 +564,7 @@
     } catch (e) {}
     setLang(initialLang);
 
+    initNavigation();
     el('langBtn').addEventListener('click', function () {
       setLang(LANG === 'ar' ? 'en' : 'ar');
     });
@@ -518,7 +576,14 @@
     });
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') closeDrawer();
-      if (e.key === 'Enter' && e.target.hasAttribute && e.target.hasAttribute('data-training')) {
+      if (e.key === 'Tab' && el('drawer').classList.contains('open')) {
+        var focusable = Array.from(el('drawer').querySelectorAll('button, a[href], input, select, textarea, [tabindex]')).filter(function (n) { return !n.disabled && n.tabIndex >= 0 && n.getClientRects().length; });
+        var first = focusable[0], last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+      if ((e.key === 'Enter' || e.key === ' ') && e.target.hasAttribute && e.target.hasAttribute('data-training')) {
+        e.preventDefault();
         openDrawer('training', e.target.getAttribute('data-training'));
       }
     });
@@ -545,22 +610,41 @@
   var pre = draft();
   if (pre) { boot(pre); return; }
 
-  Promise.all(FILES.map(function (f) {
+  Promise.allSettled(FILES.map(function (f) {
     return fetch('data/' + f + '.json?v=20260819-v12', { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error(f + '.json — ' + r.status);
       return r.json();
     });
-  })).then(function (all) {
-    var data = {};
-    FILES.forEach(function (f, i) { data[f] = all[i]; });
+  })).then(function (results) {
+    var data = {}, unavailable = [];
+    FILES.forEach(function (f, i) {
+      var result = results[i];
+      if (result.status === 'fulfilled') data[f] = result.value;
+      else {
+        if (f === 'profile' || f === 'settings') throw result.reason;
+        data[f] = { items: [] };
+        unavailable.push(f);
+        console.warn('Portfolio section unavailable:', f);
+      }
+    });
     boot(data);
+    unavailable.forEach(function (f) {
+      var section = el(f === 'skills' ? 'competencies' : f);
+      if (section) section.classList.add('is-empty');
+      var link = document.querySelector('#nav a[href="#' + (f === 'skills' ? 'competencies' : f) + '"]');
+      if (link) link.remove();
+    });
+    if (unavailable.length) {
+      var notice = document.createElement('div');
+      notice.className = 'load-notice';
+      notice.setAttribute('role', 'status');
+      notice.innerHTML = bi({ en: 'Some sections are temporarily unavailable. Please try again later.', ar: 'بعض الأقسام غير متاحة مؤقتًا. يرجى المحاولة لاحقًا.' });
+      el('main').prepend(notice);
+    }
   }).catch(function (err) {
-    document.getElementById('main').innerHTML =
-      '<div class="wrap" style="padding:80px 24px"><h1 style="font-size:1.4rem">Content failed to load</h1>' +
-      '<p class="muted">' + esc(err.message) + '</p></div>';
+    el('main').innerHTML = '<div class="wrap" style="padding:80px 24px" role="alert">' +
+      '<h1>Content unavailable / المحتوى غير متاح</h1>' +
+      '<p>Please reload the page or try again later.</p><p lang="ar" dir="rtl">يرجى إعادة تحميل الصفحة أو المحاولة لاحقًا.</p></div>';
     console.error(err);
   });
 })();
-
-
-
