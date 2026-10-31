@@ -31,11 +31,13 @@ try {
       await page.addInitScript(l => !localStorage.getItem('aa_lang') && localStorage.setItem('aa_lang', l), lang);
       await page.goto(base, { waitUntil: 'networkidle' });
       await ready(page);
-      await page.screenshot({ path: `${out}/${name}-hero.png` });
+      await page.screenshot({ path: `${out}/${name}-hero.png`, animations: 'disabled' });
       // Trigger the existing reveal observer naturally before full-page capture.
       for (const section of await page.locator('main > section').all()) if (await section.isVisible()) await section.scrollIntoViewIfNeeded();
-      await page.locator('body').press('Control+Home');
-      await page.screenshot({ path: `${out}/${name}-full.png`, fullPage: true });
+      await page.waitForFunction(() => Array.from(document.querySelectorAll('.rv')).every(e => getComputedStyle(e).display === 'none' || e.classList.contains('in')));
+      await page.evaluate(() => window.scrollTo({top:0,behavior:'instant'}));
+      await page.waitForFunction(() => scrollY === 0);
+      await page.screenshot({ path: `${out}/${name}-full.png`, fullPage: true, animations: 'disabled' });
       const geometry = await page.evaluate(() => ({ viewport: innerWidth, scrollWidth: document.documentElement.scrollWidth, dir: document.documentElement.dir }));
       const data = { name, geometry, errors, badResponses };
       if (!baseline) {
@@ -49,7 +51,7 @@ try {
           await toggle.click();
           assert.equal(await toggle.getAttribute('aria-expanded'), 'true');
           assert(await page.locator('#nav').isVisible());
-          await page.screenshot({ path: `${out}/${name}-menu.png` });
+          await page.screenshot({ path: `${out}/${name}-menu.png`, animations: 'disabled' });
           await toggle.press('Escape');
           assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
           assert(await toggle.evaluate(e => document.activeElement === e));
