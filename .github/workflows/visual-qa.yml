@@ -1,0 +1,57 @@
+name: Portfolio visual and CV QA
+on:
+  pull_request:
+    branches: [main]
+concurrency:
+  group: portfolio-qa-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  browser-qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          npm install --no-save playwright@1.55.0 axe-core@4.10.3 lighthouse@12.8.2
+          npx playwright install --with-deps chromium
+          sudo apt-get update && sudo apt-get install -y fonts-noto-core poppler-utils
+      - name: Serve before and after checkouts
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add /tmp/portfolio-before "$BASE_SHA"
+          python3 -m http.server 4174 --directory /tmp/portfolio-before >/tmp/before.log 2>&1 &
+          python3 -m http.server 4173 >/tmp/after.log 2>&1 &
+      - name: Capture baseline
+        run: QA_BASE=http://127.0.0.1:4174 QA_LABEL=before node scripts/visual-qa.mjs
+      - name: Test candidate
+        run: node scripts/visual-qa.mjs
+      - name: Regenerate CVs for verification only
+        if: always()
+        run: |
+          node scripts/generate-cv.mjs
+          mkdir -p qa-artifacts/cv
+          cp downloads/*.pdf qa-artifacts/cv/
+          for pdf in qa-artifacts/cv/*.pdf; do pdftoppm -scale-to 1400 -png -singlefile "$pdf" "${pdf%.pdf}"; pdftotext -layout "$pdf" "${pdf%.pdf}.txt"; pdfinfo "$pdf"; done
+      - name: Measure lab performance
+        if: always()
+        run: |
+          export CHROME_PATH="$(node -e "console.log(require('playwright').chromium.executablePath())")"
+          npx lighthouse http://127.0.0.1:4174 --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-before-mobile --quiet
+          npx lighthouse http://127.0.0.1:4174 --preset=desktop --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-before-desktop --quiet
+          npx lighthouse http://127.0.0.1:4173 --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-mobile --quiet
+          npx lighthouse http://127.0.0.1:4173 --preset=desktop --chrome-flags="--headless --no-sandbox" --output=json --output=html --output-path=qa-artifacts/lighthouse-desktop --quiet
+      - name: Upload evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-qa-evidence
+          path: qa-artifacts/
+          retention-days: 14
