@@ -33,7 +33,7 @@ try {
       await ready(page);
       await page.screenshot({ path: `${out}/${name}-hero.png` });
       // Trigger the existing reveal observer naturally before full-page capture.
-      for (const section of await page.locator('main > section').all()) await section.scrollIntoViewIfNeeded();
+      for (const section of await page.locator('main > section').all()) if (await section.isVisible()) await section.scrollIntoViewIfNeeded();
       await page.locator('body').press('Control+Home');
       await page.screenshot({ path: `${out}/${name}-full.png`, fullPage: true });
       const geometry = await page.evaluate(() => ({ viewport: innerWidth, scrollWidth: document.documentElement.scrollWidth, dir: document.documentElement.dir }));
