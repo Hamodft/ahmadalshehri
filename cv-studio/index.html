@@ -54,6 +54,39 @@
   }catch(e){}
 })();
 </script>
+<script id="bespinAccountManagerPreset">
+(function(){
+  var params=new URLSearchParams(location.search);
+  if(params.get('preset')!=='bespin-account-manager')return;
+  var description=[
+    'Bespin Global (e& enterprise) — Account Manager, Saudi National — Riyadh.',
+    'Role requirements for relevance matching only; not claims about the candidate:',
+    'Manage and develop customer accounts and long-term relationships with decision-makers.',
+    'Identify new business opportunities and support revenue growth and customer retention.',
+    'Develop strategic account plans, monitor sales targets and sales performance.',
+    'Maintain a sales pipeline from prospecting and opportunity qualification through negotiation and closing.',
+    'Identify upselling and cross-selling opportunities with existing customers.',
+    'Coordinate with sales, marketing and technical teams to deliver customer solutions.',
+    'Support account qualification, proposals, tenders and sales forecasting.',
+    'Track KPIs, provide reports and understand market and competitor activity.',
+    'Cloud and enterprise IT solutions experience is a role requirement, not verified candidate experience.'
+  ].join('\n');
+  function fill(){
+    var title=document.getElementById('jobTitle');
+    var jd=document.getElementById('jd');
+    var lang=document.getElementById('outLang');
+    if(!title||!jd||!lang)return;
+    title.value='Account Manager';
+    jd.value=description;
+    lang.value='en';
+    title.dispatchEvent(new Event('input',{bubbles:true}));
+    jd.dispatchEvent(new Event('input',{bubbles:true}));
+    lang.dispatchEvent(new Event('change',{bubbles:true}));
+  }
+  if(document.readyState==='complete')setTimeout(fill,250);
+  else window.addEventListener('load',function(){setTimeout(fill,250)});
+})();
+</script>
 </body></html>
 
 
